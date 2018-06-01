@@ -1,0 +1,1 @@
+FOR /R %%a IN (front.png) DO magick "%%~a" -flop "%%~a"
