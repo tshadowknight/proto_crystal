@@ -14,12 +14,17 @@ my %translations = %{decode_json $translationJSON};
 my @newBSTStrings;
 my @newPokeConstants;
 my @newPokeNames;
+my @newDexEntries;
+my @newDexEntryPointers;
 for my $id (sort keys %translations){
 	push(@newBSTStrings, "INCLUDE \"data/pokemon/base_stats/".(lc $translations{$id}->{"new"}).".asm\"	;$id - ".(lc $translations{$id}->{"old"}));
 	push(@newPokeConstants, "\tconst ".(uc $translations{$id}->{"new"})." ; ".$id);
 	my $name = uc $translations{$id}->{"new"};
 	$name .= '@' while 10 > length $name;
 	push(@newPokeNames, "\tdb \"".($name)."\"");
+	
+	push(@newDexEntries, (ucfirst $translations{$id}->{"new"})."PokedexEntry::     INCLUDE \"data/pokemon/dex_entries/".(lc $translations{$id}->{"new"}).".asm\"");
+	push(@newDexEntryPointers, "\tdw ".(ucfirst $translations{$id}->{"new"})."PokedexEntry");
 }
 
 my $filename = 'new_bst_order.txt';
@@ -36,3 +41,15 @@ my $filename = 'newPokeNames.txt';
 open(my $fh, '>', $filename) or die "Could not open file '$filename' $!";
 print $fh join("\n", @newPokeNames);
 close $fh;
+
+my $filename = 'newDexEntries.txt';
+open(my $fh, '>', $filename) or die "Could not open file '$filename' $!";
+print $fh join("\n", @newDexEntries);
+close $fh;
+
+my $filename = 'newDexEntryPointers.txt';
+open(my $fh, '>', $filename) or die "Could not open file '$filename' $!";
+print $fh join("\n", @newDexEntryPointers);
+close $fh;
+
+

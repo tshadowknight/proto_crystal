@@ -151,104 +151,105 @@ PokedexDataPointerTable: ; 0x44378
 	dw DragonitePokedexEntry
 	dw MewtwoPokedexEntry
 	dw MewPokedexEntry
-	dw ChikoritaPokedexEntry
-	dw BayleefPokedexEntry
-	dw MeganiumPokedexEntry
-	dw CyndaquilPokedexEntry
-	dw QuilavaPokedexEntry
-	dw TyphlosionPokedexEntry
-	dw TotodilePokedexEntry
-	dw CroconawPokedexEntry
-	dw FeraligatrPokedexEntry
-	dw SentretPokedexEntry
-	dw FurretPokedexEntry
+	
+	dw LeefPokedexEntry
+	dw BlossomolePokedexEntry
+	dw BlossomitePokedexEntry
+	dw FlambearPokedexEntry
+	dw VolbearPokedexEntry
+	dw DynabearPokedexEntry
+	dw CruzPokedexEntry
+	dw AquaPokedexEntry
+	dw AquariaPokedexEntry
 	dw HoothootPokedexEntry
-	dw NoctowlPokedexEntry
-	dw LedybaPokedexEntry
-	dw LedianPokedexEntry
-	dw SpinarakPokedexEntry
-	dw AriadosPokedexEntry
-	dw CrobatPokedexEntry
-	dw ChinchouPokedexEntry
-	dw LanturnPokedexEntry
-	dw PichuPokedexEntry
-	dw CleffaPokedexEntry
-	dw IgglybuffPokedexEntry
-	dw TogepiPokedexEntry
-	dw TogeticPokedexEntry
-	dw NatuPokedexEntry
-	dw XatuPokedexEntry
+	dw HoohooPokedexEntry
 	dw MareepPokedexEntry
 	dw FlaaffyPokedexEntry
 	dw AmpharosPokedexEntry
-	dw BellossomPokedexEntry
-	dw MarillPokedexEntry
-	dw AzumarillPokedexEntry
-	dw SudowoodoPokedexEntry
-	dw PolitoedPokedexEntry
-	dw HoppipPokedexEntry
-	dw SkiploomPokedexEntry
-	dw JumpluffPokedexEntry
-	dw AipomPokedexEntry
-	dw SunkernPokedexEntry
-	dw SunfloraPokedexEntry
-	dw YanmaPokedexEntry
-	dw WooperPokedexEntry
-	dw QuagsirePokedexEntry
-	dw EspeonPokedexEntry
-	dw UmbreonPokedexEntry
-	dw MurkrowPokedexEntry
-	dw SlowkingPokedexEntry
-	dw MisdreavusPokedexEntry
-	dw UnownPokedexEntry
-	dw WobbuffetPokedexEntry
-	dw GirafarigPokedexEntry
-	dw PinecoPokedexEntry
-	dw ForretressPokedexEntry
-	dw DunsparcePokedexEntry
-	dw GligarPokedexEntry
-	dw SteelixPokedexEntry
-	dw SnubbullPokedexEntry
-	dw GranbullPokedexEntry
+	dw TrifoxPokedexEntry
+	dw TangelPokedexEntry
+	dw GelanlaPokedexEntry
+	dw RayleepPokedexEntry
 	dw QwilfishPokedexEntry
-	dw ScizorPokedexEntry
-	dw ShucklePokedexEntry
-	dw HeracrossPokedexEntry
-	dw SneaselPokedexEntry
-	dw TeddiursaPokedexEntry
-	dw UrsaringPokedexEntry
-	dw SlugmaPokedexEntry
-	dw MagcargoPokedexEntry
-	dw SwinubPokedexEntry
-	dw PiloswinePokedexEntry
-	dw CorsolaPokedexEntry
-	dw RemoraidPokedexEntry
-	dw OctilleryPokedexEntry
-	dw DelibirdPokedexEntry
-	dw MantinePokedexEntry
+	dw NumpuffPokedexEntry
+	dw PichuPokedexEntry
+	dw CleffaPokedexEntry
+	dw IgglybuffPokedexEntry
+	dw QuagsirePokedexEntry
+	dw NatuPokedexEntry
+	dw XatuPokedexEntry
+	dw GolppyPokedexEntry
+	dw MarillPokedexEntry
+	dw SunmolaPokedexEntry
+	dw AnchoragePokedexEntry
+	dw GrotessPokedexEntry
+	dw CrobatPokedexEntry
+	dw ParasyPokedexEntry
+	dw SpinarakPokedexEntry
+	dw AriadosPokedexEntry
 	dw SkarmoryPokedexEntry
-	dw HoundourPokedexEntry
-	dw HoundoomPokedexEntry
-	dw KingdraPokedexEntry
+	dw LykwysePokedexEntry
+	dw DounoPokedexEntry
+	dw SunfloraPokedexEntry
 	dw PhanpyPokedexEntry
 	dw DonphanPokedexEntry
-	dw Porygon2PokedexEntry
-	dw StantlerPokedexEntry
+	dw TwinzPokedexEntry
+	dw GirafarigPokedexEntry
 	dw SmearglePokedexEntry
-	dw TyroguePokedexEntry
+	dw MeowsyPokedexEntry
+	dw RinringPokedexEntry
+	dw BellboyantPokedexEntry
+	dw PolitoedPokedexEntry
+	dw SlowkingPokedexEntry
+	dw UnownPokedexEntry
+	dw LedybaPokedexEntry
+	dw TripstarPokedexEntry
+	dw MinicornPokedexEntry
+	dw EspeonPokedexEntry
+	dw UmbreonPokedexEntry
+	dw TurbannPokedexEntry
+	dw GrimeyPokedexEntry
+	dw RemoraidPokedexEntry
+	dw OctilleryPokedexEntry
+	dw GohngPokedexEntry
 	dw HitmontopPokedexEntry
+	dw PuddiPokedexEntry
+	dw LefmewPokedexEntry
+	dw DandemewPokedexEntry
+	dw CottomewPokedexEntry
+	dw BallerinePokedexEntry
 	dw SmoochumPokedexEntry
 	dw ElekidPokedexEntry
 	dw MagbyPokedexEntry
+	dw BellossomPokedexEntry
+	dw BelmittPokedexEntry
 	dw MiltankPokedexEntry
+	dw BomseelPokedexEntry
+	dw DelibirdPokedexEntry
+	dw KotoraPokedexEntry
+	dw RaitoraPokedexEntry
+	dw MadamePokedexEntry
+	dw KurstrawPokedexEntry
+	dw PangshiPokedexEntry
+	dw MurkrowPokedexEntry
 	dw BlisseyPokedexEntry
-	dw RaikouPokedexEntry
-	dw EnteiPokedexEntry
-	dw SuicunePokedexEntry
-	dw LarvitarPokedexEntry
-	dw PupitarPokedexEntry
-	dw TyranitarPokedexEntry
-	dw LugiaPokedexEntry
-	dw HoOhPokedexEntry
-	dw CelebiPokedexEntry
+	dw ScizorPokedexEntry
+	dw PluxPokedexEntry
+	dw HoundourPokedexEntry
+	dw HoundoomPokedexEntry
+	dw WolfmanPokedexEntry
+	dw WarwolfPokedexEntry
+	dw Porygon2PokedexEntry
+	dw LikkPokedexEntry
+	dw SteelixPokedexEntry
+	dw KingdraPokedexEntry
+	dw RaiPokedexEntry
+	dw EnPokedexEntry
+	dw SuiPokedexEntry
+	dw SneaselPokedexEntry
+	dw Ho_OhPokedexEntry
+	dw TogepiPokedexEntry
+	dw SnubbullPokedexEntry
+	dw AipomPokedexEntry
+	dw LeafeonPokedexEntry
 ; 0x4456e
