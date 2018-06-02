@@ -11,7 +11,7 @@
 	db 100 ; unknown 1
 	db 25 ; step cycles to hatch
 	db 5 ; unknown 2
-	INCBIN "gfx/pokemon/mantine/front.dimensions"
+	INCBIN "gfx/pokemon/kotora/front.dimensions"
 	db 0, 0, 0, 0 ; padding
 	db GROWTH_SLOW ; growth rate
 	dn EGG_WATER_1, EGG_WATER_1 ; egg groups

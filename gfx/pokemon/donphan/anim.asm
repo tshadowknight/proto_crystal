@@ -1,6 +1,5 @@
-	frame 2, 08
-	frame 1, 24
-	frame 3, 10
-	frame 4, 06
+	frame 1, 12
+	frame 2, 06
+	frame 3, 16
 	endanim
-; 0xd1587
+; 0xd137b

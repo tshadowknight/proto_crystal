@@ -15,5 +15,7 @@ my %translations = %{decode_json $translationJSON};
 for my $id (keys %translations){
 	my $old = lc $translations{$id}->{"old"};
 	my $new = lc $translations{$id}->{"new"};
-	`grep -rl pokemon/$old --include \*asm | xargs sed -i 's/pokemon\/$old/pokemon\/$new/g'`
+	my $cmd = "grep -rl gfx/pokemon/$old --include \\*asm | xargs sed -i 's/gfx\\/pokemon\\/$old/gfx\\/pokemon\\/$new/g'";
+	print "$cmd\n";
+	#`$cmd`
 }

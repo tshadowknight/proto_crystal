@@ -183,103 +183,104 @@ INCLUDE "data/pokemon/base_stats/dragonair.asm"	;148
 INCLUDE "data/pokemon/base_stats/dragonite.asm"	;149
 INCLUDE "data/pokemon/base_stats/mewtwo.asm"	;150
 INCLUDE "data/pokemon/base_stats/mew.asm"	;151
-INCLUDE "data/pokemon/base_stats/chikorita.asm"	;152
-INCLUDE "data/pokemon/base_stats/bayleef.asm"	;153
-INCLUDE "data/pokemon/base_stats/meganium.asm"	;154
-INCLUDE "data/pokemon/base_stats/cyndaquil.asm"	;155
-INCLUDE "data/pokemon/base_stats/quilava.asm"	;156
-INCLUDE "data/pokemon/base_stats/typhlosion.asm"	;157
-INCLUDE "data/pokemon/base_stats/totodile.asm"	;158
-INCLUDE "data/pokemon/base_stats/croconaw.asm"	;159
-INCLUDE "data/pokemon/base_stats/feraligatr.asm"	;160
-INCLUDE "data/pokemon/base_stats/sentret.asm"	;161
-INCLUDE "data/pokemon/base_stats/furret.asm"	;162
-INCLUDE "data/pokemon/base_stats/hoothoot.asm"	;163
-INCLUDE "data/pokemon/base_stats/noctowl.asm"	;164
-INCLUDE "data/pokemon/base_stats/ledyba.asm"	;165
-INCLUDE "data/pokemon/base_stats/ledian.asm"	;166
-INCLUDE "data/pokemon/base_stats/spinarak.asm"	;167
-INCLUDE "data/pokemon/base_stats/ariados.asm"	;168
-INCLUDE "data/pokemon/base_stats/crobat.asm"	;169
-INCLUDE "data/pokemon/base_stats/chinchou.asm"	;170
-INCLUDE "data/pokemon/base_stats/lanturn.asm"	;171
-INCLUDE "data/pokemon/base_stats/pichu.asm"	;172
-INCLUDE "data/pokemon/base_stats/cleffa.asm"	;173
-INCLUDE "data/pokemon/base_stats/igglybuff.asm"	;174
-INCLUDE "data/pokemon/base_stats/togepi.asm"	;175
-INCLUDE "data/pokemon/base_stats/togetic.asm"	;176
-INCLUDE "data/pokemon/base_stats/natu.asm"	;177
-INCLUDE "data/pokemon/base_stats/xatu.asm"	;178
-INCLUDE "data/pokemon/base_stats/mareep.asm"	;179
-INCLUDE "data/pokemon/base_stats/flaaffy.asm"	;180
-INCLUDE "data/pokemon/base_stats/ampharos.asm"	;181
-INCLUDE "data/pokemon/base_stats/bellossom.asm"	;182
-INCLUDE "data/pokemon/base_stats/marill.asm"	;183
-INCLUDE "data/pokemon/base_stats/azumarill.asm"	;184
-INCLUDE "data/pokemon/base_stats/sudowoodo.asm"	;185
-INCLUDE "data/pokemon/base_stats/politoed.asm"	;186
-INCLUDE "data/pokemon/base_stats/hoppip.asm"	;187
-INCLUDE "data/pokemon/base_stats/skiploom.asm"	;188
-INCLUDE "data/pokemon/base_stats/jumpluff.asm"	;189
-INCLUDE "data/pokemon/base_stats/aipom.asm"	;190
-INCLUDE "data/pokemon/base_stats/sunkern.asm"	;191
-INCLUDE "data/pokemon/base_stats/sunflora.asm"	;192
-INCLUDE "data/pokemon/base_stats/yanma.asm"	;193
-INCLUDE "data/pokemon/base_stats/wooper.asm"	;194
-INCLUDE "data/pokemon/base_stats/quagsire.asm"	;195
-INCLUDE "data/pokemon/base_stats/espeon.asm"	;196
-INCLUDE "data/pokemon/base_stats/umbreon.asm"	;197
-INCLUDE "data/pokemon/base_stats/murkrow.asm"	;198
-INCLUDE "data/pokemon/base_stats/slowking.asm"	;199
-INCLUDE "data/pokemon/base_stats/misdreavus.asm"	;200
-INCLUDE "data/pokemon/base_stats/unown.asm"	;201
-INCLUDE "data/pokemon/base_stats/wobbuffet.asm"	;202
-INCLUDE "data/pokemon/base_stats/girafarig.asm"	;203
-INCLUDE "data/pokemon/base_stats/pineco.asm"	;204
-INCLUDE "data/pokemon/base_stats/forretress.asm"	;205
-INCLUDE "data/pokemon/base_stats/dunsparce.asm"	;206
-INCLUDE "data/pokemon/base_stats/gligar.asm"	;207
-INCLUDE "data/pokemon/base_stats/steelix.asm"	;208
-INCLUDE "data/pokemon/base_stats/snubbull.asm"	;209
-INCLUDE "data/pokemon/base_stats/granbull.asm"	;210
-INCLUDE "data/pokemon/base_stats/qwilfish.asm"	;211
-INCLUDE "data/pokemon/base_stats/scizor.asm"	;212
-INCLUDE "data/pokemon/base_stats/shuckle.asm"	;213
-INCLUDE "data/pokemon/base_stats/heracross.asm"	;214
-INCLUDE "data/pokemon/base_stats/sneasel.asm"	;215
-INCLUDE "data/pokemon/base_stats/teddiursa.asm"	;216
-INCLUDE "data/pokemon/base_stats/ursaring.asm"	;217
-INCLUDE "data/pokemon/base_stats/slugma.asm"	;218
-INCLUDE "data/pokemon/base_stats/magcargo.asm"	;219
-INCLUDE "data/pokemon/base_stats/swinub.asm"	;220
-INCLUDE "data/pokemon/base_stats/piloswine.asm"	;221
-INCLUDE "data/pokemon/base_stats/corsola.asm"	;222
-INCLUDE "data/pokemon/base_stats/remoraid.asm"	;223
-INCLUDE "data/pokemon/base_stats/octillery.asm"	;224
-INCLUDE "data/pokemon/base_stats/delibird.asm"	;225
-INCLUDE "data/pokemon/base_stats/mantine.asm"	;226
-INCLUDE "data/pokemon/base_stats/skarmory.asm"	;227
-INCLUDE "data/pokemon/base_stats/houndour.asm"	;228
-INCLUDE "data/pokemon/base_stats/houndoom.asm"	;229
-INCLUDE "data/pokemon/base_stats/kingdra.asm"	;230
-INCLUDE "data/pokemon/base_stats/phanpy.asm"	;231
-INCLUDE "data/pokemon/base_stats/donphan.asm"	;232
-INCLUDE "data/pokemon/base_stats/porygon2.asm"	;233
-INCLUDE "data/pokemon/base_stats/stantler.asm"	;234
-INCLUDE "data/pokemon/base_stats/smeargle.asm"	;235
-INCLUDE "data/pokemon/base_stats/tyrogue.asm"	;236
-INCLUDE "data/pokemon/base_stats/hitmontop.asm"	;237
-INCLUDE "data/pokemon/base_stats/smoochum.asm"	;238
-INCLUDE "data/pokemon/base_stats/elekid.asm"	;239
-INCLUDE "data/pokemon/base_stats/magby.asm"	;240
-INCLUDE "data/pokemon/base_stats/miltank.asm"	;241
-INCLUDE "data/pokemon/base_stats/blissey.asm"	;242
-INCLUDE "data/pokemon/base_stats/raikou.asm"	;243
-INCLUDE "data/pokemon/base_stats/entei.asm"	;244
-INCLUDE "data/pokemon/base_stats/suicune.asm"	;245
-INCLUDE "data/pokemon/base_stats/larvitar.asm"	;246
-INCLUDE "data/pokemon/base_stats/pupitar.asm"	;247
-INCLUDE "data/pokemon/base_stats/tyranitar.asm"	;248
-INCLUDE "data/pokemon/base_stats/lugia.asm"	;249
-INCLUDE "data/pokemon/base_stats/ho_oh.asm"	;250
-INCLUDE "data/pokemon/base_stats/celebi.asm"	;251
+
+INCLUDE "data/pokemon/base_stats/leef.asm"	;152 - chikorita
+INCLUDE "data/pokemon/base_stats/blossomole.asm"	;153 - bayleef
+INCLUDE "data/pokemon/base_stats/blossomite.asm"	;154 - meganium
+INCLUDE "data/pokemon/base_stats/flambear.asm"	;155 - cyndaquil
+INCLUDE "data/pokemon/base_stats/volbear.asm"	;156 - quilava
+INCLUDE "data/pokemon/base_stats/dynabear.asm"	;157 - typhlosion
+INCLUDE "data/pokemon/base_stats/cruz.asm"	;158 - totodile
+INCLUDE "data/pokemon/base_stats/aqua.asm"	;159 - croconaw
+INCLUDE "data/pokemon/base_stats/aquaria.asm"	;160 - feraligatr
+INCLUDE "data/pokemon/base_stats/hoothoot.asm"	;161 - sentret
+INCLUDE "data/pokemon/base_stats/hoohoo.asm"	;162 - furret
+INCLUDE "data/pokemon/base_stats/mareep.asm"	;163 - hoothoot
+INCLUDE "data/pokemon/base_stats/flaaffy.asm"	;164 - noctowl
+INCLUDE "data/pokemon/base_stats/ampharos.asm"	;165 - ledyba
+INCLUDE "data/pokemon/base_stats/trifox.asm"	;166 - ledian
+INCLUDE "data/pokemon/base_stats/tangel.asm"	;167 - spinarak
+INCLUDE "data/pokemon/base_stats/gelanla.asm"	;168 - ariados
+INCLUDE "data/pokemon/base_stats/rayleep.asm"	;169 - crobat
+INCLUDE "data/pokemon/base_stats/qwilfish.asm"	;170 - chinchou
+INCLUDE "data/pokemon/base_stats/numpuff.asm"	;171 - lanturn
+INCLUDE "data/pokemon/base_stats/pichu.asm"	;172 - pichu
+INCLUDE "data/pokemon/base_stats/cleffa.asm"	;173 - cleffa
+INCLUDE "data/pokemon/base_stats/igglybuff.asm"	;174 - igglybuff
+INCLUDE "data/pokemon/base_stats/quagsire.asm"	;175 - togepi
+INCLUDE "data/pokemon/base_stats/natu.asm"	;176 - togetic
+INCLUDE "data/pokemon/base_stats/xatu.asm"	;177 - natu
+INCLUDE "data/pokemon/base_stats/golppy.asm"	;178 - xatu
+INCLUDE "data/pokemon/base_stats/marill.asm"	;179 - mareep
+INCLUDE "data/pokemon/base_stats/sunmola.asm"	;180 - flaaffy
+INCLUDE "data/pokemon/base_stats/anchorage.asm"	;181 - ampharos
+INCLUDE "data/pokemon/base_stats/grotess.asm"	;182 - bellossom
+INCLUDE "data/pokemon/base_stats/crobat.asm"	;183 - marill
+INCLUDE "data/pokemon/base_stats/para.asm"	;184 - azumarill
+INCLUDE "data/pokemon/base_stats/spinarak.asm"	;185 - sudowoodo
+INCLUDE "data/pokemon/base_stats/ariados.asm"	;186 - politoed
+INCLUDE "data/pokemon/base_stats/skarmory.asm"	;187 - hoppip
+INCLUDE "data/pokemon/base_stats/lykwyse.asm"	;188 - skiploom
+INCLUDE "data/pokemon/base_stats/douno.asm"	;189 - jumpluff
+INCLUDE "data/pokemon/base_stats/sunflora.asm"	;190 - aipom
+INCLUDE "data/pokemon/base_stats/phanpy.asm"	;191 - sunkern
+INCLUDE "data/pokemon/base_stats/donphan.asm"	;192 - sunflora
+INCLUDE "data/pokemon/base_stats/twinz.asm"	;193 - yanma
+INCLUDE "data/pokemon/base_stats/girafarig.asm"	;194 - wooper
+INCLUDE "data/pokemon/base_stats/smeargle.asm"	;195 - quagsire
+INCLUDE "data/pokemon/base_stats/meowsy.asm"	;196 - espeon
+INCLUDE "data/pokemon/base_stats/rinring.asm"	;197 - umbreon
+INCLUDE "data/pokemon/base_stats/bellboyant.asm"	;198 - murkrow
+INCLUDE "data/pokemon/base_stats/politoed.asm"	;199 - slowking
+INCLUDE "data/pokemon/base_stats/slowking.asm"	;200 - misdreavus
+INCLUDE "data/pokemon/base_stats/unown.asm"	;201 - unown
+INCLUDE "data/pokemon/base_stats/ledyba.asm"	;202 - wobbuffet
+INCLUDE "data/pokemon/base_stats/tripstar.asm"	;203 - girafarig
+INCLUDE "data/pokemon/base_stats/minicorn.asm"	;204 - pineco
+INCLUDE "data/pokemon/base_stats/espeon.asm"	;205 - forretress
+INCLUDE "data/pokemon/base_stats/umbreon.asm"	;206 - dunsparce
+INCLUDE "data/pokemon/base_stats/turbann.asm"	;207 - gligar
+INCLUDE "data/pokemon/base_stats/grimey.asm"	;208 - steelix
+INCLUDE "data/pokemon/base_stats/remoraid.asm"	;209 - snubbull
+INCLUDE "data/pokemon/base_stats/octillery.asm"	;210 - granbull
+INCLUDE "data/pokemon/base_stats/gohng.asm"	;211 - qwilfish
+INCLUDE "data/pokemon/base_stats/hitmontop.asm"	;212 - scizor
+INCLUDE "data/pokemon/base_stats/puddi.asm"	;213 - shuckle
+INCLUDE "data/pokemon/base_stats/lefmew.asm"	;214 - heracross
+INCLUDE "data/pokemon/base_stats/dandemew.asm"	;215 - sneasel
+INCLUDE "data/pokemon/base_stats/cottomew.asm"	;216 - teddiursa
+INCLUDE "data/pokemon/base_stats/ballerine.asm"	;217 - ursaring
+INCLUDE "data/pokemon/base_stats/smoochum.asm"	;218 - slugma
+INCLUDE "data/pokemon/base_stats/elekid.asm"	;219 - magcargo
+INCLUDE "data/pokemon/base_stats/magby.asm"	;220 - swinub
+INCLUDE "data/pokemon/base_stats/bellossom.asm"	;221 - piloswine
+INCLUDE "data/pokemon/base_stats/belmitt.asm"	;222 - corsola
+INCLUDE "data/pokemon/base_stats/miltank.asm"	;223 - remoraid
+INCLUDE "data/pokemon/base_stats/bomseel.asm"	;224 - octillery
+INCLUDE "data/pokemon/base_stats/delibird.asm"	;225 - delibird
+INCLUDE "data/pokemon/base_stats/kotora.asm"	;226 - mantine
+INCLUDE "data/pokemon/base_stats/raitora.asm"	;227 - skarmory
+INCLUDE "data/pokemon/base_stats/madame.asm"	;228 - houndour
+INCLUDE "data/pokemon/base_stats/kurstraw.asm"	;229 - houndoom
+INCLUDE "data/pokemon/base_stats/pangshi.asm"	;230 - kingdra
+INCLUDE "data/pokemon/base_stats/murkrow.asm"	;231 - phanpy
+INCLUDE "data/pokemon/base_stats/blissey.asm"	;232 - donphan
+INCLUDE "data/pokemon/base_stats/scizor.asm"	;233 - porygon2
+INCLUDE "data/pokemon/base_stats/plux.asm"	;234 - stantler
+INCLUDE "data/pokemon/base_stats/houndour.asm"	;235 - smeargle
+INCLUDE "data/pokemon/base_stats/houndoom.asm"	;236 - tyrogue
+INCLUDE "data/pokemon/base_stats/wolfman.asm"	;237 - hitmontop
+INCLUDE "data/pokemon/base_stats/warwolf.asm"	;238 - smoochum
+INCLUDE "data/pokemon/base_stats/porygon2.asm"	;239 - elekid
+INCLUDE "data/pokemon/base_stats/likk.asm"	;240 - magby
+INCLUDE "data/pokemon/base_stats/steelix.asm"	;241 - miltank
+INCLUDE "data/pokemon/base_stats/kingdra.asm"	;242 - blissey
+INCLUDE "data/pokemon/base_stats/rai.asm"	;243 - raikou
+INCLUDE "data/pokemon/base_stats/en.asm"	;244 - entei
+INCLUDE "data/pokemon/base_stats/sui.asm"	;245 - suicune
+INCLUDE "data/pokemon/base_stats/sneasel.asm"	;246 - larvitar
+INCLUDE "data/pokemon/base_stats/ho_oh.asm"	;247 - pupitar
+INCLUDE "data/pokemon/base_stats/togepi.asm"	;248 - tyranitar
+INCLUDE "data/pokemon/base_stats/snubbull.asm"	;249 - lugia
+INCLUDE "data/pokemon/base_stats/aipom.asm"	;250 - ho_oh
+INCLUDE "data/pokemon/base_stats/leafeon.asm"	;251 - celebi

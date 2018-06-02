@@ -1,6 +1,4 @@
-	setrepeat 2
-	frame 0, 07
-	frame 4, 07
-	dorepeat 1
+	frame 1, 07
+	frame 2, 50
 	endanim
-; 0xd1fe5
+; 0xd2054
