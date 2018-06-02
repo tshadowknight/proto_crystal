@@ -1,4 +1,4 @@
-	db MANTINE ; 226
+	db RAYLEEP ; 226
 
 	db  65,  40,  70,  70,  80, 140
 	;   hp  atk  def  spd  sat  sdf

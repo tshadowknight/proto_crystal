@@ -4,19 +4,19 @@ JohtoWaterWildMons: ; 0x2b11d
 
 	map_id RUINS_OF_ALPH_OUTSIDE
 	db 2 percent ; encounter rate
-	db 15, WOOPER
+	db 15, GIRAFARIG
 	db 20, QUAGSIRE
 	db 15, QUAGSIRE
 
 	map_id UNION_CAVE_1F
 	db 2 percent ; encounter rate
-	db 15, WOOPER
+	db 15, GIRAFARIG
 	db 20, QUAGSIRE
 	db 15, QUAGSIRE
 
 	map_id UNION_CAVE_B1F
 	db 2 percent ; encounter rate
-	db 15, WOOPER
+	db 15, GIRAFARIG
 	db 20, QUAGSIRE
 	db 15, QUAGSIRE
 
@@ -150,7 +150,7 @@ JohtoWaterWildMons: ; 0x2b11d
 	db 6 percent ; encounter rate
 	db 20, TENTACOOL
 	db 20, TENTACRUEL
-	db 20, MANTINE
+	db 20, RAYLEEP
 
 	map_id ROUTE_42
 	db 4 percent ; encounter rate

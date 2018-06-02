@@ -594,7 +594,7 @@ UnknownText_0x61e5c:
 
 UnknownText_0x61eb2:
 	text "I received a"
-	line "female HOPPIP, but"
+	line "female LEFMEW, but"
 	cont "its named STANLEY!"
 
 	para "That's my dad's"

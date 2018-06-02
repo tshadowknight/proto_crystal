@@ -173,16 +173,16 @@ CeladonGameCornerPrizeRoomPokemonVendor:
 	ifequal HAVE_LESS, CeladonPrizeRoom_notenoughcoins
 	checkcode VAR_PARTYCOUNT
 	ifequal PARTY_LENGTH, CeladonPrizeRoom_notenoughroom
-	pokenamemem LARVITAR, MEM_BUFFER_0
+	pokenamemem SNEASEL, MEM_BUFFER_0
 	scall CeladonPrizeRoom_askbuy
 	iffalse CeladonPrizeRoom_cancel
 	waitsfx
 	playsound SFX_TRANSACTION
 	writetext CeladonPrizeRoom_HereYouGoText
 	waitbutton
-	writebyte LARVITAR
+	writebyte SNEASEL
 	special GameCornerPrizeMonCheckDex
-	givepoke LARVITAR, 40
+	givepoke SNEASEL, 40
 	takecoins 8888
 	jump .loop
 

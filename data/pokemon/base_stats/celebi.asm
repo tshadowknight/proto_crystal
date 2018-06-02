@@ -1,4 +1,4 @@
-	db CELEBI ; 251
+	db LEAFEON ; 251
 
 	db 100, 100, 100, 100, 100, 100
 	;   hp  atk  def  spd  sat  sdf

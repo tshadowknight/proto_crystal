@@ -997,7 +997,7 @@ AnthonyTriesDunsparceSwarm:
 	checkflag ENGINE_DUNSPARCE_SWARM
 	iftrue .Generic
 	setflag ENGINE_DUNSPARCE_SWARM
-	pokenamemem DUNSPARCE, MEM_BUFFER_1
+	pokenamemem BULBASAUR, MEM_BUFFER_1
 	swarm SWARM_DUNSPARCE, DARK_CAVE_VIOLET_ENTRANCE
 	landmarktotext DARK_CAVE, MEM_BUFFER_2
 	farjump UnknownScript_0xa05de
@@ -1220,7 +1220,7 @@ ArnieYanmaSwarm: ; start swarm
 	checkflag ENGINE_YANMA_SWARM
 	iftrue ArnieYanmaAlreadySwarming
 	setflag ENGINE_YANMA_SWARM
-	pokenamemem YANMA, MEM_BUFFER_1
+	pokenamemem BULBASAUR, MEM_BUFFER_1
 	swarm SWARM_YANMA, ROUTE_35
 	landmarktotext ROUTE_35, MEM_BUFFER_2
 	farjump UnknownScript_0xa05ce

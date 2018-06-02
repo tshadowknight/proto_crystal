@@ -136,7 +136,7 @@ ConvertBerriesToBerryJuice: ; 2ede6
 	push af
 	push hl
 	ld a, [hl]
-	cp SHUCKLE
+	cp BULBASAUR
 	jr nz, .loopMon
 	ld bc, MON_ITEM
 	add hl, bc

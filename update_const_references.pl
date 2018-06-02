@@ -15,10 +15,10 @@ my %translations = %{decode_json $translationJSON};
 for my $id (keys %translations){
 	my $old = " ".(uc $translations{$id}->{"old"});
 	my $new = " ".(uc $translations{$id}->{"new"});
-	if($new eq ""){
-		$new = "BULBASAUR";
+	if($new eq " "){
+		$new = " BULBASAUR";
 	}
 	my $cmd = "grep -rl $old --include \\*asm | xargs sed -i 's/$old/$new/g'";
 	print "$cmd\n";
-	
+	`$cmd`;
 }

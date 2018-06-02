@@ -464,7 +464,7 @@ IlexForestShrineScript:
 	pause 20
 	clearflag ENGINE_FOREST_IS_RESTLESS
 	special CelebiShrineEvent
-	loadwildmon CELEBI, 30
+	loadwildmon LEAFEON, 30
 	startbattle
 	reloadmapafterbattle
 	pause 20

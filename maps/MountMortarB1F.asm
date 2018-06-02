@@ -37,7 +37,7 @@ MountMortarB1FKiyoScript:
 	writetext UnknownText_0x7e355
 	playsound SFX_CAUGHT_MON
 	waitsfx
-	givepoke TYROGUE, 10
+	givepoke GOHNG, 10
 	setevent EVENT_GOT_TYROGUE_FROM_KIYO
 .GotTyrogue:
 	writetext UnknownText_0x7e36a

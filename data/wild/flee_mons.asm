@@ -10,11 +10,11 @@ SometimesFleeMons: ; 3c59a
 	db PORYGON
 	db DRATINI
 	db DRAGONAIR
-	db TOGETIC
+	db BULBASAUR
 	db UMBREON
 	db UNOWN
 	db SNUBBULL
-	db HERACROSS
+	db PLUX
 	db -1
 
 OftenFleeMons: ; 3c5a8
@@ -25,11 +25,11 @@ OftenFleeMons: ; 3c5a8
 	db QUAGSIRE
 	db DELIBIRD
 	db PHANPY
-	db TEDDIURSA
+	db BULBASAUR
 	db -1
 
 AlwaysFleeMons: ; 3c5b1
-	db RAIKOU
-	db ENTEI
+	db RAI
+	db EN
 	db -1
 ; 3c5b4

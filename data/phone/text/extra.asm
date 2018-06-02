@@ -416,7 +416,7 @@ UnknownText_0x64c5a: ; 0x64c5a
 	line "coming or what?"
 
 	para "You're missing out"
-	line "on seeing YANMA!"
+	line "on seeing BULBASAUR!"
 
 	para "Get down to ROUTE"
 	line "35 right now!"

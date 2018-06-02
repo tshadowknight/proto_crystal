@@ -1654,7 +1654,7 @@ UnknownText_0x176d85: ; 0x176d85
 
 UnknownText_0x176dd1: ; 0x176dd1
 	text "Hello? What? Where"
-	line "is DUNSPARCE?"
+	line "is BULBASAUR?"
 
 	para "DARK CAVE! Hurry!"
 

@@ -280,7 +280,7 @@ Function81ac3: ; 81ac3
 	ld a, [wd002]
 	and a
 	jr nz, .asm_81acc
-	ld a, NUM_POKEMON ; CELEBI
+	ld a, NUM_POKEMON ; LEAFEON
 	ret
 
 .asm_81acc

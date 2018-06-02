@@ -38,19 +38,19 @@ ReleaseTheBeasts:
 	pause 5
 	disappear BURNEDTOWERB1F_RAIKOU2
 	pause 15
-	cry RAIKOU
+	cry RAI
 	appear BURNEDTOWERB1F_ENTEI1
 	turnobject PLAYER, UP
 	pause 5
 	disappear BURNEDTOWERB1F_ENTEI2
 	pause 15
-	cry ENTEI
+	cry EN
 	appear BURNEDTOWERB1F_SUICUNE1
 	turnobject PLAYER, UP
 	pause 5
 	disappear BURNEDTOWERB1F_SUICUNE2
 	pause 15
-	cry SUICUNE
+	cry SUI
 	pause 15
 	playsound SFX_WARP_FROM
 	turnobject PLAYER, LEFT
@@ -71,7 +71,7 @@ ReleaseTheBeasts:
 	applymovement BURNEDTOWERB1F_SUICUNE1, BurnedTowerSuicuneMovement2
 	turnobject PLAYER, UP
 	pause 20
-	cry SUICUNE
+	cry SUI
 	pause 30
 	playsound SFX_WARP_FROM
 	applymovement BURNEDTOWERB1F_SUICUNE1, BurnedTowerSuicuneMovement3
@@ -204,7 +204,7 @@ BurnedTowerB1FEusineText:
 	line "eyes!"
 
 	para "For ten years I"
-	line "chased SUICUNE,"
+	line "chased SUI,"
 
 	para "and I finally got"
 	line "to see it."

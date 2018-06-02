@@ -17,15 +17,15 @@ AsleepTreeMonsNite:
 AsleepTreeMonsDay:
 	db VENONAT
 	db HOOTHOOT
-	db NOCTOWL
+	db HOOHOO
 	db SPINARAK
-	db HERACROSS
+	db PLUX
 	db -1 ; end
 
 AsleepTreeMonsMorn:
 	db VENONAT
 	db HOOTHOOT
-	db NOCTOWL
+	db HOOHOO
 	db SPINARAK
-	db HERACROSS
+	db PLUX
 	db -1 ; end

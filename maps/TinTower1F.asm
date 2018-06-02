@@ -46,7 +46,7 @@ TinTower1F_MapScripts:
 	checkevent EVENT_FOUGHT_SUICUNE
 	iftrue .FoughtSuicune
 	appear TINTOWER1F_SUICUNE
-	writebyte RAIKOU
+	writebyte RAI
 	special MonCheck
 	iftrue .NoRaikou
 	appear TINTOWER1F_RAIKOU
@@ -55,7 +55,7 @@ TinTower1F_MapScripts:
 .NoRaikou:
 	disappear TINTOWER1F_RAIKOU
 .CheckEntei:
-	writebyte ENTEI
+	writebyte EN
 	special MonCheck
 	iftrue .NoEntei
 	appear TINTOWER1F_ENTEI
@@ -84,12 +84,12 @@ TinTower1F_MapScripts:
 .SuicuneBattle:
 	applymovement PLAYER, TinTowerPlayerMovement1
 	pause 15
-	writebyte RAIKOU
+	writebyte RAI
 	special MonCheck
 	iftrue .Next1 ; if player caught Raikou, he doesn't appear in Tin Tower
 	applymovement TINTOWER1F_RAIKOU, TinTowerRaikouMovement1
 	turnobject PLAYER, LEFT
-	cry RAIKOU
+	cry RAI
 	pause 10
 	playsound SFX_WARP_FROM
 	applymovement TINTOWER1F_RAIKOU, TinTowerRaikouMovement2
@@ -97,12 +97,12 @@ TinTower1F_MapScripts:
 	playsound SFX_EXIT_BUILDING
 	waitsfx
 .Next1:
-	writebyte ENTEI
+	writebyte EN
 	special MonCheck
 	iftrue .Next2 ; if player caught Entei, he doesn't appear in Tin Tower
 	applymovement TINTOWER1F_ENTEI, TinTowerEnteiMovement1
 	turnobject PLAYER, RIGHT
-	cry ENTEI
+	cry EN
 	pause 10
 	playsound SFX_WARP_FROM
 	applymovement TINTOWER1F_ENTEI, TinTowerEnteiMovement2
@@ -114,9 +114,9 @@ TinTower1F_MapScripts:
 	pause 10
 	applymovement PLAYER, TinTowerPlayerMovement2
 	applymovement TINTOWER1F_SUICUNE, TinTowerSuicuneMovement
-	cry SUICUNE
+	cry SUI
 	pause 20
-	loadwildmon SUICUNE, 40
+	loadwildmon SUI, 40
 	writecode VAR_BATTLETYPE, BATTLETYPE_SUICUNE
 	startbattle
 	dontrestartmapmusic
@@ -323,7 +323,7 @@ TinTowerEusineSuicuneText:
 	para "more incredible,"
 	line "<PLAYER>."
 
-	para "I heard SUICUNE's"
+	para "I heard SUI's"
 	line "mystic power"
 
 	para "summons a rainbow-"
@@ -390,7 +390,7 @@ TinTower1FSage2Text:
 
 	para "They are…"
 
-	para "SUICUNE, ENTEI and"
+	para "SUICUNE, EN and"
 	line "RAIKOU."
 
 	para "That is what they"
@@ -502,7 +502,7 @@ TinTower1FSage5Text3:
 
 TinTower1FSage6Text2:
 	text "Of the legendary"
-	line "#MON, SUICUNE"
+	line "#MON, SUI"
 
 	para "is said to be the"
 	line "closest to HO-OH."
@@ -517,7 +517,7 @@ TinTower1FSage6Text2:
 	line "must be sharing a"
 
 	para "cooperative bond"
-	line "with SUICUNE."
+	line "with SUI."
 	done
 
 TinTower1F_MapEvents:

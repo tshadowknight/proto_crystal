@@ -1,4 +1,4 @@
-	db LANTURN ; 171
+	db ANCHORAGE ; 171
 
 	db 125,  58,  58,  67,  76,  76
 	;   hp  atk  def  spd  sat  sdf

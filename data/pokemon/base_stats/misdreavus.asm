@@ -1,4 +1,4 @@
-	db MISDREAVUS ; 200
+	db BULBASAUR ; 200
 
 	db  60,  60,  60,  85,  85,  85
 	;   hp  atk  def  spd  sat  sdf

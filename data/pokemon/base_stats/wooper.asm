@@ -1,4 +1,4 @@
-	db WOOPER ; 194
+	db GIRAFARIG ; 194
 
 	db  55,  45,  45,  15,  25,  25
 	;   hp  atk  def  spd  sat  sdf

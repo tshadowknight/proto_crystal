@@ -1,4 +1,4 @@
-	db STANTLER ; 234
+	db BULBASAUR ; 234
 
 	db  73,  95,  62,  85,  85,  65
 	;   hp  atk  def  spd  sat  sdf

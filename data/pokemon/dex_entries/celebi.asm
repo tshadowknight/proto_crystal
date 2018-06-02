@@ -3,7 +3,7 @@
 
 	db   "Revered as a"
 	next "guardian of the"
-	next "forest, CELEBI"
+	next "forest, LEAFEON"
 
 	page "appears wherever"
 	next "beautiful forests"

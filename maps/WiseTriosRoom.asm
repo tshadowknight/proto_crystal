@@ -131,7 +131,7 @@ MovementData_0x98628:
 WiseTriosRoomSage1Text:
 	text "Astounding…"
 
-	para "SUICUNE, ENTEI and"
+	para "SUICUNE, EN and"
 	line "RAIKOU have arisen"
 	cont "from their sleep…"
 
@@ -161,9 +161,9 @@ UnknownText_0x98712:
 	line "GYM BADGE."
 
 	para "However, now that"
-	line "SUICUNE, RAIKOU"
+	line "SUICUNE, RAI"
 
-	para "and ENTEI have"
+	para "and EN have"
 	line "arisen, I ask you"
 
 	para "to refrain from"
@@ -198,7 +198,7 @@ SageGakuSeenText:
 	line "come true!"
 
 	para "The legendary"
-	line "#MON SUICUNE"
+	line "#MON SUI"
 	cont "has arrived!"
 
 	para "We, the WISE TRIO,"
@@ -217,8 +217,8 @@ UnknownText_0x98938:
 	text "Ah, so it is you"
 	line "who claim to have"
 
-	para "seen SUICUNE,"
-	line "ENTEI and RAIKOU"
+	para "seen SUI,"
+	line "ENTEI and RAI"
 	cont "while they slept?"
 
 	para "Unbelievable!"

@@ -1,4 +1,4 @@
-	db SENTRET ; 161
+	db BULBASAUR ; 161
 
 	db  35,  46,  34,  20,  35,  45
 	;   hp  atk  def  spd  sat  sdf

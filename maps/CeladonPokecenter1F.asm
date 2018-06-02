@@ -27,7 +27,7 @@ CeladonEusine:
 	opentext
 	writetext CeladonEusineText1
 	buttonsound
-	writebyte SUICUNE
+	writebyte SUI
 	special MonCheck
 	iffalse .NoSuicune
 	special BeastsCheck
@@ -128,7 +128,7 @@ NoBeastsText:
 	para "Have you caught"
 	line "the legendary"
 
-	para "#MON RAIKOU and"
+	para "#MON RAI and"
 	line "ENTEI?"
 
 	para "<……><……><……>"

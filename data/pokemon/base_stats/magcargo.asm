@@ -1,4 +1,4 @@
-	db MAGCARGO ; 219
+	db BULBASAUR ; 219
 
 	db  50,  50, 120,  30,  80,  80
 	;   hp  atk  def  spd  sat  sdf

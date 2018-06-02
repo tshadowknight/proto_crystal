@@ -241,7 +241,7 @@ JOHTO_POKEMON EQU const_value
 	const ELEKID ; 219
 	const MAGBY ; 220
 	const BELLOSSOM ; 221
-	const BELMITT ; 222
+	const BELLMITT ; 222
 	const MILTANK ; 223
 	const BOMSEEL ; 224
 	const DELIBIRD ; 225

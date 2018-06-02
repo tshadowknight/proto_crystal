@@ -7,7 +7,7 @@ GiveShuckle: ; 7305
 	ld [wMonType], a
 
 ; Level 15 Shuckle.
-	ld a, SHUCKLE
+	ld a, BULBASAUR
 	ld [wCurPartySpecies], a
 	ld a, 15
 	ld [wCurPartyLevel], a
@@ -76,7 +76,7 @@ ReturnShuckle: ; 737e
 	jr c, .refused
 
 	ld a, [wCurPartySpecies]
-	cp SHUCKLE
+	cp BULBASAUR
 	jr nz, .DontReturn
 
 	ld a, [wCurPartyMon]

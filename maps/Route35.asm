@@ -408,7 +408,7 @@ BugCatcherArnieAfterBattleText:
 
 BugCatcherArnieYanmaText:
 	text "Wow… Look at all"
-	line "those YANMA!"
+	line "those BULBASAUR!"
 
 	para "I'm so blown away,"
 	line "I can't move."

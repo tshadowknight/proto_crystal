@@ -169,17 +169,17 @@ KantoGrassWildMons: ; 0x2b274
 	; morn
 	db 2, PIDGEY
 	db 2, RATTATA
-	db 3, SENTRET
+	db 3, BULBASAUR
 	db 3, PIDGEY
-	db 6, FURRET
+	db 6, BULBASAUR
 	db 4, PIDGEY
 	db 4, PIDGEY
 	; day
 	db 2, PIDGEY
 	db 2, RATTATA
-	db 3, SENTRET
+	db 3, BULBASAUR
 	db 3, PIDGEY
-	db 6, FURRET
+	db 6, BULBASAUR
 	db 4, PIDGEY
 	db 4, PIDGEY
 	; nite
@@ -198,7 +198,7 @@ KantoGrassWildMons: ; 0x2b274
 	db 3, LEDYBA
 	db 5, PIDGEY
 	db 7, BUTTERFREE
-	db 7, LEDIAN
+	db 7, TRIPSTAR
 	db 4, PIKACHU
 	db 4, PIKACHU
 	; day
@@ -213,10 +213,10 @@ KantoGrassWildMons: ; 0x2b274
 	db 3, HOOTHOOT
 	db 3, SPINARAK
 	db 5, HOOTHOOT
-	db 7, NOCTOWL
+	db 7, HOOHOO
 	db 7, ARIADOS
-	db 4, NOCTOWL
-	db 4, NOCTOWL
+	db 4, HOOHOO
+	db 4, HOOHOO
 
 	map_id ROUTE_3
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -293,7 +293,7 @@ KantoGrassWildMons: ; 0x2b274
 	; nite
 	db 13, HOOTHOOT
 	db 13, MEOWTH
-	db 15, NOCTOWL
+	db 15, HOOHOO
 	db 12, ABRA
 	db 14, JIGGLYPUFF
 	db 14, ABRA
@@ -307,16 +307,16 @@ KantoGrassWildMons: ; 0x2b274
 	db 14, MAGNEMITE
 	db 15, RATICATE
 	db 12, JIGGLYPUFF
-	db 15, GRANBULL
-	db 15, GRANBULL
+	db 15, BULBASAUR
+	db 15, BULBASAUR
 	; day
 	db 13, RATTATA
 	db 13, SNUBBULL
 	db 14, MAGNEMITE
 	db 15, RATICATE
 	db 12, JIGGLYPUFF
-	db 15, GRANBULL
-	db 15, GRANBULL
+	db 15, BULBASAUR
+	db 15, BULBASAUR
 	; nite
 	db 13, MEOWTH
 	db 13, DROWZEE
@@ -373,7 +373,7 @@ KantoGrassWildMons: ; 0x2b274
 	db 18, KADABRA
 	; nite
 	db 17, MEOWTH
-	db 20, NOCTOWL
+	db 20, HOOHOO
 	db 16, ABRA
 	db 17, HAUNTER
 	db 16, JIGGLYPUFF
@@ -437,26 +437,26 @@ KantoGrassWildMons: ; 0x2b274
 	map_id ROUTE_11
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 14, HOPPIP
+	db 14, LEFMEW
 	db 13, RATICATE
 	db 15, MAGNEMITE
 	db 16, PIDGEOTTO
 	db 16, RATTATA
-	db 16, HOPPIP
-	db 16, HOPPIP
+	db 16, LEFMEW
+	db 16, LEFMEW
 	; day
-	db 14, HOPPIP
+	db 14, LEFMEW
 	db 13, RATICATE
 	db 15, MAGNEMITE
 	db 16, PIDGEOTTO
 	db 16, RATTATA
-	db 16, HOPPIP
-	db 16, HOPPIP
+	db 16, LEFMEW
+	db 16, LEFMEW
 	; nite
 	db 14, DROWZEE
 	db 13, MEOWTH
 	db 15, MAGNEMITE
-	db 16, NOCTOWL
+	db 16, HOOHOO
 	db 16, RATICATE
 	db 16, HYPNO
 	db 16, HYPNO
@@ -467,22 +467,22 @@ KantoGrassWildMons: ; 0x2b274
 	db 23, NIDORINO
 	db 23, NIDORINA
 	db 25, PIDGEOTTO
-	db 25, HOPPIP
-	db 27, HOPPIP
-	db 27, HOPPIP
+	db 25, LEFMEW
+	db 27, LEFMEW
+	db 27, LEFMEW
 	db 25, CHANSEY
 	; day
 	db 23, NIDORINO
 	db 23, NIDORINA
 	db 25, PIDGEOTTO
-	db 25, HOPPIP
-	db 27, HOPPIP
-	db 27, HOPPIP
+	db 25, LEFMEW
+	db 27, LEFMEW
+	db 27, LEFMEW
 	db 25, CHANSEY
 	; nite
 	db 23, VENONAT
 	db 23, QUAGSIRE
-	db 25, NOCTOWL
+	db 25, HOOHOO
 	db 25, VENOMOTH
 	db 25, QUAGSIRE
 	db 25, QUAGSIRE
@@ -494,22 +494,22 @@ KantoGrassWildMons: ; 0x2b274
 	db 26, NIDORINO
 	db 26, NIDORINA
 	db 28, PIDGEOTTO
-	db 28, HOPPIP
-	db 30, SKIPLOOM
-	db 30, SKIPLOOM
+	db 28, LEFMEW
+	db 30, DANDEMEW
+	db 30, DANDEMEW
 	db 28, CHANSEY
 	; day
 	db 26, NIDORINO
 	db 26, NIDORINA
 	db 28, PIDGEOTTO
-	db 28, HOPPIP
-	db 30, SKIPLOOM
-	db 30, SKIPLOOM
+	db 28, LEFMEW
+	db 30, DANDEMEW
+	db 30, DANDEMEW
 	db 28, CHANSEY
 	; nite
 	db 26, VENONAT
 	db 26, QUAGSIRE
-	db 28, NOCTOWL
+	db 28, HOOHOO
 	db 28, VENOMOTH
 	db 28, QUAGSIRE
 	db 28, QUAGSIRE
@@ -521,22 +521,22 @@ KantoGrassWildMons: ; 0x2b274
 	db 23, NIDORINO
 	db 23, NIDORINA
 	db 25, PIDGEOTTO
-	db 25, HOPPIP
-	db 27, HOPPIP
-	db 27, HOPPIP
+	db 25, LEFMEW
+	db 27, LEFMEW
+	db 27, LEFMEW
 	db 25, CHANSEY
 	; day
 	db 23, NIDORINO
 	db 23, NIDORINA
 	db 25, PIDGEOTTO
-	db 25, HOPPIP
-	db 27, HOPPIP
-	db 27, HOPPIP
+	db 25, LEFMEW
+	db 27, LEFMEW
+	db 27, LEFMEW
 	db 25, CHANSEY
 	; nite
 	db 23, VENONAT
 	db 23, QUAGSIRE
-	db 25, NOCTOWL
+	db 25, HOOHOO
 	db 25, VENOMOTH
 	db 25, QUAGSIRE
 	db 25, QUAGSIRE
@@ -557,7 +557,7 @@ KantoGrassWildMons: ; 0x2b274
 	db 27, FEAROW
 	db 28, GRIMER
 	db 29, FEAROW
-	db 29, SLUGMA
+	db 29, BULBASAUR
 	db 30, MUK
 	db 30, MUK
 	; nite
@@ -581,10 +581,10 @@ KantoGrassWildMons: ; 0x2b274
 	db 33, MUK
 	; day
 	db 30, FEAROW
-	db 29, SLUGMA
+	db 29, BULBASAUR
 	db 29, GRIMER
 	db 32, FEAROW
-	db 32, SLUGMA
+	db 32, BULBASAUR
 	db 33, MUK
 	db 33, MUK
 	; nite
@@ -611,7 +611,7 @@ KantoGrassWildMons: ; 0x2b274
 	db 27, FEAROW
 	db 28, GRIMER
 	db 29, FEAROW
-	db 29, SLUGMA
+	db 29, BULBASAUR
 	db 30, MUK
 	db 30, MUK
 	; nite
@@ -689,7 +689,7 @@ KantoGrassWildMons: ; 0x2b274
 	db 14, BUTTERFREE
 	; day
 	db 8, CATERPIE
-	db 12, SUNKERN
+	db 12, BULBASAUR
 	db 10, CATERPIE
 	db 12, ABRA
 	db 10, BELLSPROUT
@@ -726,10 +726,10 @@ KantoGrassWildMons: ; 0x2b274
 	db 10, ODDISH
 	db 10, HOOTHOOT
 	db 10, VENONAT
-	db 12, NOCTOWL
+	db 12, HOOHOO
 	db 10, BELLSPROUT
-	db 14, NOCTOWL
-	db 14, NOCTOWL
+	db 14, HOOHOO
+	db 14, HOOHOO
 
 	map_id ROUTE_26
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -750,9 +750,9 @@ KantoGrassWildMons: ; 0x2b274
 	db 30, ARBOK
 	db 30, ARBOK
 	; nite
-	db 28, NOCTOWL
+	db 28, HOOHOO
 	db 28, RATICATE
-	db 32, NOCTOWL
+	db 32, HOOHOO
 	db 30, RATICATE
 	db 30, QUAGSIRE
 	db 30, QUAGSIRE
@@ -778,12 +778,12 @@ KantoGrassWildMons: ; 0x2b274
 	db 30, DODRIO
 	; nite
 	db 28, QUAGSIRE
-	db 28, NOCTOWL
+	db 28, HOOHOO
 	db 30, RATICATE
 	db 30, QUAGSIRE
-	db 32, NOCTOWL
-	db 32, NOCTOWL
-	db 32, NOCTOWL
+	db 32, HOOHOO
+	db 32, HOOHOO
+	db 32, HOOHOO
 
 	map_id ROUTE_28
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite

@@ -512,9 +512,9 @@ InitRoamMons: ; 2a2a0
 ; initialize wRoamMon structs
 
 ; species
-	ld a, RAIKOU
+	ld a, RAI
 	ld [wRoamMon1Species], a
-	ld a, ENTEI
+	ld a, EN
 	ld [wRoamMon2Species], a
 
 ; level

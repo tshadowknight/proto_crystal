@@ -4057,7 +4057,7 @@ BattleTower_UbersCheck: ; 119dd1 (46:5dd1)
 	jr z, .uber
 	cp MEW
 	jr z, .uber
-	cp LUGIA
+	cp SNUBBULL
 	jr c, .next
 	cp NUM_POKEMON + 1
 	jr nc, .next

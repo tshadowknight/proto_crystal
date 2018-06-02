@@ -1929,10 +1929,10 @@ LinkTrade: ; 28b87
 	jr z, .loop
 	ld b, $2
 	ld a, c
-	cp CELEBI
+	cp LEAFEON
 	jr z, .loop
 	ld a, [wCurPartySpecies]
-	cp CELEBI
+	cp LEAFEON
 	jr z, .loop
 	ld b, $0
 

@@ -33,6 +33,6 @@ SpriteMons: ; 14495
 	db MOLTRES
 	db SNORLAX
 	db GYARADOS
-	db LUGIA
+	db SNUBBULL
 	db HO_OH
 ; 144b8

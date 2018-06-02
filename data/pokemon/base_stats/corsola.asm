@@ -1,4 +1,4 @@
-	db CORSOLA ; 222
+	db BULBASAUR ; 222
 
 	db  55,  55,  85,  35,  65,  85
 	;   hp  atk  def  spd  sat  sdf
