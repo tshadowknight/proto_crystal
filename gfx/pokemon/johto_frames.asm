@@ -1,5 +1,5 @@
 JohtoFrames:
-ChikoritaFrames:  INCLUDE "gfx/pokemon/chikorita/frames.asm"
+ChikoritaFrames:  INCLUDE "gfx/pokemon/leef/frames.asm"
 BayleefFrames:    INCLUDE "gfx/pokemon/bayleef/frames.asm"
 MeganiumFrames:   INCLUDE "gfx/pokemon/meganium/frames.asm"
 CyndaquilFrames:  INCLUDE "gfx/pokemon/cyndaquil/frames.asm"
