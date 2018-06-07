@@ -1,6 +1,6 @@
 	db LYKWYSE ; 188
 
-	db  50,  50,  50,  50, 50,  50
+	db  84,  84,  84,  84, 84,  84
 	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, NORMAL ; type

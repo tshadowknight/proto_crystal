@@ -1,6 +1,6 @@
 	db DOUNO ; 188
 
-	db  50,  50,  50,  50, 50,  50
+	db  30,  75,  35,  70, 25,  25
 	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, FLYING ; type

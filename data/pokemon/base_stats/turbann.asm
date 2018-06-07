@@ -1,6 +1,6 @@
 	db TURBANN ; 204
 
-	db  50,  50,  50,  50, 50,  50
+	db  50,  95,  180,  30, 125,  45
 	;   hp  atk  def  spd  sat  sdf
 
 	db WATER, WATER ; type

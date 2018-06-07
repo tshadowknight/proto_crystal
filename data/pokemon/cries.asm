@@ -159,7 +159,7 @@ PokemonCries:: ; f2787
 	mon_cry CRY_CHIKORITA,  -$010,  $0b0 ; LEEF
 	mon_cry CRY_CHIKORITA,  -$022,  $120 ; BLOSSOMOLE
 	mon_cry CRY_CHIKORITA,  -$0b7,  $200 ; BLOSSOMITE
-	mon_cry CRY_CYNDAQUIL,   $347,  $080 ; FLAMBEAR
+	mon_cry CRY_CYNDAQUIL,   $347,  $080 ; FLAMBEAR 039C
 	mon_cry CRY_CYNDAQUIL,   $321,  $120 ; VOLBEAR
 	mon_cry CRY_TYPHLOSION,  $f00,  $0d4 ; DYNABEAR
 	mon_cry CRY_TOTODILE,    $46c,  $0e8 ; CRUZ

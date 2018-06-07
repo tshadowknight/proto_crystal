@@ -1,6 +1,6 @@
 	db PARASY ; 181
 
-	db  50,  50,  50,  50, 50,  50
+	db  30,  60,  45,  20, 30,  45
 	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, GRASS ; type

@@ -1,6 +1,6 @@
 	db GRIMEY ; 204
 
-	db  50,  50,  50,  50, 50,  50
+	db  70,  70,  40,  20, 20,  40
 	;   hp  atk  def  spd  sat  sdf
 
 	db POISON, POISON ; type

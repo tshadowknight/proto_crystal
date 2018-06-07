@@ -1,6 +1,6 @@
 	db DYNABEAR ; 157
 
-	db  78,  84,  78, 100, 109,  85
+	db  74,  120,  90, 70, 100,  80
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, FIRE ; type

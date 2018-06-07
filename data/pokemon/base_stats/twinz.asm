@@ -1,6 +1,6 @@
 	db TWINZ ; 188
 
-	db  50,  50,  50,  50, 50,  50
+	db  60,  55,  50,  60, 70,  50
 	;   hp  atk  def  spd  sat  sdf
 
 	db DARK, NORMAL ; type

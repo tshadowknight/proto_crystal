@@ -42,33 +42,33 @@
 	const CRY_WEEPINBELL
 
 ; gen 2
-	const CRY_MARILL
-	const CRY_SPINARAK
-	const CRY_TOGEPI
-	const CRY_GIRAFARIG
-	const CRY_RAIKOU
-	const CRY_MAREEP
-	const CRY_TOGETIC
-	const CRY_HOOTHOOT
-	const CRY_SENTRET
-	const CRY_SLOWKING
-	const CRY_CYNDAQUIL
-	const CRY_CHIKORITA
-	const CRY_TOTODILE
-	const CRY_GLIGAR
-	const CRY_CLEFFA
-	const CRY_SLUGMA
-	const CRY_LEDYBA
-	const CRY_ENTEI
-	const CRY_WOOPER
-	const CRY_MANTINE
-	const CRY_TYPHLOSION
-	const CRY_NATU
-	const CRY_TEDDIURSA
-	const CRY_SUNFLORA
-	const CRY_AMPHAROS
-	const CRY_MAGCARGO
-	const CRY_PICHU
-	const CRY_AIPOM
-	const CRY_DUNSPARCE
-	const CRY_DONPHAN
+	const CRY_MARILL ; 26
+	const CRY_SPINARAK ; 27
+	const CRY_TOGEPI ; 28
+	const CRY_GIRAFARIG ; 29
+	const CRY_RAIKOU ; 2A
+	const CRY_MAREEP ; 2B
+	const CRY_TOGETIC ; 2C
+	const CRY_HOOTHOOT ; 2D
+	const CRY_SENTRET ; 2E
+	const CRY_SLOWKING ; 2F
+	const CRY_CYNDAQUIL ; 30
+	const CRY_CHIKORITA ; 31 
+	const CRY_TOTODILE ; 32
+	const CRY_GLIGAR ; 33
+	const CRY_CLEFFA ; 34
+	const CRY_SLUGMA ; 35
+	const CRY_LEDYBA ; 36
+	const CRY_ENTEI ; 37
+	const CRY_WOOPER ; 38
+	const CRY_MANTINE ; 39
+	const CRY_TYPHLOSION ; 3A
+	const CRY_NATU ; 3B
+	const CRY_TEDDIURSA ; 3C
+	const CRY_SUNFLORA ; 3D
+	const CRY_AMPHAROS ; 3E
+	const CRY_MAGCARGO ; 3F
+	const CRY_PICHU ; 40
+	const CRY_AIPOM ; 41
+	const CRY_DUNSPARCE ; 42
+	const CRY_DONPHAN ; 43

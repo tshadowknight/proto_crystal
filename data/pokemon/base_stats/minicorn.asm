@@ -1,6 +1,6 @@
 	db MINICORN ; 204
 
-	db  50,  50,  50,  50, 50,  50
+	db  40,  75,  45,  70, 55,  55
 	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, NORMAL ; type
