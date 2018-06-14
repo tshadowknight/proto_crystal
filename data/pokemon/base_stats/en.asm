@@ -1,6 +1,6 @@
 	db EN ; 244
 
-	db 115, 115,  85, 100,  90,  75
+	db 90, 100,  90, 90,  125,  99
 	;   hp  atk  def  spd  sat  sdf
 
 	db FIRE, FIRE ; type

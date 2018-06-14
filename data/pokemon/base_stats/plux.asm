@@ -1,6 +1,6 @@
 	db PLUX ; 182
 
-	db  50,  50,  50,  50,  50, 50
+	db  75,  145,  120,  95,  60, 80
 	;   hp  atk  def  spd  sat  sdf
 
 	db BUG, BUG ; type
