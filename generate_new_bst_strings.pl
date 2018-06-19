@@ -16,6 +16,8 @@ my @newPokeConstants;
 my @newPokeNames;
 my @newDexEntries;
 my @newDexEntryPointers;
+my @newMoveHeaders;
+my @newMovePointers;
 for my $id (sort keys %translations){
 	push(@newBSTStrings, "INCLUDE \"data/pokemon/base_stats/".(lc $translations{$id}->{"new"}).".asm\"	;$id - ".(lc $translations{$id}->{"old"}));
 	push(@newPokeConstants, "\tconst ".(uc $translations{$id}->{"new"})." ; ".$id);
@@ -25,6 +27,8 @@ for my $id (sort keys %translations){
 	
 	push(@newDexEntries, (ucfirst $translations{$id}->{"new"})."PokedexEntry::     INCLUDE \"data/pokemon/dex_entries/".(lc $translations{$id}->{"new"}).".asm\"");
 	push(@newDexEntryPointers, "\tdw ".(ucfirst $translations{$id}->{"new"})."PokedexEntry");
+	push(@newMoveHeaders,  (ucfirst $translations{$id}->{"new"})."EvosAttacks:\n\tdb 0 ; no more evolutions\n\tdb 0 ; no more level-up moves\n");
+	push(@newMovePointers,  "\tdw ".(ucfirst $translations{$id}->{"new"})."EvosAttacks");
 }
 
 my $filename = 'new_bst_order.txt';
@@ -52,4 +56,13 @@ open(my $fh, '>', $filename) or die "Could not open file '$filename' $!";
 print $fh join("\n", @newDexEntryPointers);
 close $fh;
 
+my $filename = 'newMoveHeaders.txt';
+open(my $fh, '>', $filename) or die "Could not open file '$filename' $!";
+print $fh join("\n", @newMoveHeaders);
+close $fh;
+
+my $filename = 'newMovePointers.txt';
+open(my $fh, '>', $filename) or die "Could not open file '$filename' $!";
+print $fh join("\n", @newMovePointers);
+close $fh;
 

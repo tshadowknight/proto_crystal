@@ -152,104 +152,104 @@ EvosAttacksPointers:: ; 0x425b1
 	dw DragoniteEvosAttacks
 	dw MewtwoEvosAttacks
 	dw MewEvosAttacks
-	dw ChikoritaEvosAttacks
-	dw BayleefEvosAttacks
-	dw MeganiumEvosAttacks
-	dw CyndaquilEvosAttacks
-	dw QuilavaEvosAttacks
-	dw TyphlosionEvosAttacks
-	dw TotodileEvosAttacks
-	dw CroconawEvosAttacks
-	dw FeraligatrEvosAttacks
-	dw SentretEvosAttacks
-	dw FurretEvosAttacks
+	dw LeefEvosAttacks
+	dw BlossomoleEvosAttacks
+	dw BlossomiteEvosAttacks
+	dw FlambearEvosAttacks
+	dw VolbearEvosAttacks
+	dw DynabearEvosAttacks
+	dw CruzEvosAttacks
+	dw AquaEvosAttacks
+	dw AquariaEvosAttacks
 	dw HoothootEvosAttacks
-	dw NoctowlEvosAttacks
-	dw LedybaEvosAttacks
-	dw LedianEvosAttacks
-	dw SpinarakEvosAttacks
-	dw AriadosEvosAttacks
-	dw CrobatEvosAttacks
-	dw ChinchouEvosAttacks
-	dw LanturnEvosAttacks
-	dw PichuEvosAttacks
-	dw CleffaEvosAttacks
-	dw IgglybuffEvosAttacks
-	dw TogepiEvosAttacks
-	dw TogeticEvosAttacks
-	dw NatuEvosAttacks
-	dw XatuEvosAttacks
+	dw HoohooEvosAttacks
 	dw MareepEvosAttacks
 	dw FlaaffyEvosAttacks
 	dw AmpharosEvosAttacks
-	dw BellossomEvosAttacks
-	dw MarillEvosAttacks
-	dw AzumarillEvosAttacks
-	dw SudowoodoEvosAttacks
-	dw PolitoedEvosAttacks
-	dw HoppipEvosAttacks
-	dw SkiploomEvosAttacks
-	dw JumpluffEvosAttacks
-	dw AipomEvosAttacks
-	dw SunkernEvosAttacks
-	dw SunfloraEvosAttacks
-	dw YanmaEvosAttacks
-	dw WooperEvosAttacks
-	dw QuagsireEvosAttacks
-	dw EspeonEvosAttacks
-	dw UmbreonEvosAttacks
-	dw MurkrowEvosAttacks
-	dw SlowkingEvosAttacks
-	dw MisdreavusEvosAttacks
-	dw UnownEvosAttacks
-	dw WobbuffetEvosAttacks
-	dw GirafarigEvosAttacks
-	dw PinecoEvosAttacks
-	dw ForretressEvosAttacks
-	dw DunsparceEvosAttacks
-	dw GligarEvosAttacks
-	dw SteelixEvosAttacks
-	dw SnubbullEvosAttacks
-	dw GranbullEvosAttacks
+	dw TrifoxEvosAttacks
+	dw TangelEvosAttacks
+	dw GelanlaEvosAttacks
+	dw RayleepEvosAttacks
 	dw QwilfishEvosAttacks
-	dw ScizorEvosAttacks
-	dw ShuckleEvosAttacks
-	dw HeracrossEvosAttacks
-	dw SneaselEvosAttacks
-	dw TeddiursaEvosAttacks
-	dw UrsaringEvosAttacks
-	dw SlugmaEvosAttacks
-	dw MagcargoEvosAttacks
-	dw SwinubEvosAttacks
-	dw PiloswineEvosAttacks
-	dw CorsolaEvosAttacks
-	dw RemoraidEvosAttacks
-	dw OctilleryEvosAttacks
-	dw DelibirdEvosAttacks
-	dw MantineEvosAttacks
+	dw NumpuffEvosAttacks
+	dw PichuEvosAttacks
+	dw CleffaEvosAttacks
+	dw IgglybuffEvosAttacks
+	dw QuagsireEvosAttacks
+	dw NatuEvosAttacks
+	dw XatuEvosAttacks
+	dw GolppyEvosAttacks
+	dw MarillEvosAttacks
+	dw SunmolaEvosAttacks
+	dw AnchorageEvosAttacks
+	dw GrotessEvosAttacks
+	dw CrobatEvosAttacks
+	dw ParasyEvosAttacks
+	dw SpinarakEvosAttacks
+	dw AriadosEvosAttacks
 	dw SkarmoryEvosAttacks
-	dw HoundourEvosAttacks
-	dw HoundoomEvosAttacks
-	dw KingdraEvosAttacks
+	dw LykwyseEvosAttacks
+	dw DounoEvosAttacks
+	dw SunfloraEvosAttacks
 	dw PhanpyEvosAttacks
 	dw DonphanEvosAttacks
-	dw Porygon2EvosAttacks
-	dw StantlerEvosAttacks
+	dw TwinzEvosAttacks
+	dw GirafarigEvosAttacks
 	dw SmeargleEvosAttacks
-	dw TyrogueEvosAttacks
+	dw MeowsyEvosAttacks
+	dw RinringEvosAttacks
+	dw BellboyantEvosAttacks
+	dw PolitoedEvosAttacks
+	dw SlowkingEvosAttacks
+	dw UnownEvosAttacks
+	dw LedybaEvosAttacks
+	dw TripstarEvosAttacks
+	dw MinicornEvosAttacks
+	dw EspeonEvosAttacks
+	dw UmbreonEvosAttacks
+	dw TurbannEvosAttacks
+	dw GrimeyEvosAttacks
+	dw RemoraidEvosAttacks
+	dw OctilleryEvosAttacks
+	dw GohngEvosAttacks
 	dw HitmontopEvosAttacks
+	dw PuddiEvosAttacks
+	dw LefmewEvosAttacks
+	dw DandemewEvosAttacks
+	dw CottomewEvosAttacks
+	dw BallerineEvosAttacks
 	dw SmoochumEvosAttacks
 	dw ElekidEvosAttacks
 	dw MagbyEvosAttacks
+	dw BellossomEvosAttacks
+	dw BelmittEvosAttacks
 	dw MiltankEvosAttacks
+	dw BomseelEvosAttacks
+	dw DelibirdEvosAttacks
+	dw KotoraEvosAttacks
+	dw RaitoraEvosAttacks
+	dw MadameEvosAttacks
+	dw KurstrawEvosAttacks
+	dw PangshiEvosAttacks
+	dw MurkrowEvosAttacks
 	dw BlisseyEvosAttacks
-	dw RaikouEvosAttacks
-	dw EnteiEvosAttacks
-	dw SuicuneEvosAttacks
-	dw LarvitarEvosAttacks
-	dw PupitarEvosAttacks
-	dw TyranitarEvosAttacks
-	dw LugiaEvosAttacks
-	dw HoOhEvosAttacks
-	dw CelebiEvosAttacks
+	dw ScizorEvosAttacks
+	dw PluxEvosAttacks
+	dw HoundourEvosAttacks
+	dw HoundoomEvosAttacks
+	dw WolfmanEvosAttacks
+	dw WarwolfEvosAttacks
+	dw Porygon2EvosAttacks
+	dw LikkEvosAttacks
+	dw SteelixEvosAttacks
+	dw KingdraEvosAttacks
+	dw RaiEvosAttacks
+	dw EnEvosAttacks
+	dw SuiEvosAttacks
+	dw SneaselEvosAttacks
+	dw Ho_OhEvosAttacks
+	dw TogepiEvosAttacks
+	dw SnubbullEvosAttacks
+	dw AipomEvosAttacks
+	dw LeafeonEvosAttacks
 ; 0x427a7
