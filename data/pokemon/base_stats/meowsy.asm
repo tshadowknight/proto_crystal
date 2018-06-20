@@ -5,7 +5,7 @@
 
 	db NORMAL, NORMAL ; type
 	db 255 ; catch rate
-	db 100 ; base exp
+	db 40 ; base exp
 	db NO_ITEM, NO_ITEM ; items.
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
@@ -13,9 +13,9 @@
 	db 5 ; unknown 2
 	INCBIN "gfx/pokemon/meowsy/front.dimensions"
 	db 0, 0, 0, 0 ; padding
-	db GROWTH_MEDIUM_SLOW ; growth rate
-	dn EGG_HUMANSHAPE, EGG_HUMANSHAPE ; egg groups
+	db GROWTH_MEDIUM_FAST ; growth rate
+	dn EGG_GROUND, EGG_GROUND ; egg groups
 
 	; tm/hm learnset
-	tmhm 
+	tmhm HEADBUTT, CURSE, TOXIC, ZAP_CANNON, PSYCH_UP, HIDDEN_POWER, SUNNY_DAY, SNORE, ICY_WIND, PROTECT, ENDURE, FRUSTRATION, IRON_TAIL, THUNDER, RETURN, SHADOW_BALL, MUD_SLAP, DOUBLE_TEAM, SWAGGER, SLEEP_TALK, SWIFT, DEFENSE_CURL, DREAM_EATER, DETECT, REST, ATTRACT, THIEF, NIGHTMARE, THUNDERBOLT
 	; end

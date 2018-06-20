@@ -4,8 +4,8 @@
 	;   hp  atk  def  spd  sat  sdf
 
 	db GHOST, GHOST ; type
-	db 100 ; catch rate
-	db 184 ; base exp
+	db 90 ; catch rate
+	db 170 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
@@ -14,8 +14,8 @@
 	INCBIN "gfx/pokemon/pangshi/front.dimensions"
 	db 0, 0, 0, 0 ; padding
 	db GROWTH_MEDIUM_SLOW ; growth rate
-	dn EGG_PLANT, EGG_PLANT ; egg groups
+	dn EGG_INDETERMINATE, EGG_INDETERMINATE ; egg groups
 
 	; tm/hm learnset
-	tmhm
+	tmhm DYNAMICPUNCH, HEADBUTT, CURSE, TOXIC, ZAP_CANNON, ROCK_SMASH, PSYCH_UP, HIDDEN_POWER, SUNNY_DAY, SNORE, HYPER_BEAM, PROTECT, RAIN_DANCE, ENDURE, FRUSTRATION, RETURN, SHADOW_BALL, DOUBLE_TEAM, ICE_PUNCH, SWAGGER, SLEEP_TALK, THUNDERPUNCH, DREAM_EATER, REST, ATTRACT, THIEF, FIRE_PUNCH, NIGHTMARE, STRENGTH
 	; end

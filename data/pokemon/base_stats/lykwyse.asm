@@ -4,8 +4,8 @@
 	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, NORMAL ; type
-	db 255 ; catch rate
-	db 100 ; base exp
+	db 20 ; catch rate
+	db 200 ; base exp
 	db NO_ITEM, NO_ITEM ; items.
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
@@ -13,8 +13,8 @@
 	db 5 ; unknown 2
 	INCBIN "gfx/pokemon/lykwyse/front.dimensions"
 	db 0, 0, 0, 0 ; padding
-	db GROWTH_MEDIUM_SLOW ; growth rate
-	dn EGG_HUMANSHAPE, EGG_HUMANSHAPE ; egg groups
+	db GROWTH_MEDIUM_FAST ; growth rate
+	dn EGG_DITTO, EGG_DITTO ; egg groups
 
 	; tm/hm learnset
 	tmhm 
