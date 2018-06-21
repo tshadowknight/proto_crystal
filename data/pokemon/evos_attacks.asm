@@ -2699,6 +2699,7 @@ RinringEvosAttacks:
 	db 20, BITE
 	db 27, FAINT_ATTACK
 	db 35, PSYBEAM
+	db 39, MOONLIGHT
 	db 43, CRUNCH
 	db 0 ; no more level-up moves
 
@@ -2711,6 +2712,7 @@ BellboyantEvosAttacks:
 	db 20, BITE
 	db 29, FAINT_ATTACK
 	db 27, PSYBEAM
+	db 36, MOONLIGHT
 	db 45, CRUNCH
 	db 0 ; no more level-up moves
 
