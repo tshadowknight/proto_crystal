@@ -26,8 +26,8 @@ TreeMonSet_Canyon: ; b82fa
 	db -1
 ; rare
 	db 50, SPEAROW,    10
-	db 15, PLUX,  10
-	db 15, PLUX,  10
+	db 15, PINSIR,  10
+	db 15, PINSIR,  10
 	db 10, AIPOM,      10
 	db  5, AIPOM,      10
 	db  5, AIPOM,      10
@@ -44,8 +44,8 @@ TreeMonSet_Town: ; b8320
 	db -1
 ; rare
 	db 50, SPEAROW,    10
-	db 15, PLUX,  10
-	db 15, PLUX,  10
+	db 15, PINSIR,  10
+	db 15, PINSIR,  10
 	db 10, AIPOM,      10
 	db  5, AIPOM,      10
 	db  5, AIPOM,      10
@@ -125,6 +125,6 @@ TreeMonSet_Forest: ; b83b8
 
 TreeMonSet_Rock: ; b83de
 	db 90, KRABBY,     15
-	db 10, BULBASAUR,    15
+	db 10, LYKWYSE,    15
 	db -1
 ; b83e5

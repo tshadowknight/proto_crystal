@@ -23,7 +23,7 @@ FishGroups: ; 92488
 
 .Shore_Old: ; 924e3
 	db  70 percent + 1, MAGIKARP,   10
-	db  85 percent + 1, MAGIKARP,   10
+	db  85 percent + 1, GOLPPY,   10
 	db 100 percent,     KRABBY,     10
 .Shore_Good: ; 924ec
 	db  35 percent,     MAGIKARP,   20
@@ -38,7 +38,7 @@ FishGroups: ; 92488
 
 .Ocean_Old: ; 92504
 	db  70 percent + 1, MAGIKARP,   10
-	db  85 percent + 1, MAGIKARP,   10
+	db  85 percent + 1, GOLPPY,   10
 	db 100 percent,     TENTACOOL,  10
 .Ocean_Good: ; 9250d
 	db  35 percent,     MAGIKARP,   20
@@ -53,7 +53,7 @@ FishGroups: ; 92488
 
 .Lake_Old: ; 92525
 	db  70 percent + 1, MAGIKARP,   10
-	db  85 percent + 1, MAGIKARP,   10
+	db  85 percent + 1, GOLPPY,   10
 	db 100 percent,     GOLDEEN,    10
 .Lake_Good: ; 9252e
 	db  35 percent,     MAGIKARP,   20
@@ -68,7 +68,7 @@ FishGroups: ; 92488
 
 .Pond_Old: ; 92546
 	db  70 percent + 1, MAGIKARP,   10
-	db  85 percent + 1, MAGIKARP,   10
+	db  85 percent + 1, GOLPPY,   10
 	db 100 percent,     POLIWAG,    10
 .Pond_Good: ; 9254f
 	db  35 percent,     MAGIKARP,   20
@@ -208,8 +208,8 @@ FishGroups: ; 92488
 
 TimeFishGroups: ; 9266f
 	;  day              nite
-	db BULBASAUR,    20,  STARYU,     20 ; 0
-	db BULBASAUR,    40,  STARYU,     40 ; 1
+	db SUNMOLA,    20,  STARYU,     20 ; 0
+	db SUNMOLA,    40,  STARYU,     40 ; 1
 	db SHELLDER,   20,  SHELLDER,   20 ; 2
 	db SHELLDER,   40,  SHELLDER,   40 ; 3
 	db GOLDEEN,    20,  GOLDEEN,    20 ; 4

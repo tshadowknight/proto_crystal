@@ -136,14 +136,14 @@ KantoWaterWildMons: ; 0x2b7f7
 
 	map_id FUCHSIA_CITY
 	db 2 percent ; encounter rate
-	db 20, MAGIKARP
+	db 20, SUNMOLA
 	db 15, MAGIKARP
 	db 10, MAGIKARP
 
 	map_id CINNABAR_ISLAND
 	db 6 percent ; encounter rate
-	db 35, TENTACOOL
-	db 30, TENTACOOL
-	db 35, TENTACRUEL
+	db 35, BOMSEEL
+	db 30, BOMSEEL
+	db 35, BOMSEEL
 
 	db -1 ; end

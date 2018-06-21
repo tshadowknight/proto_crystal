@@ -277,25 +277,25 @@ JohtoGrassWildMons: ; 0x2a5e9
 	; morn
 	db 13, RATTATA
 	db 14, KOFFING
-	db 15, RATTATA
+	db 15, GRIMEY
 	db 14, ZUBAT
-	db 15, RATTATA
+	db 15, GRIMEY
 	db 15, RATICATE
 	db 15, RATICATE
 	; day
 	db 13, RATTATA
 	db 14, KOFFING
-	db 15, RATTATA
+	db 15, GRIMEY
 	db 14, ZUBAT
-	db 15, RATTATA
+	db 15, GRIMEY
 	db 15, RATICATE
 	db 15, RATICATE
 	; nite
 	db 13, RATTATA
 	db 14, KOFFING
-	db 15, RATTATA
+	db 15, GRIMEY
 	db 14, ZUBAT
-	db 15, RATTATA
+	db 15, GRIMEY
 	db 15, RATICATE
 	db 15, RATICATE
 
@@ -304,26 +304,26 @@ JohtoGrassWildMons: ; 0x2a5e9
 	; morn
 	db 14, RATTATA
 	db 14, KOFFING
-	db 16, KOFFING
+	db 16, GRIMEY
 	db 15, ZUBAT
-	db 12, KOFFING
-	db 16, KOFFING
+	db 12, BOMSEEL
+	db 16, BOMSEEL
 	db 16, WEEZING
 	; day
 	db 14, RATTATA
-	db 14, KOFFING
+	db 14, GRIMEY
 	db 16, KOFFING
 	db 15, ZUBAT
-	db 12, KOFFING
-	db 16, KOFFING
+	db 12, BOMSEEL
+	db 16, BOMSEEL
 	db 16, WEEZING
 	; nite
 	db 14, RATTATA
-	db 14, KOFFING
+	db 14, GRIMEY
 	db 16, KOFFING
 	db 15, ZUBAT
-	db 12, KOFFING
-	db 16, KOFFING
+	db 12, BOMSEEL
+	db 16, BOMSEEL
 	db 16, WEEZING
 
 	map_id NATIONAL_PARK
@@ -334,15 +334,15 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 14, LEDYBA
 	db 13, PIDGEY
 	db 10, CATERPIE
-	db 10, WEEDLE
+	db 10, KOTORA
 	db 10, WEEDLE
 	; day
 	db 12, NIDORAN_F
 	db 12, NIDORAN_M
-	db 14, BULBASAUR
+	db 14, KOTORA
 	db 13, PIDGEY
 	db 10, CATERPIE
-	db 10, WEEDLE
+	db 10, KOTORA
 	db 10, WEEDLE
 	; nite
 	db 12, PSYDUCK
@@ -351,7 +351,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 15, HOOTHOOT
 	db 10, VENONAT
 	db 12, VENONAT
-	db 12, VENONAT
+	db 12, KOTORA
 
 	map_id RUINS_OF_ALPH_OUTSIDE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
@@ -520,27 +520,27 @@ JohtoGrassWildMons: ; 0x2a5e9
 	; morn
 	db 21, ZUBAT
 	db 23, ZUBAT
-	db 19, ZUBAT
+	db 19, SLOWPOKE
 	db 21, SLOWPOKE
 	db 23, GOLBAT
-	db 23, SLOWPOKE
-	db 23, SLOWPOKE
+	db 23, TURBANN
+	db 23, TURBANN
 	; day
 	db 21, ZUBAT
 	db 23, ZUBAT
-	db 19, ZUBAT
+	db 19, SLOWPOKE
 	db 21, SLOWPOKE
 	db 23, GOLBAT
-	db 23, SLOWPOKE
-	db 23, SLOWPOKE
+	db 23, TURBANN
+	db 23, TURBANN
 	; nite
 	db 21, ZUBAT
 	db 23, ZUBAT
-	db 19, ZUBAT
+	db 19, SLOWPOKE
 	db 21, SLOWPOKE
 	db 23, GOLBAT
-	db 23, SLOWPOKE
-	db 23, SLOWPOKE
+	db 23, TURBANN
+	db 23, TURBANN
 
 	map_id ILEX_FOREST
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
@@ -550,24 +550,24 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 7, METAPOD
 	db 7, KAKUNA
 	db 7, PIDGEY
-	db 6, PARAS
-	db 6, PARAS
+	db 6, PARASY
+	db 6, PARASY
 	; day
 	db 5, CATERPIE
 	db 5, WEEDLE
 	db 7, METAPOD
 	db 7, KAKUNA
 	db 7, PIDGEY
-	db 6, PARAS
-	db 6, PARAS
+	db 6, PARASY
+	db 6, PARASY
 	; nite
 	db 5, ODDISH
 	db 5, VENONAT
 	db 7, ODDISH
 	db 7, PSYDUCK
 	db 7, HOOTHOOT
-	db 6, PARAS
-	db 6, PARAS
+	db 6, PARASY
+	db 6, PARASY
 
 	map_id MOUNT_MORTAR_1F_OUTSIDE
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
@@ -684,24 +684,24 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 22, ZUBAT
 	db 22, GOLBAT
 	db 23, WOLFMAN
-	db 24, GOLBAT
-	db 22, GOLBAT
+	db 24, WOLFMAN
+	db 24, WARWOLF
 	db 22, GOLBAT
 	; day
 	db 21, WOLFMAN
 	db 22, ZUBAT
 	db 22, GOLBAT
 	db 23, WOLFMAN
-	db 24, GOLBAT
-	db 22, GOLBAT
+	db 24, WOLFMAN
+	db 24, WARWOLF
 	db 22, GOLBAT
 	; nite
 	db 21, DELIBIRD
 	db 22, ZUBAT
 	db 22, GOLBAT
 	db 23, DELIBIRD
-	db 24, GOLBAT
-	db 22, GOLBAT
+	db 24, WOLFMAN
+	db 24, WARWOLF
 	db 22, GOLBAT
 
 	map_id ICE_PATH_B1F
@@ -711,24 +711,24 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 23, ZUBAT
 	db 23, GOLBAT
 	db 24, WOLFMAN
-	db 25, GOLBAT
-	db 23, GOLBAT
+	db 25, WARWOLF
+	db 25, WARWOLF
 	db 22, JYNX
 	; day
 	db 22, WOLFMAN
 	db 23, ZUBAT
 	db 23, GOLBAT
 	db 24, WOLFMAN
-	db 25, GOLBAT
-	db 23, GOLBAT
+	db 25, WARWOLF
+	db 25, WARWOLF
 	db 22, JYNX
 	; nite
 	db 22, DELIBIRD
 	db 23, ZUBAT
 	db 23, GOLBAT
 	db 24, DELIBIRD
-	db 25, GOLBAT
-	db 23, GOLBAT
+	db 25, WARWOLF
+	db 25, WARWOLF
 	db 22, SNEASEL
 
 	map_id ICE_PATH_B2F_MAHOGANY_SIDE
@@ -738,7 +738,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 24, ZUBAT
 	db 24, GOLBAT
 	db 25, WOLFMAN
-	db 26, GOLBAT
+	db 26, WARWOLF
 	db 22, JYNX
 	db 24, JYNX
 	; day
@@ -746,7 +746,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 24, ZUBAT
 	db 24, GOLBAT
 	db 25, WOLFMAN
-	db 26, GOLBAT
+	db 26, WARWOLF
 	db 22, JYNX
 	db 24, JYNX
 	; nite
@@ -754,7 +754,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 24, ZUBAT
 	db 24, GOLBAT
 	db 25, DELIBIRD
-	db 26, GOLBAT
+	db 26, WARWOLF
 	db 22, SNEASEL
 	db 24, SNEASEL
 
@@ -765,7 +765,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 24, ZUBAT
 	db 24, GOLBAT
 	db 25, WOLFMAN
-	db 26, GOLBAT
+	db 26, WARWOLF
 	db 22, JYNX
 	db 24, JYNX
 	; day
@@ -773,7 +773,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 24, ZUBAT
 	db 24, GOLBAT
 	db 25, WOLFMAN
-	db 26, GOLBAT
+	db 26, WARWOLF
 	db 22, JYNX
 	db 24, JYNX
 	; nite
@@ -781,7 +781,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 24, ZUBAT
 	db 24, GOLBAT
 	db 25, DELIBIRD
-	db 26, GOLBAT
+	db 26, WARWOLF
 	db 22, SNEASEL
 	db 24, SNEASEL
 
@@ -792,7 +792,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 25, ZUBAT
 	db 25, GOLBAT
 	db 26, WOLFMAN
-	db 22, JYNX
+	db 22, WARWOLF
 	db 24, JYNX
 	db 26, JYNX
 	; day
@@ -800,7 +800,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 25, ZUBAT
 	db 25, GOLBAT
 	db 26, WOLFMAN
-	db 22, JYNX
+	db 22, WARWOLF
 	db 24, JYNX
 	db 26, JYNX
 	; nite
@@ -808,7 +808,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 25, ZUBAT
 	db 25, GOLBAT
 	db 26, DELIBIRD
-	db 22, SNEASEL
+	db 22, WARWOLF
 	db 24, SNEASEL
 	db 26, SNEASEL
 
@@ -820,7 +820,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 22, SEEL
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
+	db 24, BOMSEEL
 	db 24, SEEL
 	; day
 	db 22, KRABBY
@@ -828,14 +828,14 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 22, SEEL
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
+	db 24, BOMSEEL
 	db 24, SEEL
 	; nite
 	db 22, KRABBY
 	db 23, ZUBAT
 	db 22, KRABBY
 	db 24, KRABBY
-	db 25, GOLBAT
+	db 25, BOMSEEL
 	db 24, GOLBAT
 	db 24, GOLBAT
 
@@ -847,7 +847,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 22, SEEL
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
+	db 24, BOMSEEL
 	db 24, SEEL
 	; day
 	db 22, KRABBY
@@ -855,14 +855,14 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 22, SEEL
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
+	db 24, BOMSEEL
 	db 24, SEEL
 	; nite
 	db 22, KRABBY
 	db 23, ZUBAT
 	db 22, KRABBY
 	db 24, KRABBY
-	db 25, GOLBAT
+	db 25, BOMSEEL
 	db 24, GOLBAT
 	db 24, GOLBAT
 
@@ -874,7 +874,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 22, SEEL
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
+	db 24, BOMSEEL
 	db 24, SEEL
 	; day
 	db 22, KRABBY
@@ -882,14 +882,14 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 22, SEEL
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
+	db 24, BOMSEEL
 	db 24, SEEL
 	; nite
 	db 22, KRABBY
 	db 23, ZUBAT
 	db 22, KRABBY
 	db 24, KRABBY
-	db 25, GOLBAT
+	db 25, BOMSEEL
 	db 24, GOLBAT
 	db 24, GOLBAT
 
@@ -901,7 +901,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 22, SEEL
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
+	db 24, BOMSEEL
 	db 24, SEEL
 	; day
 	db 22, KRABBY
@@ -909,14 +909,14 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 22, SEEL
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
+	db 24, BOMSEEL
 	db 24, SEEL
 	; nite
 	db 22, KRABBY
 	db 23, ZUBAT
 	db 22, KRABBY
 	db 24, KRABBY
-	db 25, GOLBAT
+	db 25, BOMSEEL
 	db 24, GOLBAT
 	db 24, GOLBAT
 
@@ -928,7 +928,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 22, SEEL
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
+	db 24, BOMSEEL
 	db 24, SEEL
 	; day
 	db 22, KRABBY
@@ -936,14 +936,14 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 22, SEEL
 	db 24, KRABBY
 	db 25, GOLBAT
-	db 24, SEEL
+	db 24, BOMSEEL
 	db 24, SEEL
 	; nite
 	db 22, KRABBY
 	db 23, ZUBAT
 	db 22, KRABBY
 	db 24, KRABBY
-	db 25, GOLBAT
+	db 25, BOMSEEL
 	db 24, GOLBAT
 	db 24, GOLBAT
 
@@ -955,7 +955,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 23, SEEL
 	db 25, KRABBY
 	db 26, GOLBAT
-	db 25, SEEL
+	db 25, BOMSEEL
 	db 25, SEEL
 	; day
 	db 23, KRABBY
@@ -963,14 +963,14 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 23, SEEL
 	db 25, KRABBY
 	db 26, GOLBAT
-	db 25, SEEL
+	db 25, BOMSEEL
 	db 25, SEEL
 	; nite
 	db 23, KRABBY
 	db 24, ZUBAT
 	db 23, KRABBY
 	db 25, KRABBY
-	db 26, GOLBAT
+	db 26, BOMSEEL
 	db 25, GOLBAT
 	db 25, GOLBAT
 
@@ -982,14 +982,14 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 24, SEEL
 	db 26, KRABBY
 	db 27, GOLBAT
-	db 26, SEEL
+	db 26, BOMSEEL
 	db 26, SEEL
 	; day
 	db 24, KRABBY
 	db 25, ZUBAT
 	db 24, SEEL
 	db 26, KRABBY
-	db 27, GOLBAT
+	db 27, BOMSEEL
 	db 26, SEEL
 	db 26, SEEL
 	; nite
@@ -997,7 +997,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 25, ZUBAT
 	db 24, KRABBY
 	db 26, KRABBY
-	db 27, GOLBAT
+	db 27, BOMSEEL
 	db 26, GOLBAT
 	db 26, GOLBAT
 
@@ -1009,7 +1009,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 25, SEEL
 	db 27, KRABBY
 	db 28, GOLBAT
-	db 27, SEEL
+	db 27, BOMSEEL
 	db 27, SEEL
 	; day
 	db 25, KRABBY
@@ -1017,14 +1017,14 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 25, SEEL
 	db 27, KRABBY
 	db 28, GOLBAT
-	db 27, SEEL
+	db 27, BOMSEEL
 	db 27, SEEL
 	; nite
 	db 25, KRABBY
 	db 26, ZUBAT
 	db 25, KRABBY
 	db 27, KRABBY
-	db 28, GOLBAT
+	db 28, BOMSEEL
 	db 27, GOLBAT
 	db 27, GOLBAT
 
@@ -1032,7 +1032,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
 	db 43, GRAVELER
-	db 44, BULBASAUR
+	db 44, PANGSHI
 	db 42, ONIX
 	db 45, MAGMAR
 	db 45, GOLBAT
@@ -1040,7 +1040,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 15, SNEASEL
 	; day
 	db 43, GRAVELER
-	db 44, BULBASAUR
+	db 44, PANGSHI
 	db 42, ONIX
 	db 45, MAGMAR
 	db 45, GOLBAT
@@ -1060,17 +1060,17 @@ JohtoGrassWildMons: ; 0x2a5e9
 	; morn
 	db 48, GOLBAT
 	db 48, MACHOKE
-	db 47, BULBASAUR
+	db 47, PANGSHI
 	db 46, PARASECT
-	db 48, PARASECT
+	db 48, WARWOLF
 	db 15, SNEASEL
 	db 20, SNEASEL
 	; day
 	db 48, GOLBAT
 	db 48, MACHOKE
-	db 47, BULBASAUR
+	db 47, PANGSHI
 	db 46, PARASECT
-	db 48, PARASECT
+	db 48, WARWOLF
 	db 15, SNEASEL
 	db 20, SNEASEL
 	; nite
@@ -1078,9 +1078,9 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 48, GOLDUCK
 	db 46, GOLBAT
 	db 46, PARASECT
-	db 48, PARASECT
-	db 45, BULBASAUR
-	db 45, BULBASAUR
+	db 48, WARWOLF
+	db 45, PANGSHI
+	db 45, WARWOLF
 
 	map_id SILVER_CAVE_ROOM_3
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
@@ -1088,7 +1088,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 51, GOLBAT
 	db 48, ONIX
 	db 48, GRAVELER
-	db 50, BULBASAUR
+	db 50, PANGSHI
 	db 20, SNEASEL
 	db 15, SNEASEL
 	db 20, GRIMEY
@@ -1096,7 +1096,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 51, GOLBAT
 	db 48, ONIX
 	db 48, GRAVELER
-	db 50, BULBASAUR
+	db 50, PANGSHI
 	db 20, SNEASEL
 	db 15, SNEASEL
 	db 20, GRIMEY
@@ -1128,7 +1128,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 50, PARASECT
 	db 52, PARASECT
 	; nite
-	db 45, BULBASAUR
+	db 45, PANGSHI
 	db 48, GOLBAT
 	db 50, GOLBAT
 	db 46, PARASECT
@@ -1143,9 +1143,9 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 2, ZUBAT
 	db 2, GEODUDE
 	db 4, GEODUDE
-	db 2, BULBASAUR
+	db 2, TWINZ
 	db 4, ZUBAT
-	db 4, BULBASAUR
+	db 4, TWINZ
 	; day
 	db 3, GEODUDE
 	db 2, ZUBAT
@@ -1153,7 +1153,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 4, GEODUDE
 	db 2, ZUBAT
 	db 4, ZUBAT
-	db 4, BULBASAUR
+	db 4, TWINZ
 	; nite
 	db 3, GEODUDE
 	db 2, ZUBAT
@@ -1161,7 +1161,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 4, GEODUDE
 	db 2, ZUBAT
 	db 4, ZUBAT
-	db 4, BULBASAUR
+	db 4, TWINZ
 
 	map_id DARK_CAVE_BLACKTHORN_ENTRANCE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
@@ -1169,16 +1169,16 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 23, GEODUDE
 	db 23, ZUBAT
 	db 25, GRAVELER
-	db 25, BULBASAUR
-	db 20, BULBASAUR
+	db 25, TWINZ
+	db 20, TWINZ
 	db 23, GOLBAT
 	db 23, GOLBAT
 	; day
 	db 23, GEODUDE
 	db 23, ZUBAT
 	db 25, GRAVELER
-	db 25, BULBASAUR
-	db 30, BULBASAUR
+	db 25, TWINZ
+	db 30, TWINZ
 	db 23, GOLBAT
 	db 23, GOLBAT
 	; nite
@@ -1194,18 +1194,18 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 2, PIDGEY
-	db 2, BULBASAUR
+	db 2, RATTATA
 	db 3, PIDGEY
-	db 3, BULBASAUR
+	db 3, MEOWSY
 	db 2, RATTATA
 	db 3, LEFMEW
 	db 3, LEFMEW
 	; day
 	db 2, PIDGEY
-	db 2, BULBASAUR
-	db 3, PIDGEY
-	db 3, BULBASAUR
 	db 2, RATTATA
+	db 3, PIDGEY
+	db 3, MEOWSY
+	db 2, MEOWSY
 	db 3, LEFMEW
 	db 3, LEFMEW
 	; nite
@@ -1222,10 +1222,10 @@ JohtoGrassWildMons: ; 0x2a5e9
 	; morn
 	db 3, LEDYBA
 	db 3, CATERPIE
-	db 4, CATERPIE
+	db 4, DOUNO
 	db 4, PIDGEY
 	db 3, WEEDLE
-	db 4, LEFMEW
+	db 4, DOUNO
 	db 4, LEFMEW
 	; day
 	db 3, PIDGEY
@@ -1233,13 +1233,13 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 4, CATERPIE
 	db 4, PIDGEY
 	db 3, WEEDLE
-	db 4, LEFMEW
+	db 4, DOUNO
 	db 4, LEFMEW
 	; nite
 	db 3, SPINARAK
 	db 3, HOOTHOOT
 	db 4, POLIWAG
-	db 4, HOOTHOOT
+	db 4, DOUNO
 	db 3, ZUBAT
 	db 4, HOOTHOOT
 	db 4, HOOTHOOT
@@ -1277,17 +1277,17 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 4, EKANS
 	db 5, RATTATA
 	db 7, BELLSPROUT
-	db 6, LEFMEW
+	db 6, PUDDI
 	db 7, PIDGEY
-	db 7, LEFMEW
+	db 7, PUDDI
 	db 7, LEFMEW
 	; day
 	db 4, EKANS
 	db 5, RATTATA
 	db 7, BELLSPROUT
-	db 6, LEFMEW
+	db 6, PUDDI
 	db 7, PIDGEY
-	db 7, LEFMEW
+	db 7, PUDDI
 	db 7, LEFMEW
 	; nite
 	db 4, GIRAFARIG
@@ -1329,55 +1329,55 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 10, SNUBBULL
-	db 11, RATTATA
+	db 11, MINICORN
 	db 12, PIDGEY
 	db 10, ABRA
 	db 12, JIGGLYPUFF
-	db 10, DITTO
+	db 10, MINICORN
 	db 10, DITTO
 	; day
 	db 10, SNUBBULL
-	db 11, RATTATA
+	db 11, MINICORN
 	db 12, PIDGEY
 	db 10, ABRA
 	db 12, JIGGLYPUFF
-	db 10, DITTO
+	db 10, MINICORN
 	db 10, DITTO
 	; nite
 	db 12, DROWZEE
-	db 11, RATTATA
+	db 11, MINICORN
 	db 12, HOOTHOOT
 	db 10, ABRA
 	db 12, JIGGLYPUFF
-	db 10, DITTO
+	db 10, MINICORN
 	db 10, DITTO
 
 	map_id ROUTE_35
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 12, SNUBBULL
-	db 14, PIDGEY
-	db 13, GROWLITHE
+	db 14, RINRING
+	db 13, HOUNDOUR
 	db 10, ABRA
 	db 12, JIGGLYPUFF
 	db 10, DITTO
-	db 12, BULBASAUR
+	db 12, RINRING
 	; day
 	db 12, SNUBBULL
-	db 14, PIDGEY
-	db 13, GROWLITHE
+	db 14, RINRING
+	db 13, HOUNDOUR
 	db 10, ABRA
 	db 12, JIGGLYPUFF
 	db 10, DITTO
-	db 12, BULBASAUR
+	db 12, RINRING
 	; nite
 	db 12, DROWZEE
-	db 14, HOOTHOOT
-	db 13, PSYDUCK
+	db 14, RINRING
+	db 13, HOUNDOUR
 	db 10, ABRA
 	db 12, JIGGLYPUFF
 	db 10, DITTO
-	db 12, BULBASAUR
+	db 12, RINRING
 
 	map_id ROUTE_36
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -1412,23 +1412,23 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 13, LEDYBA
 	db 14, GROWLITHE
 	db 15, PIDGEY
-	db 16, GROWLITHE
+	db 16, RINRING
 	db 15, PIDGEOTTO
 	db 15, TRIPSTAR
 	db 15, TRIPSTAR
 	; day
 	db 13, PIDGEY
 	db 14, GROWLITHE
-	db 15, PIDGEY
+	db 15, RINRING
 	db 16, GROWLITHE
 	db 15, PIDGEOTTO
 	db 15, PIDGEY
 	db 15, PIDGEY
 	; nite
 	db 13, SPINARAK
-	db 14, BULBASAUR
+	db 14, RINRING
 	db 15, HOOTHOOT
-	db 16, BULBASAUR
+	db 16, RINRING
 	db 15, HOOHOO
 	db 15, ARIADOS
 	db 15, ARIADOS
@@ -1441,7 +1441,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 16, MAGNEMITE
 	db 16, PIDGEOTTO
 	db 13, TAUROS
-	db 13, MILTANK
+	db 13, KURSTRAW
 	db 13, MILTANK
 	; day
 	db 16, RATTATA
@@ -1449,38 +1449,38 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 16, MAGNEMITE
 	db 16, PIDGEOTTO
 	db 13, TAUROS
-	db 13, MILTANK
+	db 13, KURSTRAW
 	db 13, MILTANK
 	; nite
 	db 16, MEOWTH
-	db 16, RATICATE
+	db 16, KURSTRAW
 	db 16, MAGNEMITE
-	db 16, HOOHOO
-	db 16, MEOWTH
-	db 16, MEOWTH
+	db 16, KURSTRAW
+	db 16, KURSTRAW
+	db 16, KURSTRAW
 	db 16, MEOWTH
 
 	map_id ROUTE_39
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 16, RATTATA
-	db 16, RATICATE
+	db 16, WOLFMAN
+	db 16, WOLFMAN
 	db 16, MAGNEMITE
 	db 16, PIDGEOTTO
 	db 15, MILTANK
 	db 15, TAUROS
 	db 15, TAUROS
 	; day
-	db 16, RATTATA
-	db 16, RATICATE
+	db 16, WOLFMAN
+	db 16, WOLFMAN
 	db 16, MAGNEMITE
 	db 16, PIDGEOTTO
 	db 15, MILTANK
 	db 15, TAUROS
 	db 15, TAUROS
 	; nite
-	db 16, MEOWTH
-	db 16, RATICATE
+	db 16, WOLFMAN
+	db 16, WOLFMAN
 	db 16, MAGNEMITE
 	db 16, HOOHOO
 	db 18, MEOWTH
@@ -1492,21 +1492,21 @@ JohtoGrassWildMons: ; 0x2a5e9
 	; morn
 	db 13, EKANS
 	db 14, SPEAROW
-	db 15, RATTATA
+	db 15, KOTORA
 	db 16, RATICATE
 	db 15, ARBOK
-	db 16, FEAROW
+	db 16, KOTORA
 	db 16, FEAROW
 	; day
 	db 13, EKANS
 	db 14, SPEAROW
-	db 15, RATTATA
+	db 15, KOTORA
 	db 16, RATICATE
 	db 15, ARBOK
-	db 16, FEAROW
+	db 16, KOTORA
 	db 16, FEAROW
 	; nite
-	db 13, RATTATA
+	db 13, KOTORA
 	db 14, ZUBAT
 	db 15, RATICATE
 	db 16, GOLBAT
@@ -1517,21 +1517,21 @@ JohtoGrassWildMons: ; 0x2a5e9
 	map_id ROUTE_43
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 15, BULBASAUR
+	db 15, SNEASEL
 	db 16, PIDGEOTTO
 	db 16, FARFETCH_D
-	db 15, BULBASAUR
+	db 15, SNEASEL
 	db 17, RATICATE
-	db 17, BULBASAUR
-	db 17, BULBASAUR
+	db 17, GIRAFARIG
+	db 17, GIRAFARIG
 	; day
-	db 15, BULBASAUR
+	db 15, SNEASEL
 	db 16, PIDGEOTTO
 	db 16, FARFETCH_D
-	db 15, BULBASAUR
+	db 15, SNEASEL
 	db 17, RATICATE
-	db 17, BULBASAUR
-	db 17, BULBASAUR
+	db 17, GIRAFARIG
+	db 17, GIRAFARIG
 	; nite
 	db 15, VENONAT
 	db 16, HOOHOO
@@ -1571,27 +1571,27 @@ JohtoGrassWildMons: ; 0x2a5e9
 	map_id ROUTE_45
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 23, GEODUDE
-	db 23, GRAVELER
-	db 24, BULBASAUR
+	db 23, VULPIX
+	db 23, SUNFLORA
+	db 24, LYKWYSE
 	db 25, DONPHAN
 	db 20, PHANPY
 	db 27, SKARMORY
 	db 27, SKARMORY
 	; day
-	db 23, GEODUDE
+	db 23, VULPIX
 	db 23, GRAVELER
-	db 24, BULBASAUR
-	db 25, DONPHAN
+	db 24, LYKWYSE
+	db 25, SUNFLORA
 	db 30, DONPHAN
 	db 27, SKARMORY
 	db 27, SKARMORY
 	; nite
-	db 23, GEODUDE
+	db 23, VULPIX
 	db 23, GRAVELER
-	db 24, BULBASAUR
-	db 25, GRAVELER
-	db 27, GRAVELER
+	db 24, LYKWYSE
+	db 25, TANGELA
+	db 27, TANGELA
 	db 27, GRAVELER
 	db 27, GRAVELER
 
@@ -1600,26 +1600,26 @@ JohtoGrassWildMons: ; 0x2a5e9
 	; morn
 	db 2, GEODUDE
 	db 2, SPEAROW
-	db 3, GEODUDE
 	db 3, RATTATA
+	db 3, TRIFOX
 	db 2, PHANPY
-	db 2, RATTATA
-	db 2, RATTATA
+	db 2, TRIFOX
+	db 2, TANGEL
 	; day
 	db 2, GEODUDE
 	db 2, SPEAROW
-	db 3, GEODUDE
 	db 3, RATTATA
-	db 2, RATTATA
-	db 2, RATTATA
-	db 2, RATTATA
+	db 3, TRIFOX
+	db 2, TRIFOX
+	db 2, TANGEL
+	db 2, TANGEL
 	; nite
 	db 2, GEODUDE
-	db 2, RATTATA
+	db 2, TRIFOX
 	db 3, GEODUDE
-	db 3, RATTATA
-	db 2, RATTATA
-	db 2, RATTATA
+	db 3, TRIFOX
+	db 2, TANGEL
+	db 2, TANGEL
 	db 2, RATTATA
 
 	map_id SILVER_CAVE_OUTSIDE

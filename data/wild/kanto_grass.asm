@@ -169,17 +169,17 @@ KantoGrassWildMons: ; 0x2b274
 	; morn
 	db 2, PIDGEY
 	db 2, RATTATA
-	db 3, BULBASAUR
+	db 3, MEOWSY
 	db 3, PIDGEY
-	db 6, BULBASAUR
+	db 6, MEOWSY
 	db 4, PIDGEY
 	db 4, PIDGEY
 	; day
 	db 2, PIDGEY
 	db 2, RATTATA
-	db 3, BULBASAUR
+	db 3, MEOWSY
 	db 3, PIDGEY
-	db 6, BULBASAUR
+	db 6, MEOWSY
 	db 4, PIDGEY
 	db 4, PIDGEY
 	; nite
@@ -307,24 +307,24 @@ KantoGrassWildMons: ; 0x2b274
 	db 14, MAGNEMITE
 	db 15, RATICATE
 	db 12, JIGGLYPUFF
-	db 15, BULBASAUR
-	db 15, BULBASAUR
+	db 15, MAGBY
+	db 15, MAGBY
 	; day
 	db 13, RATTATA
 	db 13, SNUBBULL
 	db 14, MAGNEMITE
 	db 15, RATICATE
 	db 12, JIGGLYPUFF
-	db 15, BULBASAUR
-	db 15, BULBASAUR
+	db 15, MAGBY
+	db 15, MAGBY
 	; nite
 	db 13, MEOWTH
 	db 13, DROWZEE
 	db 14, MAGNEMITE
 	db 15, PSYDUCK
 	db 12, JIGGLYPUFF
-	db 15, RATICATE
-	db 15, RATICATE
+	db 15, MAGBY
+	db 15, MAGBY
 
 	map_id ROUTE_7
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -334,30 +334,30 @@ KantoGrassWildMons: ; 0x2b274
 	db 18, SNUBBULL
 	db 18, RATICATE
 	db 18, JIGGLYPUFF
-	db 16, ABRA
-	db 16, ABRA
+	db 16, BALLERINE
+	db 16, BALLERINE
 	; day
 	db 17, RATTATA
 	db 17, SPEAROW
 	db 18, SNUBBULL
 	db 18, RATICATE
 	db 18, JIGGLYPUFF
-	db 16, ABRA
-	db 16, ABRA
+	db 16, BALLERINE
+	db 16, BALLERINE
 	; nite
 	db 17, MEOWTH
 	db 17, MURKROW
 	db 18, HOUNDOUR
 	db 18, PERSIAN
 	db 18, JIGGLYPUFF
-	db 16, ABRA
-	db 16, ABRA
+	db 16, BALLERINE
+	db 16, BALLERINE
 
 	map_id ROUTE_8
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 17, SNUBBULL
-	db 19, PIDGEOTTO
+	db 19, MADAME
 	db 16, ABRA
 	db 17, GROWLITHE
 	db 16, JIGGLYPUFF
@@ -365,7 +365,7 @@ KantoGrassWildMons: ; 0x2b274
 	db 18, KADABRA
 	; day
 	db 17, SNUBBULL
-	db 19, PIDGEOTTO
+	db 19, MADAME
 	db 16, ABRA
 	db 17, GROWLITHE
 	db 16, JIGGLYPUFF
@@ -373,7 +373,7 @@ KantoGrassWildMons: ; 0x2b274
 	db 18, KADABRA
 	; nite
 	db 17, MEOWTH
-	db 20, HOOHOO
+	db 20, MADAME
 	db 16, ABRA
 	db 17, HAUNTER
 	db 16, JIGGLYPUFF
@@ -415,24 +415,24 @@ KantoGrassWildMons: ; 0x2b274
 	db 15, RATICATE
 	db 15, FEAROW
 	db 15, MAROWAK
-	db 16, ELECTABUZZ
-	db 16, ELECTABUZZ
+	db 16, ELEKID
+	db 16, ELEKID
 	; day
 	db 15, SPEAROW
 	db 17, VOLTORB
 	db 15, RATICATE
 	db 15, FEAROW
 	db 15, MAROWAK
-	db 18, ELECTABUZZ
-	db 18, ELECTABUZZ
+	db 18, ELEKID
+	db 18, ELEKID
 	; nite
 	db 15, VENONAT
 	db 17, VOLTORB
 	db 15, RATICATE
 	db 15, VENOMOTH
 	db 15, ZUBAT
-	db 16, ELECTABUZZ
-	db 16, ELECTABUZZ
+	db 16, ELEKID
+	db 16, ELEKID
 
 	map_id ROUTE_11
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -548,22 +548,22 @@ KantoGrassWildMons: ; 0x2b274
 	db 26, GRIMER
 	db 27, FEAROW
 	db 28, GRIMER
-	db 29, FEAROW
-	db 29, FEAROW
+	db 29, BELLBOYANT
+	db 29, BELLBOYANT
 	db 30, MUK
 	db 30, MUK
 	; day
 	db 26, GRIMER
 	db 27, FEAROW
 	db 28, GRIMER
-	db 29, FEAROW
-	db 29, BULBASAUR
+	db 29, BELLBOYANT
+	db 29, BELLBOYANT
 	db 30, MUK
 	db 30, MUK
 	; nite
 	db 26, GRIMER
 	db 27, GRIMER
-	db 28, GRIMER
+	db 28, BELLBOYANT
 	db 29, MURKROW
 	db 29, MURKROW
 	db 30, MUK
@@ -573,26 +573,26 @@ KantoGrassWildMons: ; 0x2b274
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 30, FEAROW
-	db 29, GRIMER
+	db 29, BELLBOYANT
 	db 31, GRIMER
 	db 32, FEAROW
-	db 33, GRIMER
+	db 33, BELLBOYANT
 	db 33, MUK
 	db 33, MUK
 	; day
 	db 30, FEAROW
-	db 29, BULBASAUR
+	db 29, BELLBOYANT
 	db 29, GRIMER
 	db 32, FEAROW
-	db 32, BULBASAUR
+	db 32, BELLBOYANT
 	db 33, MUK
 	db 33, MUK
 	; nite
 	db 30, GRIMER
-	db 29, GRIMER
+	db 29, BELLBOYANT
 	db 31, GRIMER
 	db 32, GRIMER
-	db 33, GRIMER
+	db 33, BELLBOYANT
 	db 33, MUK
 	db 33, MUK
 
@@ -611,7 +611,7 @@ KantoGrassWildMons: ; 0x2b274
 	db 27, FEAROW
 	db 28, GRIMER
 	db 29, FEAROW
-	db 29, BULBASAUR
+	db 29, DOUNO
 	db 30, MUK
 	db 30, MUK
 	; nite
@@ -681,7 +681,7 @@ KantoGrassWildMons: ; 0x2b274
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 8, CATERPIE
-	db 10, CATERPIE
+	db 10, SMOOCHUM
 	db 12, METAPOD
 	db 12, ABRA
 	db 10, BELLSPROUT
@@ -689,7 +689,7 @@ KantoGrassWildMons: ; 0x2b274
 	db 14, BUTTERFREE
 	; day
 	db 8, CATERPIE
-	db 12, BULBASAUR
+	db 12, SMOOCHUM
 	db 10, CATERPIE
 	db 12, ABRA
 	db 10, BELLSPROUT
@@ -697,7 +697,7 @@ KantoGrassWildMons: ; 0x2b274
 	db 14, BUTTERFREE
 	; nite
 	db 10, VENONAT
-	db 10, ODDISH
+	db 10, SMOOCHUM
 	db 12, ODDISH
 	db 12, ABRA
 	db 10, BELLSPROUT

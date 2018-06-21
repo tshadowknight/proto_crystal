@@ -4,19 +4,19 @@ JohtoWaterWildMons: ; 0x2b11d
 
 	map_id RUINS_OF_ALPH_OUTSIDE
 	db 2 percent ; encounter rate
-	db 15, GIRAFARIG
+	db 15, QWILFISH
 	db 20, QUAGSIRE
 	db 15, QUAGSIRE
 
 	map_id UNION_CAVE_1F
 	db 2 percent ; encounter rate
-	db 15, GIRAFARIG
+	db 15, QWILFISH
 	db 20, QUAGSIRE
 	db 15, QUAGSIRE
 
 	map_id UNION_CAVE_B1F
 	db 2 percent ; encounter rate
-	db 15, GIRAFARIG
+	db 15, QWILFISH
 	db 20, QUAGSIRE
 	db 15, QUAGSIRE
 
@@ -30,7 +30,7 @@ JohtoWaterWildMons: ; 0x2b11d
 	db 2 percent ; encounter rate
 	db 15, SLOWPOKE
 	db 20, SLOWPOKE
-	db 10, SLOWPOKE
+	db 10, SUNMOLA
 
 	map_id SLOWPOKE_WELL_B2F
 	db 2 percent ; encounter rate
@@ -143,13 +143,13 @@ JohtoWaterWildMons: ; 0x2b11d
 	map_id ROUTE_40
 	db 6 percent ; encounter rate
 	db 20, TENTACOOL
-	db 15, TENTACOOL
+	db 15, SUNMOLA
 	db 20, TENTACRUEL
 
 	map_id ROUTE_41
 	db 6 percent ; encounter rate
-	db 20, TENTACOOL
-	db 20, TENTACRUEL
+	db 20, SUNMOLA
+	db 20, ANCHORAGE
 	db 20, RAYLEEP
 
 	map_id ROUTE_42
@@ -185,7 +185,7 @@ JohtoWaterWildMons: ; 0x2b11d
 	map_id CHERRYGROVE_CITY
 	db 6 percent ; encounter rate
 	db 20, TENTACOOL
-	db 15, TENTACOOL
+	db 15, BOMSEEL
 	db 20, TENTACRUEL
 
 	map_id VIOLET_CITY
@@ -196,8 +196,8 @@ JohtoWaterWildMons: ; 0x2b11d
 
 	map_id CIANWOOD_CITY
 	db 6 percent ; encounter rate
-	db 20, TENTACOOL
-	db 15, TENTACOOL
+	db 20, SUNMOLA
+	db 15, ANCHORAGE
 	db 20, TENTACRUEL
 
 	map_id OLIVINE_CITY
@@ -226,7 +226,7 @@ JohtoWaterWildMons: ; 0x2b11d
 
 	map_id SILVER_CAVE_OUTSIDE
 	db 2 percent ; encounter rate
-	db 35, POLIWHIRL
+	db 35, NUMPUFF
 	db 40, POLIWHIRL
 	db 35, POLIWAG
 

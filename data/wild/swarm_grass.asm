@@ -7,28 +7,28 @@ SwarmGrassWildMons: ; 0x2b8d0
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	db 3, GEODUDE
-	db 3, BULBASAUR
+	db 3, TWINZ
 	db 2, ZUBAT
 	db 2, GEODUDE
-	db 2, BULBASAUR
-	db 4, BULBASAUR
-	db 4, BULBASAUR
+	db 2, TWINZ
+	db 4, TWINZ
+	db 4, TWINZ
 	; day
 	db 3, GEODUDE
-	db 3, BULBASAUR
+	db 3, TWINZ
 	db 2, ZUBAT
 	db 2, GEODUDE
-	db 2, BULBASAUR
-	db 4, BULBASAUR
-	db 4, BULBASAUR
+	db 2, TWINZ
+	db 4, TWINZ
+	db 4, TWINZ
 	; nite
 	db 3, GEODUDE
-	db 3, BULBASAUR
+	db 3, TWINZ
 	db 2, ZUBAT
 	db 2, GEODUDE
-	db 2, BULBASAUR
-	db 4, BULBASAUR
-	db 4, BULBASAUR
+	db 2, TWINZ
+	db 4, TWINZ
+	db 4, TWINZ
 
 ; Yanma swarm
 	map_id ROUTE_35
@@ -36,24 +36,24 @@ SwarmGrassWildMons: ; 0x2b8d0
 	; morn
 	db 12, NIDORAN_M
 	db 12, NIDORAN_F
-	db 12, BULBASAUR
-	db 14, BULBASAUR
+	db 12, RINRING
+	db 14, RINRING
 	db 14, PIDGEY
 	db 10, DITTO
 	db 10, DITTO
 	; day
 	db 12, NIDORAN_M
 	db 12, NIDORAN_F
-	db 12, BULBASAUR
-	db 14, BULBASAUR
+	db 12, RINRING
+	db 14, RINRING
 	db 14, PIDGEY
 	db 10, DITTO
 	db 10, DITTO
 	; nite
 	db 12, NIDORAN_M
 	db 12, NIDORAN_F
-	db 12, BULBASAUR
-	db 14, BULBASAUR
+	db 12, RINRING
+	db 14, RINRING
 	db 14, HOOTHOOT
 	db 10, DITTO
 	db 10, DITTO
