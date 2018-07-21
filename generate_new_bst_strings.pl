@@ -19,6 +19,7 @@ my @newDexEntryPointers;
 my @newMoveHeaders;
 my @newMovePointers;
 my @newPalettePointers;
+my @newPartyIconsPlaceHolders;
 for my $id (sort keys %translations){
 	push(@newBSTStrings, "INCLUDE \"data/pokemon/base_stats/".(lc $translations{$id}->{"new"}).".asm\"	;$id - ".(lc $translations{$id}->{"old"}));
 	push(@newPokeConstants, "\tconst ".(uc $translations{$id}->{"new"})." ; ".$id);
@@ -32,6 +33,8 @@ for my $id (sort keys %translations){
 	push(@newMovePointers,  "\tdw ".(ucfirst $translations{$id}->{"new"})."EvosAttacks");
 	push(@newPalettePointers,  "INCLUDE \"gfx/pokemon/".(lc $translations{$id}->{"new"})."/normal.pal\"");
 	push(@newPalettePointers,  "INCLUDE \"gfx/pokemon/".(lc $translations{$id}->{"new"})."/shiny.pal\"");
+	push(@newPartyIconsPlaceHolders,  "\tdb ICON_ODDISH      ; ".$translations{$id}->{"new"});
+		
 }
 
 my $filename = 'new_bst_order.txt';
@@ -74,3 +77,7 @@ open(my $fh, '>', $filename) or die "Could not open file '$filename' $!";
 print $fh join("\n", @newPalettePointers);
 close $fh;
 
+my $filename = 'newPartyIconsPlaceHolders.txt';
+open(my $fh, '>', $filename) or die "Could not open file '$filename' $!";
+print $fh join("\n", @newPartyIconsPlaceHolders);
+close $fh;
