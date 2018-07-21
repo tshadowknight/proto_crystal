@@ -134,8 +134,8 @@ ItemDescriptions:
 	dw StarPieceDesc
 	dw BasementKeyDesc
 	dw PassDesc
-	dw TeruSama9Desc
-	dw TeruSama10Desc
+	dw HeartStoneDesc; TeruSama9Desc
+	dw PoisonStoneDesc ; TeruSama10Desc
 	dw TeruSama11Desc
 	dw CharcoalDesc
 	dw BerryJuiceDesc
@@ -778,11 +778,13 @@ PassDesc:
 	db   "A ticket for the"
 	next "MAGNET TRAIN.@"
 
-TeruSama9Desc:
-	db   "?@"
+HeartStoneDesc:
+	db   "Evolves certain"
+	next "kinds of #MON.@"
 
-TeruSama10Desc:
-	db   "?@"
+PoisonStoneDesc:
+	db   "Evolves certain"
+	next "kinds of #MON.@"
 
 TeruSama11Desc:
 	db   "?@"
