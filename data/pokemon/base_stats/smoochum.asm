@@ -3,7 +3,7 @@
 	db  45,  30,  15,  65,  85,  65
 	;   hp  atk  def  spd  sat  sdf
 
-	db ICE, PSYCHIC ; type
+	db ICE, ICE ; type
 	db 45 ; catch rate
 	db 87 ; base exp
 	db ICE_BERRY, ICE_BERRY ; items

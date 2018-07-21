@@ -3,7 +3,7 @@
 	db  45,  55,  45,  75,  65,  45
 	;   hp  atk  def  spd  sat  sdf
 
-	db ICE, FLYING ; type
+	db WATER, ICE ; type
 	db 45 ; catch rate
 	db 183 ; base exp
 	db NO_ITEM, NO_ITEM ; items

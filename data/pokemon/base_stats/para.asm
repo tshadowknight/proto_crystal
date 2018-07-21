@@ -3,7 +3,7 @@
 	db  30,  60,  45,  20, 30,  45
 	;   hp  atk  def  spd  sat  sdf
 
-	db BUG, GRASS ; type
+	db BUG, BUG ; type
 	db 220 ; catch rate
 	db 50 ; base exp
 	db BIG_MUSHROOM, TINYMUSHROOM ; items
