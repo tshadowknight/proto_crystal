@@ -149,8 +149,8 @@ ItemEffects: ; e73c
 	dw NoEffect            ; STAR_PIECE
 	dw BasementKeyEffect   ; BASEMENT_KEY
 	dw NoEffect            ; PASS
-	dw NoEffect            ; ITEM_87
-	dw NoEffect            ; ITEM_88
+	dw EvoStoneEffect      ; ITEM_87 - HEART_STONE
+	dw EvoStoneEffect      ; ITEM_88 - POISON_STONE
 	dw NoEffect            ; ITEM_89
 	dw NoEffect            ; CHARCOAL
 	dw RestoreHPEffect     ; BERRY_JUICE
