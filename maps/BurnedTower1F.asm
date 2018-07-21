@@ -4,6 +4,7 @@
 	const BURNEDTOWER1F_SILVER
 	const BURNEDTOWER1F_MORTY
 	const BURNEDTOWER1F_POKE_BALL
+	const BURNEDTOWER1F_POKE_BALL2
 
 BurnedTower1F_MapScripts:
 	db 3 ; scene scripts
@@ -136,6 +137,9 @@ BurnedTower1FHiddenUltraBall:
 
 BurnedTower1FHPUp:
 	itemball HP_UP
+	
+BurnedTower1PoisonStone:
+	itemball POISON_STONE
 
 BurnedTowerMovement_PlayerWalksToSilver:
 	step LEFT
@@ -301,9 +305,10 @@ BurnedTower1F_MapEvents:
 	bg_event  8,  7, BGEVENT_ITEM, BurnedTower1FHiddenEther
 	bg_event 13, 11, BGEVENT_ITEM, BurnedTower1FHiddenUltraBall
 
-	db 5 ; object events
+	db 6 ; object events
 	object_event 15,  4, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BurnedTower1FRock, -1
 	object_event 12, 12, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, BurnedTower1FEusineScript, EVENT_BURNED_TOWER_1F_EUSINE
 	object_event  8,  9, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, ObjectEvent, EVENT_RIVAL_BURNED_TOWER
 	object_event 14, 14, SPRITE_MORTY, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, BurnedTower1FMortyScript, EVENT_BURNED_TOWER_MORTY
 	object_event 14,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, BurnedTower1FHPUp, EVENT_BURNED_TOWER_1F_HP_UP
+	object_event 2,  13, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, BurnedTower1PoisonStone, EVENT_BURNED_TOWER_1F_POISON_STONE
