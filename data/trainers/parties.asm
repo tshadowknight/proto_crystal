@@ -1982,8 +1982,8 @@ SwimmerFGroup:
 	db -1 ; end
 
 	; SWIMMERF (5)
-	db "BOMSEEL@", TRAINERTYPE_NORMAL
-	db 22, SEEL
+	db "TRESSA@", TRAINERTYPE_NORMAL
+	db 22, BOMSEEL
 	db -1 ; end
 
 	; SWIMMERF (6)
