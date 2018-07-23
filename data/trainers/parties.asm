@@ -713,7 +713,7 @@ BirdKeeperGroup:
 
 LassGroup:
 	; LASS (1)
-	db "CARRIE@"
+	db "CARRIE@", TRAINERTYPE_NORMAL
 	db 18, WIGGLYTUFF
 	db -1 ; end
 
