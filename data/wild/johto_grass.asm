@@ -428,7 +428,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	; nite
 	db 6, GEODUDE
 	db 6, RATTATA
-	db 5, GIRAFARIG
+	db 5, SANDSHREW
 	db 4, RATTATA
 	db 7, ZUBAT
 	db 6, ONIX
@@ -455,7 +455,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	; nite
 	db 8, GEODUDE
 	db 6, ZUBAT
-	db 8, GIRAFARIG
+	db 8, ZUBAT
 	db 8, ONIX
 	db 6, RATTATA
 	db 8, RATTATA
@@ -1290,7 +1290,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 7, PUDDI
 	db 7, LEFMEW
 	; nite
-	db 4, GIRAFARIG
+	db 4, BELLSPROUT
 	db 5, RATTATA
 	db 7, BELLSPROUT
 	db 6, ZUBAT
