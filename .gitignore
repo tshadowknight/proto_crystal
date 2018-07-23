@@ -44,3 +44,7 @@ pokecrystal.txt
 gfx/pokemon/*/bitmask.asm
 gfx/pokemon/*/frames.asm
 !gfx/pokemon/*/shiny.pal
+gfx/pokemon/blissey/normal.
+gfx/pokemon/miltank/normal.
+gfx/pokemon/sneasel/normal.
+gfx/pokemon/steelix/normal.

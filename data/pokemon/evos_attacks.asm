@@ -2639,12 +2639,10 @@ TwinzEvosAttacks:
 	db 1, TACKLE
 	db 1, GROWL
 	db 1, CONFUSION
-	db 1, STOMP
-	db 7, CONFUSION
-	db 13, STOMP
-	db 20, AGILITY
+	db 7, BITE
+	db 20, PSYBEAM
 	db 30, BATON_PASS
-	db 41, PSYBEAM
+	db 41, AGILITY
 	db 54, CRUNCH
 	db 0 ; no more level-up moves
 
@@ -2655,8 +2653,9 @@ GirafarigEvosAttacks:
 	db 1, CONFUSION
 	db 1, STOMP
 	db 7, CONFUSION
-	db 13, STOMP
+	db 13, BITE
 	db 20, AGILITY
+	db 26, STOMP
 	db 30, BATON_PASS
 	db 41, PSYBEAM
 	db 54, CRUNCH
