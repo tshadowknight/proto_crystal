@@ -1107,17 +1107,17 @@ BeautyGroup:
 
 	; BEAUTY (3)
 	db "JULIE@", TRAINERTYPE_NORMAL
-	db 15, SNUBBULL
+	db 15, CLEFAIRY
 	db -1 ; end
 
 	; BEAUTY (4)
 	db "JACLYN@", TRAINERTYPE_NORMAL
-	db 15, SNUBBULL
+	db 15, CLEFAIRY
 	db -1 ; end
 
 	; BEAUTY (5)
 	db "BRENDA@", TRAINERTYPE_NORMAL
-	db 16, SNUBBULL
+	db 16, CLEFAIRY
 	db -1 ; end
 
 	; BEAUTY (6)
@@ -1140,27 +1140,27 @@ BeautyGroup:
 
 	; BEAUTY (9)
 	db "JESSICA@", TRAINERTYPE_NORMAL
-	db 15, SNUBBULL
+	db 15, CLEFAIRY
 	db -1 ; end
 
 	; BEAUTY (10)
 	db "RACHAEL@", TRAINERTYPE_NORMAL
-	db 15, SNUBBULL
+	db 15, CLEFAIRY
 	db -1 ; end
 
 	; BEAUTY (11)
 	db "ANGELICA@", TRAINERTYPE_NORMAL
-	db 15, SNUBBULL
+	db 15, CLEFAIRY
 	db -1 ; end
 
 	; BEAUTY (12)
 	db "KENDRA@", TRAINERTYPE_NORMAL
-	db 15, SNUBBULL
+	db 15, CLEFAIRY
 	db -1 ; end
 
 	; BEAUTY (13)
 	db "VERONICA@", TRAINERTYPE_NORMAL
-	db 15, SNUBBULL
+	db 15, CLEFAIRY
 	db -1 ; end
 
 	; BEAUTY (14)
@@ -1172,7 +1172,7 @@ BeautyGroup:
 
 	; BEAUTY (15)
 	db "THERESA@", TRAINERTYPE_NORMAL
-	db 15, SNUBBULL
+	db 15, CLEFAIRY
 	db -1 ; end
 
 	; BEAUTY (16)
