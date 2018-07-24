@@ -2710,8 +2710,8 @@ BellboyantEvosAttacks:
 	db 13, CONFUSION
 	db 20, BITE
 	db 29, FAINT_ATTACK
-	db 27, PSYBEAM
-	db 36, MOONLIGHT
+	db 35, PSYBEAM
+	db 40, MOONLIGHT
 	db 45, CRUNCH
 	db 0 ; no more level-up moves
 
