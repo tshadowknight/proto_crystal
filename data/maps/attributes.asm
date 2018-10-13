@@ -415,7 +415,7 @@ ENDM
 	map_attributes WhirlIslandSE, WHIRL_ISLAND_SE, $0f, 0
 	map_attributes WhirlIslandB1F, WHIRL_ISLAND_B1F, $09, 0
 	map_attributes WhirlIslandB2F, WHIRL_ISLAND_B2F, $2e, 0
-	map_attributes WhirlIslandLugiaChamber, WHIRL_ISLAND_LUGIA_CHAMBER, $0f, 0
+	map_attributes WhirlIslandLugiaChamber, WHIRL_ISLAND_LUGIA_CHAMBER, $09, 0
 	map_attributes SilverCaveRoom1, SILVER_CAVE_ROOM_1, $09, 0
 	map_attributes SilverCaveRoom2, SILVER_CAVE_ROOM_2, $09, 0
 	map_attributes SilverCaveRoom3, SILVER_CAVE_ROOM_3, $09, 0
