@@ -4,11 +4,18 @@
 	const WHIRLISLANDLUGIACHAMBER_ARTICUNO
 
 WhirlIslandLugiaChamber_MapScripts:
-	db 0 ; scene scripts
-
+	db 2 ; scene scripts
+	scene_script .DummyScene0 ; SCENE_DEFAULT
+	scene_script .DummyScene1 ; SCENE_FINISHED
 	db 1 ; callbacks
 	callback MAPCALLBACK_OBJECTS, .checkVisible
-	
+
+.DummyScene0:
+	end
+
+.DummyScene1:
+	end	
+		
 .checkVisible:
 	scall .Zapdos
 	scall .Moltres
@@ -113,6 +120,42 @@ Articuno:
 BirbText:
 	text "Gyaoo!"
 	done
+	
+CheckSilverWing:
+	
+	checkitem SILVER_WING
+	iftrue .holdingSilverWing
+	end 
+	
+.holdingSilverWing	
+	checkevent EVENT_SILVER_SCALE_PLAYER_ALERTED
+	iffalse .aStrangePresence
+	end
+		
+.aStrangePresence
+	setevent EVENT_SILVER_SCALE_PLAYER_ALERTED
+	showemote EMOTE_SHOCK, PLAYER, 15
+	cry ARTICUNO
+	wait 2
+	cry ZAPDOS
+	wait 2
+	cry MOLTRES
+	wait 2
+	opentext
+	writetext .aStrangePresenceText
+	waitbutton
+	closetext
+	end
+	
+.aStrangePresenceText
+	text "A strange presence"
+	line "appears to be"
+
+	para "fixated on the"
+	line "SILVER WING in"
+	
+	para "your BAG."
+	done	
 
 WhirlIslandLugiaChamber_MapEvents:
 	db 0, 0 ; filler
@@ -120,7 +163,11 @@ WhirlIslandLugiaChamber_MapEvents:
 	db 1 ; warp events
 	warp_event  15, 21, WHIRL_ISLAND_B2F, 3
 
-	db 0 ; coord events
+	db 4 ; coord events
+	coord_event  15,  13, $FF, CheckSilverWing
+	coord_event  15,  13, $FF, CheckSilverWing
+	coord_event  16,  13, $FF, CheckSilverWing
+	coord_event  17,  13, $FF, CheckSilverWing
 
 	db 0 ; bg events
 

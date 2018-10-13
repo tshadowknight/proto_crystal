@@ -84,5 +84,6 @@ MapScenes:: ; 4d01e
 	scene_var MOUNT_MOON_SQUARE,                           wMountMoonSquareSceneID
 	scene_var MOBILE_TRADE_ROOM,                           wMobileTradeRoomSceneID
 	scene_var MOBILE_BATTLE_ROOM,                          wMobileBattleRoomSceneID
+	;scene_var WHIRL_ISLAND_LUGIA_CHAMBER,                  wMobileBattleRoomSceneID
 	db -1
 ; 4d15b
