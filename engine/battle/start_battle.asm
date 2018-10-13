@@ -69,6 +69,15 @@ PlayBattleMusic: ; 2ee6c
 	ld a, [wOtherTrainerClass]
 	and a
 	jr nz, .trainermusic
+	
+	ld de, MUSIC_KANTO_WILD_BATTLE_CLASSIC
+	ld a, [wTempEnemyMonSpecies]
+	cp $90 ;  Articuno
+	jp z, .done
+	cp $91 ;  Zapdos
+	jp z, .done
+	cp $92 ; Moltres
+	jp z, .done
 
 	farcall RegionCheck
 	ld a, e

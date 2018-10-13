@@ -107,6 +107,9 @@
 	const MUSIC_SUICUNE_BATTLE               ; 64
 	const MUSIC_BATTLE_TOWER_LOBBY           ; 65
 	const MUSIC_MOBILE_CENTER                ; 66
+	
+; new to Space World Crystal
+	const MUSIC_KANTO_WILD_BATTLE_CLASSIC    ; 67	
 
 ; GetMapMusic picks music for this value (see home/map.asm)
 MUSIC_MAHOGANY_MART EQU $64

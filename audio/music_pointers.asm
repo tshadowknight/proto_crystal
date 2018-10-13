@@ -109,4 +109,7 @@ Music: ; e906e
 	dba Music_SuicuneBattle ; 0x178b81
 	dba Music_BattleTowerLobby ; 0x17948b
 	dba Music_MobileCenter ; 0x17961d
+	
+; new to Space World Crystal
+	dba Music_Route47 ; 0x17961d	
 ; e91a3

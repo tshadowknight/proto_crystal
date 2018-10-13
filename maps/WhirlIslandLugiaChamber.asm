@@ -73,6 +73,7 @@ Zapdos:
 	setevent EVENT_FOUGHT_ZAPDOS
 	writecode VAR_BATTLETYPE, BATTLETYPE_FORCEITEM
 	loadwildmon ZAPDOS, 60
+	 
 	startbattle
 	disappear WHIRLISLANDLUGIACHAMBER_ZAPDOS
 	reloadmapafterbattle
