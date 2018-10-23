@@ -282,6 +282,8 @@ DoPlayerMovement:: ; 80000
 	jr nc, .ice
 
 ; Downhill riding is slower when not moving down.
+	call .RunCheck
+	jr z, .fast
 	call .BikeCheck
 	jr nz, .walk
 
@@ -757,6 +759,15 @@ DoPlayerMovement:: ; 80000
 	cp PLAYER_BIKE
 	ret z
 	cp PLAYER_SKATE
+	ret
+
+.RunCheck:
+	ld a, [wPlayerState]
+	cp PLAYER_NORMAL
+	ret nz
+	ldh a, [hJoypadDown]
+	and B_BUTTON
+	cp B_BUTTON
 	ret
 ; 803d3
 
