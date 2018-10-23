@@ -39,13 +39,13 @@ pokecrystal.txt
 *.2bpp
 *.1bpp
 *.lz
-*.pal
 *.animated.tilemap
 gfx/pokemon/*/bitmask.asm
 gfx/pokemon/*/frames.asm
+gfx/pokemon/*/*.pal
 !gfx/pokemon/*/shiny.pal
 gfx/pokemon/blissey/normal.
 gfx/pokemon/miltank/normal.
 gfx/pokemon/sneasel/normal.
 gfx/pokemon/steelix/normal.
-!gfx/mail/mail.pal
+
