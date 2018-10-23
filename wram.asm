@@ -1563,6 +1563,7 @@ wGBPrinter:: ; cfd0
 	db
 wOptions2:: ; cfd1
 ; bit 1: menu account off/on
+; bit 2: use final typechart off/on
 	db
 	ds 2
 wOptionsEnd::

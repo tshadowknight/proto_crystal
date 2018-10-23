@@ -259,3 +259,33 @@ GetBattleAnimByte:: ; 3af0
 	ld a, [wBattleAnimByte]
 	ret
 ; 3b0c
+
+_BattleCommand_Stab::
+	ld a, [hROMBank]
+	push af
+	ld a, BANK(BattleCommand_Stab_)
+	rst Bankswitch
+	call BattleCommand_Stab_
+	pop af
+	rst Bankswitch
+	ret
+
+_BattleCheckTypeMatchup::
+	ld a, [hROMBank]
+	push af
+	ld a, BANK(BattleCheckTypeMatchup_)
+	rst Bankswitch
+	call BattleCheckTypeMatchup_
+	pop af
+	rst Bankswitch
+	ret
+	
+_CheckTypeMatchup::
+	ld a, [hROMBank]
+	push af
+	ld a, BANK(CheckTypeMatchup_)
+	rst Bankswitch
+	call CheckTypeMatchup_
+	pop af
+	rst Bankswitch
+	ret	

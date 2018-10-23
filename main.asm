@@ -625,3 +625,9 @@ INCBIN "mobile/stadium/stadium2_2.bin"
 else
 INCBIN "mobile/stadium/stadium2_1.bin"
 endc
+
+SECTION "Type Checking", ROMX
+
+INCLUDE "data/types/type_matchups.asm"
+INCLUDE "engine/battle/type_checking.asm"
+
