@@ -129,7 +129,7 @@ SetTypeChart_:
 	sla a
 	ld b, a 
 	ld a, [wOptions2]
-	and %00000001
+	and %11111101
 	or b 	
 	ld [wOptions2], a
 	ld c, 10
