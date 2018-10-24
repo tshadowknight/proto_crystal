@@ -6,6 +6,25 @@ _ResetClock: ; 4d3b1
 	call LoadFontsExtra
 	ld de, MUSIC_MAIN_MENU
 	call PlayMusic
+	ld hl, .EditorSelectionHeader
+	call LoadMenuHeader
+	call WaitBGMap2
+	call VerticalMenu
+	call CloseWindow
+	ld a, [wMenuCursorY]
+	dec a
+	and a 
+	jr z, .resetClock
+	dec a 
+	and a 
+	jp z, .changeMatchups	
+	ret
+
+.resetClock:
+	call .resetClockInner
+	jp _ResetClock
+	
+.resetClockInner:	
 	ld hl, .text_askreset
 	call PrintText
 	ld hl, .NoYes_MenuHeader
@@ -15,8 +34,8 @@ _ResetClock: ; 4d3b1
 	ld a, [wMenuCursorY]
 	cp $1
 	ret z
-	call ClockResetPassword
-	jr c, .wrongpassword
+	;call ClockResetPassword
+	;jr c, .wrongpassword
 	ld a, BANK(sRTCStatusFlags)
 	call GetSRAMBank
 	ld a, $80
@@ -30,6 +49,21 @@ _ResetClock: ; 4d3b1
 	ld hl, .text_wrong
 	call PrintText
 	ret
+	
+.EditorSelectionHeader: ; 0x48dfc
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 3, 4, 16, 11
+	dw .EditorSelectionData
+	db 1 ; default option
+; 0x48e04
+
+.EditorSelectionData: ; 0x48e04
+	db STATICMENU_CURSOR | STATICMENU_WRAP | STATICMENU_DISABLE_B ; flags
+	db 3 ; items
+	db "RTC@"
+	db "Matchups@"
+	db "Quit@"
+; 0x48e0f	
 
 .text_okay ; 0x4d3fe
 	; Password OK. Select CONTINUE & reset settings.
@@ -57,6 +91,11 @@ _ResetClock: ; 4d3b1
 	db 2 ; items
 	db "NO@"
 	db "YES@"
+	
+.changeMatchups:
+	farcall SetTypeChart_
+	farcall SaveOptions
+	jp _ResetClock		
 
 ClockResetPassword: ; 4d41e
 	call .CalculatePassword
@@ -256,4 +295,6 @@ ClockResetPassword: ; 4d41e
 	ld d, a
 	dec c
 	jr nz, .ComponentFromString
-	ret
+	ret	
+	
+

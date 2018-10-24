@@ -71,6 +71,7 @@ NewGame: ; 5b6b
 	ld [wMonStatusFlags], a
 	call ResetWRAM
 	call NewGame_ClearTileMapEtc
+	call SetTypeChart
 	call AreYouABoyOrAreYouAGirl
 	call OakSpeech
 	call InitializeWorld
@@ -84,6 +85,10 @@ NewGame: ; 5b6b
 	ld [hMapEntryMethod], a
 	jp FinishContinueFunction
 ; 5b8f
+
+SetTypeChart: ; 5b8f
+	farcall SetTypeChart_
+	ret
 
 AreYouABoyOrAreYouAGirl: ; 5b8f
 	farcall Mobile_AlwaysReturnNotCarry ; some mobile stuff
@@ -503,12 +508,12 @@ DisplaySaveInfoOnContinue: ; 5e85
 	call CheckRTCStatus
 	and %10000000
 	jr z, .clock_ok
-	lb de, 4, 8
+	lb de, 4, 6
 	call DisplayContinueDataWithRTCError
 	ret
 
 .clock_ok
-	lb de, 4, 8
+	lb de, 4, 6
 	call DisplayNormalContinueData
 	ret
 ; 5e9a
@@ -522,6 +527,7 @@ DisplayNormalContinueData: ; 5e9f
 	call Continue_LoadMenuHeader
 	call Continue_DisplayBadgesDexPlayerName
 	call Continue_PrintGameTime
+	call Continue_PrintTypesSetting
 	call LoadFontsExtra
 	call UpdateSprites
 	ret
@@ -531,6 +537,7 @@ DisplayContinueDataWithRTCError: ; 5eaf
 	call Continue_LoadMenuHeader
 	call Continue_DisplayBadgesDexPlayerName
 	call Continue_UnknownGameTime
+	call Continue_PrintTypesSetting
 	call LoadFontsExtra
 	call UpdateSprites
 	ret
@@ -554,34 +561,36 @@ Continue_LoadMenuHeader: ; 5ebf
 
 .MenuHeader_Dex: ; 5ed9
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 0, 15, 9
+	menu_coords 0, 0, 15, 11
 	dw .MenuData_Dex
 	db 1 ; default option
 ; 5ee1
 
 .MenuData_Dex: ; 5ee1
 	db 0 ; flags
-	db 4 ; items
+	db 5 ; items
 	db "PLAYER@"
 	db "BADGES@"
 	db "#DEX@"
 	db "TIME@"
+	db "TYPES@"
 ; 5efb
 
 .MenuHeader_NoDex: ; 5efb
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 0, 15, 9
+	menu_coords 0, 0, 15, 11
 	dw .MenuData_NoDex
 	db 1 ; default option
 ; 5f03
 
 .MenuData_NoDex: ; 5f03
 	db 0 ; flags
-	db 4 ; items
+	db 5 ; items
 	db "PLAYER <PLAYER>@"
 	db "BADGES@"
 	db " @"
 	db "TIME@"
+	db "TYPES@"
 ; 5f1c
 
 
@@ -608,6 +617,29 @@ Continue_DisplayBadgesDexPlayerName: ; 5f1c
 .Player:
 	db "<PLAYER>@"
 ; 5f40
+
+
+
+Continue_PrintTypesSetting:	
+	ld a, [wOptions2]
+	and %00000010
+	jr z, .prototype
+	hlcoord 12, 16
+	ld de, .Normal
+	call PlaceString
+	jr .done
+.prototype	
+	hlcoord 12, 16
+	ld de, .Prototype
+	call PlaceString
+.done:	
+	ret
+	
+.Normal:
+	db "NORMAL@"
+	
+.Prototype:
+	db "PROTO@"		
 
 Continue_PrintGameTime: ; 5f40
 	decoord 9, 8, 0
@@ -675,6 +707,8 @@ OakSpeech: ; 0x5f99
 
 	ld de, MUSIC_ROUTE_30
 	call PlayMusic
+	
+	
 
 	call RotateFourPalettesRight
 	call RotateThreePalettesRight
@@ -1221,33 +1255,9 @@ TitleScreenMain: ; 6304
 	jr z, .delete_save_data
 
 ; To bring up the clock reset dialog:
-
-; Hold Down + B + Select to initiate the sequence.
-	ld a, [hClockResetTrigger]
-	cp $34
-	jr z, .check_clock_reset
-
 	ld a, [hl]
-	and D_DOWN + B_BUTTON + SELECT
-	cp  D_DOWN + B_BUTTON + SELECT
-	jr nz, .check_start
-
-	ld a, $34
-	ld [hClockResetTrigger], a
-	jr .check_start
-
-; Keep Select pressed, and hold Left + Up.
-; Then let go of Select.
-.check_clock_reset
-	bit SELECT_F, [hl]
-	jr nz, .check_start
-
-	xor a
-	ld [hClockResetTrigger], a
-
-	ld a, [hl]
-	and D_LEFT + D_UP
-	cp  D_LEFT + D_UP
+	and D_DOWN + B_BUTTON
+	cp  D_DOWN + B_BUTTON
 	jr z, .clock_reset
 
 ; Press Start or A to start the game.

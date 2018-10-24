@@ -63,6 +63,7 @@ TextJump_AreYouABoyOrAreYouAGirl: ; 0x48e0f
 	db "@"
 ; 0x48e14
 
+
 InitGenderScreen: ; 48e14 (12:4e14)
 	ld a, $10
 	ld [wMusicFade], a
@@ -109,3 +110,47 @@ LoadGenderScreenLightBlueTile: ; 48e64 (12:4e64)
 
 .LightBlueTile: ; 48e71
 INCBIN "gfx/new_game/gender_screen.2bpp"
+
+SetTypeChart_:
+	call InitGenderScreen
+	call LoadGenderScreenPal
+	call LoadGenderScreenLightBlueTile
+	call WaitBGMap2
+	call SetPalettes
+	ld hl, TextJump_WhichTypeChart
+	call PrintText
+	ld hl, .MatchupsMenuHeader
+	call LoadMenuHeader
+	call WaitBGMap2
+	call VerticalMenu
+	call CloseWindow
+	ld a, [wMenuCursorY]
+	dec a
+	sla a
+	ld b, a 
+	ld a, [wOptions2]
+	and %00000001
+	or b 	
+	ld [wOptions2], a
+	ld c, 10
+	call DelayFrames
+	ret	
+
+.MatchupsMenuHeader: ; 0x48dfc
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 3, 4, 16, 9
+	dw .MatchupsMenuData
+	db 1 ; default option
+; 0x48e04
+
+.MatchupsMenuData: ; 0x48e04
+	db STATICMENU_CURSOR | STATICMENU_WRAP | STATICMENU_DISABLE_B ; flags
+	db 2 ; items
+	db "Prototype@"
+	db "Normal@"
+; 0x48e0f
+
+TextJump_WhichTypeChart: ; 0x48e0f
+	text_jump Text_WhichTypeChart
+	db "@"
+; 0x48e14	

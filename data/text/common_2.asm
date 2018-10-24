@@ -653,6 +653,10 @@ Text_AreYouABoyOrAreYouAGirl::
 	text "Are you a boy?"
 	line "Or are you a girl?"
 	done
+	
+Text_WhichTypeChart::
+	text "Set type matchups."
+	done	
 
 UnknownText_0x1c0cc6::
 	text "<USER>'s"
