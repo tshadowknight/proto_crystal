@@ -2696,6 +2696,7 @@ RinringEvosAttacks:
 	db 7, ROAR
 	db 13, CONFUSION
 	db 20, BITE
+	db 24, PURSUIT
 	db 27, FAINT_ATTACK
 	db 35, PSYBEAM
 	db 39, MOONLIGHT
@@ -2709,6 +2710,7 @@ BellboyantEvosAttacks:
 	db 7, ROAR
 	db 13, CONFUSION
 	db 20, BITE
+	db 24, PURSUIT
 	db 29, FAINT_ATTACK
 	db 35, PSYBEAM
 	db 40, MOONLIGHT
@@ -3140,6 +3142,7 @@ MurkrowEvosAttacks:
 	db 1, PECK
 	db 11, PURSUIT
 	db 16, HAZE
+	db 20, SPIKES
 	db 26, NIGHT_SHADE
 	db 31, FAINT_ATTACK
 	db 41, MEAN_LOOK
