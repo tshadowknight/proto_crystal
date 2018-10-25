@@ -84,6 +84,7 @@ CharmanderEvosAttacks:
 	db 25, SCARY_FACE
 	db 31, FLAMETHROWER
 	db 37, SLASH
+	db 40, AGILITY
 	db 43, DRAGON_RAGE
 	db 49, FIRE_SPIN
 	db 0 ; no more level-up moves
@@ -99,7 +100,8 @@ CharmeleonEvosAttacks:
 	db 20, RAGE
 	db 27, SCARY_FACE
 	db 34, FLAMETHROWER
-	db 41, SLASH
+	db 40, AGILITY
+	db 43, SLASH
 	db 48, DRAGON_RAGE
 	db 55, FIRE_SPIN
 	db 0 ; no more level-up moves
@@ -116,6 +118,7 @@ CharizardEvosAttacks:
 	db 27, SCARY_FACE
 	db 34, FLAMETHROWER
 	db 36, WING_ATTACK
+	db 40, AGILITY
 	db 44, SLASH
 	db 54, DRAGON_RAGE
 	db 64, FIRE_SPIN
@@ -2222,6 +2225,7 @@ HoothootEvosAttacks:
 	db 16, HYPNOSIS
 	db 22, REFLECT
 	db 28, TAKE_DOWN
+	db 32, MOONLIGHT
 	db 34, CONFUSION
 	db 48, DREAM_EATER
 	db 0 ; no more level-up moves
@@ -2237,6 +2241,7 @@ HoohooEvosAttacks:
 	db 16, HYPNOSIS
 	db 25, REFLECT
 	db 33, TAKE_DOWN
+	db 37, MOONLIGHT
 	db 41, CONFUSION
 	db 57, DREAM_EATER
 	db 0 ; no more level-up moves
@@ -2317,7 +2322,8 @@ GelanlaEvosAttacks:
 	db 25, BIND
 	db 31, MEGA_DRAIN
 	db 34, STUN_SPORE
-	db 40, SLAM
+	db 39, SLAM
+	db 43, NIGHT_SHADE
 	db 46, GROWTH
 	db 51, GIGA_DRAIN
 	db 0 ; no more level-up moves
@@ -2346,8 +2352,11 @@ endc
 	db 10, MINIMIZE
 	db 19, WATER_GUN
 	db 28, PIN_MISSILE
+	db 32, THUNDER_WAVE
 	db 37, TAKE_DOWN
+	db 41, SELFDESTRUCT
 	db 46, HYDRO_PUMP
+	db 50, EXPLOSION
 	db 0 ; no more level-up moves
 
 NumpuffEvosAttacks:
@@ -2362,9 +2371,12 @@ endc
 	db 19, BUBBLEBEAM
 	db 24, DRAGON_RAGE
 	db 28, PIN_MISSILE
-	db 31, TAKE_DOWN	
+	db 31, TAKE_DOWN
+	db 36, THUNDER_WAVE	
+	db 41, SELFDESTRUCT
 	db 46, HYDRO_PUMP
 	db 51, OUTRAGE
+	db 60, EXPLOSION
 	db 0 ; no more level-up moves
 
 PichuEvosAttacks:
@@ -2511,6 +2523,7 @@ CrobatEvosAttacks:
 	db 6, SUPERSONIC
 	db 12, BITE
 	db 19, CONFUSE_RAY
+	db 25, MOONLIGHT
 	db 30, WING_ATTACK
 	db 42, MEAN_LOOK
 	db 55, HAZE
@@ -2602,9 +2615,12 @@ SunfloraEvosAttacks:
 	db 1, ABSORB
 	db 1, POUND
 	db 4, GROWTH
+	db 7, SING
 	db 10, RAZOR_LEAF
 	db 19, SUNNY_DAY
+	db 25, MORNING_SUN
 	db 31, PETAL_DANCE
+	db 38, ENCORE
 	db 46, SOLARBEAM
 	db 0 ; no more level-up moves
 
@@ -2691,13 +2707,15 @@ MeowsyEvosAttacks:
 RinringEvosAttacks:
 	db EVOLVE_LEVEL, 28, BELLBOYANT
 	db 0 ; no more evolutions
+	db 1, HEAL_BELL
 	db 1, LEER
 	db 1, SCRATCH
 	db 7, ROAR
+	db 10, SWEET_KISS
 	db 13, CONFUSION
 	db 20, BITE
 	db 24, PURSUIT
-	db 27, FAINT_ATTACK
+	db 27, LOVELY_KISS
 	db 35, PSYBEAM
 	db 39, MOONLIGHT
 	db 43, CRUNCH
@@ -2705,13 +2723,15 @@ RinringEvosAttacks:
 
 BellboyantEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, HEAL_BELL
 	db 1, LEER
 	db 1, SCRATCH
 	db 7, ROAR
+	db 10, SWEET_KISS
 	db 13, CONFUSION
 	db 20, BITE
 	db 24, PURSUIT
-	db 29, FAINT_ATTACK
+	db 29, LOVELY_KISS
 	db 35, PSYBEAM
 	db 40, MOONLIGHT
 	db 45, CRUNCH
@@ -2811,6 +2831,7 @@ UmbreonEvosAttacks:
 	db 16, PURSUIT
 	db 23, QUICK_ATTACK
 	db 30, CONFUSE_RAY
+	db 33, ACID_ARMOR
 	db 36, FAINT_ATTACK
 	db 42, MEAN_LOOK
 	db 47, SCREECH
@@ -3046,6 +3067,7 @@ MiltankEvosAttacks:
 	db 8, DEFENSE_CURL
 	db 13, STOMP
 	db 19, MILK_DRINK
+	db 22, CHARM
 	db 26, BIDE
 	db 34, ROLLOUT
 	db 43, BODY_SLAM
@@ -3085,6 +3107,7 @@ KotoraEvosAttacks:
 	db 16, ROLLOUT
 	db 20, MAGNITUDE
 	db 24, SPARK
+	db 31, AGILITY
 	db 38, BODY_SLAM
 	db 44, THUNDERBOLT
 	db 49, EARTHQUAKE
@@ -3099,6 +3122,7 @@ RaitoraEvosAttacks:
 	db 16, ROLLOUT
 	db 20, MAGNITUDE
 	db 24, SPARK
+	db 31, AGILITY
 	db 42, BODY_SLAM
 	db 49, THUNDERBOLT
 	db 53, EARTHQUAKE
@@ -3131,8 +3155,9 @@ PangshiEvosAttacks:
 	db 16, TRIPLE_KICK
 	db 24, MEAN_LOOK
 	db 28, CURSE
-	db 31, JUMP_KICK
-	db 37, AGILITY
+	db 32, SUBSTITUTE
+	db 35, JUMP_KICK
+	db 38, AGILITY
 	db 44, SHADOW_BALL
 	db 49, HI_JUMP_KICK
 	db 0 ; no more level-up moves
@@ -3199,6 +3224,7 @@ HoundourEvosAttacks:
 	db 13, SMOG
 	db 20, BITE
 	db 27, FAINT_ATTACK
+	db 31, BONEMERANG
 	db 35, FLAMETHROWER
 	db 43, CRUNCH
 	db 0 ; no more level-up moves
@@ -3211,6 +3237,7 @@ HoundoomEvosAttacks:
 	db 13, SMOG
 	db 20, BITE
 	db 30, FAINT_ATTACK
+	db 36, BONEMERANG
 	db 41, FLAMETHROWER
 	db 52, CRUNCH
 	db 0 ; no more level-up moves
