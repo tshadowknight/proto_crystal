@@ -3152,7 +3152,7 @@ PangshiEvosAttacks:
 	db 1, CURSE
 	db 7, GROWL
 	db 11, LICK
-	db 16, TRIPLE_KICK
+	db 18, TRIPLE_KICK
 	db 24, MEAN_LOOK
 	db 28, CURSE
 	db 32, SUBSTITUTE
