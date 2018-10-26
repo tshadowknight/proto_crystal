@@ -205,21 +205,21 @@ GoldenrodGameCornerPrizeMonVendorScript:
 	jump .loop
 
 .wobbuffet
-	checkcoins 1500
+	checkcoins 2500
 	ifequal HAVE_LESS, GoldenrodGameCornerPrizeVendor_NotEnoughCoinsScript
 	checkcode VAR_PARTYCOUNT
 	ifequal PARTY_LENGTH, GoldenrodGameCornerPrizeMonVendor_NoRoomForPrizeScript
-	pokenamemem LEDYBA, MEM_BUFFER_0
+	pokenamemem TURBANN, MEM_BUFFER_0
 	scall GoldenrodGameCornerPrizeVendor_ConfirmPurchaseScript
 	iffalse GoldenrodGameCornerPrizeVendor_CancelPurchaseScript
 	waitsfx
 	playsound SFX_TRANSACTION
 	writetext GoldenrodGameCornerPrizeVendorHereYouGoText
 	waitbutton
-	writebyte LEDYBA
+	writebyte TURBANN
 	special GameCornerPrizeMonCheckDex
-	givepoke LEDYBA, 15
-	takecoins 1500
+	givepoke TURBANN, 15
+	takecoins 2500
 	jump .loop
 
 .MenuHeader:
@@ -233,7 +233,7 @@ GoldenrodGameCornerPrizeMonVendorScript:
 	db 4 ; items
 	db "ABRA        100@"
 	db "CUBONE      800@"
-	db "WOBBUFFET  1500@"
+	db "TURBANN    2500@"
 	db "CANCEL@"
 
 GoldenrodGameCornerPharmacistScript:
