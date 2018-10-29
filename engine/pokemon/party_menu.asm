@@ -417,7 +417,7 @@ PlacePartyMonEvoStoneCompatibility: ; 5022f
 	ld l, a
 	ld de, wStringBuffer1
 	ld a, BANK(EvosAttacks)
-	ld bc, 10
+	ld bc, 19
 	call FarCopyBytes
 	ld hl, wStringBuffer1
 .loop2
