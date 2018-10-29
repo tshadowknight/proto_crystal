@@ -349,10 +349,18 @@ MartCeladon3F: ; 161ce
 ; 161d5
 
 MartCeladon4F: ; 161d5
-	db 3 ; # items
+	db 11 ; # items
 	db POKE_DOLL
 	db LOVELY_MAIL
 	db SURF_MAIL
+	db MOON_STONE
+	db SUN_STONE
+	db WATER_STONE
+	db THUNDERSTONE
+	db FIRE_STONE
+	db LEAF_STONE
+	db POISON_STONE
+	db HEART_STONE
 	db -1 ; end
 ; 161da
 
