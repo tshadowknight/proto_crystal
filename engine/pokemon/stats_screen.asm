@@ -744,6 +744,7 @@ StatsScreen_LoadGFX: ; 4dfb6 (13:5fb6)
 
 .BluePage: ; 4e1ae (13:61ae)
 	call .PlaceOTInfo
+	call TN_PrintDVs
 	hlcoord 10, 8
 	ld de, SCREEN_WIDTH
 	ld b, 10
@@ -753,6 +754,14 @@ StatsScreen_LoadGFX: ; 4dfb6 (13:5fb6)
 	add hl, de
 	dec b
 	jr nz, .BluePageVerticalDivider
+.BluePageHorizontalDivider:
+	hlcoord 0, 11
+	ld b, 10
+	ld a, $62 ; horizontal divider (empty HP/exp bar)
+.loop
+	ld [hli], a
+	dec b
+	jr nz, .loop	
 	hlcoord 11, 8
 	ld bc, 6
 	predef PrintTempMonStats
@@ -760,12 +769,12 @@ StatsScreen_LoadGFX: ; 4dfb6 (13:5fb6)
 
 .PlaceOTInfo: ; 4e1cc (13:61cc)
 	ld de, IDNoString
-	hlcoord 0, 9
+	hlcoord 0, 8
 	call PlaceString
 	ld de, OTString
-	hlcoord 0, 12
+	hlcoord 0, 9
 	call PlaceString
-	hlcoord 2, 10
+	hlcoord 4, 8
 	lb bc, PRINTNUM_LEADINGZEROS | 2, 5
 	ld de, wTempMonID
 	call PrintNum
@@ -773,7 +782,7 @@ StatsScreen_LoadGFX: ; 4dfb6 (13:5fb6)
 	call GetNicknamePointer
 	call CopyNickname
 	farcall CorrectNickErrors
-	hlcoord 2, 13
+	hlcoord 2, 10
 	call PlaceString
 	ld a, [wTempMonCaughtGender]
 	and a
@@ -785,8 +794,8 @@ StatsScreen_LoadGFX: ; 4dfb6 (13:5fb6)
 	jr z, .got_gender
 	ld a, "♀"
 .got_gender
-	hlcoord 9, 13
-	ld [hl], a
+	hlcoord 9, 9
+	ld [hl], a	
 .done
 	ret
 ; 4e216 (13:6216)
@@ -1171,3 +1180,157 @@ CheckFaintedFrzSlp: ; 4e53f
 	scf
 	ret
 ; 4e554
+
+; by Aurelio Mannara - BitBuilt 2017
+; ShockSlayer helped ( °v°)
+TN_PrintDVs:
+    ; print labels
+	
+    hlcoord 1, 12
+    ld [wBuffer2], a
+    ld de, .label_DV ; DV
+    call PlaceString
+    
+    hlcoord 0, 13
+    ld [wBuffer2], a
+    ld de, .label_HP ; hp
+    call PlaceString
+    
+    hlcoord 0, 14
+    ld [wBuffer2], a
+    ld de, .label_ATK ; atk
+    call PlaceString
+    
+    hlcoord 0, 15
+    ld [wBuffer2], a
+    ld de, .label_DEF ; def
+    call PlaceString
+    
+    hlcoord 0, 16
+    ld [wBuffer2], a
+    ld de, .label_SPE ; spe
+    call PlaceString
+    
+    hlcoord 0, 17
+    ld [wBuffer2], a
+    ld de, .label_SPC ; spc
+    call PlaceString
+    
+    ; print 16 bit value of DVs
+
+    ld de, wTempMonDVs
+    ld a, [de]
+    ld b, a
+    inc de
+    ld a, [de]
+    ld c, a
+    push bc
+
+
+    ld de, wTempMonDVs
+    xor a
+    ld [de], a
+    inc de
+    pop bc
+    ld a, b
+    push bc
+    and $f0
+    swap a
+    ld [de], a
+    hlcoord 4, 14; atk disp coords
+    lb bc, PRINTNUM_LEADINGZEROS | 2, 2
+    ld de, wTempMonDVs
+    call PrintNum
+
+    ld de, wTempMonDVs
+    xor a
+    ld [de], a
+    inc de
+    pop bc
+    ld a, b
+    push bc
+    and $f
+    ld [de],a
+    hlcoord 4, 15 ; def disp coords
+    lb bc, PRINTNUM_LEADINGZEROS | 2, 2
+    ld de, wTempMonDVs
+    call PrintNum
+
+    ld de, wTempMonDVs
+    xor a
+    ld [de], a
+    inc de
+    pop bc
+    ld a, c
+    push bc
+    and $f0
+    swap a
+    ld [de], a
+    hlcoord 4, 16 ; spe disp coords
+    lb bc, PRINTNUM_LEADINGZEROS | 2, 2
+    ld de, wTempMonDVs
+    call PrintNum
+
+    ld de, wTempMonDVs
+    xor a
+    ld [de], a
+    inc de
+    pop bc
+    ld a, c
+    push bc
+    and $f
+    ld [de], a
+    hlcoord 4, 17 ; spc disp coords
+    lb bc, PRINTNUM_LEADINGZEROS | 2, 2
+    ld de, wTempMonDVs
+    call PrintNum
+
+    ld de, wTempMonDVs
+    xor a
+    ld [de], a
+    inc de
+    pop bc
+    bit 4, b
+    jr z, .noAttackHP
+    set 3, a
+.noAttackHP
+    bit 0, b
+    jr z, .noDefenseHP
+    set 2, a
+.noDefenseHP
+    bit 4, c
+    jr z, .noSpeedHP
+    set 1, a 
+.noSpeedHP
+    bit 0, c
+    jr z, .noSpecialHP
+    set 0, a
+.noSpecialHP
+    push bc
+    ld [de], a
+    hlcoord 4, 13 ; hp disp coords
+    lb bc, PRINTNUM_LEADINGZEROS | 2, 2
+    ld de, wTempMonDVs
+    call PrintNum
+
+    ld de, wTempMonDVs
+    pop bc
+    ld a, b
+    ld [de], a
+    inc de
+    ld a, c
+    ld [de], a
+	ret
+.label_DV
+    db "DVs:@"
+.label_HP
+    db "HP    /15@"
+.label_ATK
+    db "ATK   /15@"
+.label_DEF
+    db "DEF   /15@"
+.label_SPE
+    db "SPE   /15@"
+.label_SPC
+    db "SPC   /15@"    
+    
