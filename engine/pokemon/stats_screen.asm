@@ -60,6 +60,7 @@ StatsScreenInit_gotaddress: ; 4dc94
 
 StatsScreenMain: ; 0x4dcd2
 	xor a
+	ld [wcf65], a
 	ld [wJumptableIndex], a
 	; stupid interns
 	ld [wcf64], a
@@ -215,7 +216,7 @@ MonStatsJoypad: ; 4ddd6 (13:5dd6)
 	ret
 
 .next
-	and D_DOWN | D_UP | D_LEFT | D_RIGHT | A_BUTTON | B_BUTTON
+	and D_DOWN | D_UP | D_LEFT | D_RIGHT | A_BUTTON | B_BUTTON | SELECT
 	jp StatsScreen_JoypadAction
 
 StatsScreenWaitCry: ; 4dde6 (13:5de6)
@@ -289,7 +290,7 @@ StatsScreen_JoypadAction: ; 4de54 (13:5e54)
 	bit B_BUTTON_F, a
 	jp nz, .b_button
 	bit D_LEFT_F, a
-	jr nz, .d_left
+	jp nz, .d_left
 	bit D_RIGHT_F, a
 	jr nz, .d_right
 	bit A_BUTTON_F, a
@@ -298,8 +299,29 @@ StatsScreen_JoypadAction: ; 4de54 (13:5e54)
 	jr nz, .d_up
 	bit D_DOWN_F, a
 	jr nz, .d_down
+	bit SELECT_F, a
+	jr nz, .select
 	jr .done
 
+.select	
+	ld a, c 
+	cp BLUE_PAGE
+	jr nz, .select_done
+	ld a, [wcf65]
+	and a 
+	jr nz, .showStatExp
+.showStats
+	ld a, 1
+	ld [wcf65], a	
+	jr .refresh
+.showStatExp
+	xor a
+	ld [wcf65], a		
+.refresh
+	ld c, BLUE_PAGE ; first page
+	jr .set_page	
+.select_done	
+	jr .done
 .d_down
 	ld a, [wMonType]
 	cp BOXMON
@@ -744,7 +766,15 @@ StatsScreen_LoadGFX: ; 4dfb6 (13:5fb6)
 
 .BluePage: ; 4e1ae (13:61ae)
 	call .PlaceOTInfo
+	ld a, [wcf65]
+	and a 
+	jr z, .printDvs	
+.printStatExp:	
+	call printStatExp
+	jr .printRestOfScreen
+.printDvs:
 	call TN_PrintDVs
+.printRestOfScreen:	
 	hlcoord 10, 8
 	ld de, SCREEN_WIDTH
 	ld b, 10
@@ -1181,40 +1211,48 @@ CheckFaintedFrzSlp: ; 4e53f
 	ret
 ; 4e554
 
+PrintStatLabels:
+	hlcoord 0, 13
+    ld de, .label_HP ; hp
+    call PlaceString
+    
+    hlcoord 0, 14
+    ld de, .label_ATK ; atk
+    call PlaceString
+    
+    hlcoord 0, 15
+    ld de, .label_DEF ; def
+    call PlaceString
+    
+    hlcoord 0, 16
+    ld de, .label_SPE ; spe
+    call PlaceString
+    
+    hlcoord 0, 17
+    ld de, .label_SPC ; spc
+    call PlaceString	
+	ret	
+
+.label_HP
+    db "HP    /15@"
+.label_ATK
+    db "ATK   /15@"
+.label_DEF
+    db "DEF   /15@"
+.label_SPE
+    db "SPE   /15@"
+.label_SPC
+    db "SPC   /15@"
 ; by Aurelio Mannara - BitBuilt 2017
 ; ShockSlayer helped ( °v°)
 TN_PrintDVs:
     ; print labels
 	
     hlcoord 1, 12
-    ld [wBuffer2], a
     ld de, .label_DV ; DV
     call PlaceString
     
-    hlcoord 0, 13
-    ld [wBuffer2], a
-    ld de, .label_HP ; hp
-    call PlaceString
-    
-    hlcoord 0, 14
-    ld [wBuffer2], a
-    ld de, .label_ATK ; atk
-    call PlaceString
-    
-    hlcoord 0, 15
-    ld [wBuffer2], a
-    ld de, .label_DEF ; def
-    call PlaceString
-    
-    hlcoord 0, 16
-    ld [wBuffer2], a
-    ld de, .label_SPE ; spe
-    call PlaceString
-    
-    hlcoord 0, 17
-    ld [wBuffer2], a
-    ld de, .label_SPC ; spc
-    call PlaceString
+	call PrintStatLabels
     
     ; print 16 bit value of DVs
 
@@ -1225,8 +1263,7 @@ TN_PrintDVs:
     ld a, [de]
     ld c, a
     push bc
-
-
+	
     ld de, wTempMonDVs
     xor a
     ld [de], a
@@ -1321,16 +1358,39 @@ TN_PrintDVs:
     ld a, c
     ld [de], a
 	ret
+
 .label_DV
-    db "DVs:@"
-.label_HP
-    db "HP    /15@"
-.label_ATK
-    db "ATK   /15@"
-.label_DEF
-    db "DEF   /15@"
-.label_SPE
-    db "SPE   /15@"
-.label_SPC
-    db "SPC   /15@"    
+    db "DVs:@" 
+
+printStatExp:
+	hlcoord 0, 12
+    ld de, .label_statExp
+    call PlaceString	
+	call PrintStatLabels
+	
+	hlcoord 4, 13 ; hp disp coords
+    lb bc, PRINTNUM_LEADINGZEROS | 2, 5
+    ld de, wTempMonHPExp
+    call PrintNum
+	hlcoord 4, 14 ; atk disp coords
+    lb bc, PRINTNUM_LEADINGZEROS | 2, 5
+    ld de, wTempMonAtkExp
+    call PrintNum
+	hlcoord 4, 15 ; def disp coords
+    lb bc, PRINTNUM_LEADINGZEROS | 2, 5
+    ld de, wTempMonDefExp
+    call PrintNum
+	hlcoord 4, 16 ; spc disp coords
+    lb bc, PRINTNUM_LEADINGZEROS | 2, 5
+    ld de, wTempMonSpcExp
+    ld de, wTempMonSpcExp
+    call PrintNum
+	hlcoord 4, 17 ; spd disp coords
+    lb bc, PRINTNUM_LEADINGZEROS | 2, 5
+    ld de, wTempMonSpdExp
+    call PrintNum
+	ret	
+	
+.label_statExp
+	db "sEXP:@"	
     
