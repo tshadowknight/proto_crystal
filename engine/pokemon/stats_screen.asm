@@ -1368,29 +1368,51 @@ printStatExp:
     call PlaceString	
 	call PrintStatLabels
 	
+	lb bc, PRINTNUM_LEADINGZEROS | 2, 5
 	hlcoord 4, 13 ; hp disp coords
-    lb bc, PRINTNUM_LEADINGZEROS | 2, 5
     ld de, wTempMonHPExp
-    call PrintNum
+	call .printStatExpVal
+    
 	hlcoord 4, 14 ; atk disp coords
-    lb bc, PRINTNUM_LEADINGZEROS | 2, 5
     ld de, wTempMonAtkExp
-    call PrintNum
+    call .printStatExpVal
+	
 	hlcoord 4, 15 ; def disp coords
-    lb bc, PRINTNUM_LEADINGZEROS | 2, 5
     ld de, wTempMonDefExp
-    call PrintNum
+    call .printStatExpVal
+	
 	hlcoord 4, 16 ; spc disp coords
-    lb bc, PRINTNUM_LEADINGZEROS | 2, 5
     ld de, wTempMonSpcExp
-    ld de, wTempMonSpcExp
-    call PrintNum
+    call .printStatExpVal
+	
 	hlcoord 4, 17 ; spd disp coords
-    lb bc, PRINTNUM_LEADINGZEROS | 2, 5
     ld de, wTempMonSpdExp
-    call PrintNum
+    call .printStatExpVal
+	ret	
+	
+.printStatExpVal:
+	ld a, [de] 
+	cp $FF
+	jr nz, .printAsNum
+	inc de
+	ld a, [de]
+	dec de
+	cp $FF 
+	jr nz, .printAsNum	
+.printAsMax
+	ld de, .label_MAX
+	push bc ; keep the print num settings in bc
+    call PlaceString	
+	pop bc
+	jr .done
+.printAsNum
+    call PrintNum	
+.done		
 	ret	
 	
 .label_statExp
 	db "sEXP:@"	
+	
+.label_MAX
+	db "-MAX-@"	
     
