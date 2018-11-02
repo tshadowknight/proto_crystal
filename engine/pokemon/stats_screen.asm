@@ -773,6 +773,8 @@ StatsScreen_LoadGFX: ; 4dfb6 (13:5fb6)
 	call printStatExp
 	jr .printRestOfScreen
 .printDvs:
+	ld de, wTempMonDVs ; DV source
+	hlcoord 0, 12
 	call TN_PrintDVs
 .printRestOfScreen:	
 	hlcoord 10, 8
@@ -1212,23 +1214,27 @@ CheckFaintedFrzSlp: ; 4e53f
 ; 4e554
 
 PrintStatLabels:
-	hlcoord 0, 13
+	
     ld de, .label_HP ; hp
     call PlaceString
     
-    hlcoord 0, 14
+    ld bc, SCREEN_WIDTH
+	add hl, bc
     ld de, .label_ATK ; atk
     call PlaceString
     
-    hlcoord 0, 15
+    ld bc, SCREEN_WIDTH
+	add hl, bc
     ld de, .label_DEF ; def
     call PlaceString
     
-    hlcoord 0, 16
+    ld bc, SCREEN_WIDTH
+	add hl, bc
     ld de, .label_SPE ; spe
     call PlaceString
     
-    hlcoord 0, 17
+    ld bc, SCREEN_WIDTH
+	add hl, bc
     ld de, .label_SPC ; spc
     call PlaceString	
 	ret	
@@ -1246,17 +1252,28 @@ PrintStatLabels:
 ; by Aurelio Mannara - BitBuilt 2017
 ; ShockSlayer helped ( °v°)
 TN_PrintDVs:
-    ; print labels
-	
-    hlcoord 1, 12
+	;store DV source
+	ld a, d
+	ld [wBuffer2], a 
+	ld a, e
+	ld [wBuffer2+1], a
+	;store base display coordinates	
+	ld a, h
+	ld [wBuffer2+2], a 
+	ld a, l
+	ld [wBuffer2+3], a
+    ; print labels	
+    inc hl
     ld de, .label_DV ; DV
     call PlaceString
     
+	call .getBaseCoordinates
+	ld bc, SCREEN_WIDTH
+	add hl, bc
 	call PrintStatLabels
     
     ; print 16 bit value of DVs
-
-    ld de, wTempMonDVs
+    call .getDVSource
     ld a, [de]
     ld b, a
     inc de
@@ -1264,7 +1281,7 @@ TN_PrintDVs:
     ld c, a
     push bc
 	
-    ld de, wTempMonDVs
+    call .getDVSource
     xor a
     ld [de], a
     inc de
@@ -1274,12 +1291,13 @@ TN_PrintDVs:
     and $f0
     swap a
     ld [de], a
-    hlcoord 4, 14; atk disp coords
+	lb bc, 4, 2
+	call .getOffsetCoordinates
     lb bc, PRINTNUM_LEADINGZEROS | 2, 2
-    ld de, wTempMonDVs
+    call .getDVSource
     call PrintNum
 
-    ld de, wTempMonDVs
+    call .getDVSource
     xor a
     ld [de], a
     inc de
@@ -1288,12 +1306,14 @@ TN_PrintDVs:
     push bc
     and $f
     ld [de],a
-    hlcoord 4, 15 ; def disp coords
+	
+    lb bc, 4, 3
+	call .getOffsetCoordinates
     lb bc, PRINTNUM_LEADINGZEROS | 2, 2
-    ld de, wTempMonDVs
+    call .getDVSource
     call PrintNum
 
-    ld de, wTempMonDVs
+    call .getDVSource
     xor a
     ld [de], a
     inc de
@@ -1303,12 +1323,13 @@ TN_PrintDVs:
     and $f0
     swap a
     ld [de], a
-    hlcoord 4, 16 ; spe disp coords
+    lb bc, 4, 4
+	call .getOffsetCoordinates
     lb bc, PRINTNUM_LEADINGZEROS | 2, 2
-    ld de, wTempMonDVs
+    call .getDVSource
     call PrintNum
 
-    ld de, wTempMonDVs
+    call .getDVSource
     xor a
     ld [de], a
     inc de
@@ -1317,12 +1338,13 @@ TN_PrintDVs:
     push bc
     and $f
     ld [de], a
-    hlcoord 4, 17 ; spc disp coords
+    lb bc, 4, 5
+	call .getOffsetCoordinates
     lb bc, PRINTNUM_LEADINGZEROS | 2, 2
-    ld de, wTempMonDVs
+    call .getDVSource
     call PrintNum
 
-    ld de, wTempMonDVs
+    call .getDVSource
     xor a
     ld [de], a
     inc de
@@ -1345,12 +1367,13 @@ TN_PrintDVs:
 .noSpecialHP
     push bc
     ld [de], a
-    hlcoord 4, 13 ; hp disp coords
+    lb bc, 4, 1
+	call .getOffsetCoordinates
     lb bc, PRINTNUM_LEADINGZEROS | 2, 2
-    ld de, wTempMonDVs
+    call .getDVSource
     call PrintNum
 
-    ld de, wTempMonDVs
+    call .getDVSource
     pop bc
     ld a, b
     ld [de], a
@@ -1361,11 +1384,45 @@ TN_PrintDVs:
 
 .label_DV
     db "DVs:@" 
-
+	
+.getDVSource
+	push af
+	ld a, [wBuffer2]
+	ld d, a
+	ld a, [wBuffer2+1]
+	ld e, a	
+	pop af
+	ret
+	
+.getBaseCoordinates
+	push af
+	ld a, [wBuffer2+2]
+	ld h, a
+	ld a, [wBuffer2+3]
+	ld l, a	
+	pop af
+	ret	
+	
+.getOffsetCoordinates
+	call .getBaseCoordinates
+	ld a, b 
+.xLoop
+	inc hl
+	dec a 	
+	jr nz, .xLoop
+	ld a, c 
+	ld bc, SCREEN_WIDTH
+.yLoop
+	add hl, bc
+	dec a 	
+	jr nz, .yLoop	
+	ret		
+	
 printStatExp:
 	hlcoord 0, 12
     ld de, .label_statExp
     call PlaceString	
+	hlcoord 0, 13
 	call PrintStatLabels
 	
 	lb bc, PRINTNUM_LEADINGZEROS | 2, 5
