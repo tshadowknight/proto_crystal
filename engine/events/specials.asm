@@ -108,6 +108,10 @@ NameRater: ; c2b9
 	ret
 ; c2c0
 
+GigaSage: ; c2b9
+	farcall _GigaSage
+	ret
+
 OverworldTownMap: ; c2c0
 	call FadeToMenu
 	farcall _TownMap
