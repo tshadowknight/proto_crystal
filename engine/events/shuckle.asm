@@ -7,7 +7,7 @@ GiveShuckle: ; 7305
 	ld [wMonType], a
 
 ; Level 15 Shuckle.
-	ld a, BULBASAUR
+	ld a, SNUBBULL
 	ld [wCurPartySpecies], a
 	ld a, 15
 	ld [wCurPartyLevel], a
@@ -69,7 +69,7 @@ GiveShuckle: ; 7305
 SpecialShuckleOT:
 	db "MANIA@"
 SpecialShuckleNick:
-	db "SHUCKIE@"
+	db "SNUBBIE@"
 
 ReturnShuckle: ; 737e
 	farcall SelectMonFromParty
