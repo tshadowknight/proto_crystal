@@ -265,12 +265,16 @@ printStatExp:
 	db "-MAX-@"	
 	
 EditMonDVs:
-	call DisableSpriteUpdates
 	call ClearSprites
-	call ClearBGPalettes
 	call WriteDvEditMenuTilemap
 	call WaitBGMap
 	call SetPalettes
+	hlcoord 4, 2
+	lb bc, 7, 10
+	call TextBox
+	hlcoord 0, 0
+	lb bc, SCREEN_HEIGHT, SCREEN_WIDTH
+	call TextBoxPalette 
 	call DelayFrame
 	call DVEditMenu
 	ld [wcf65], a
@@ -298,7 +302,7 @@ DVEditMenu:
 	ld [wcf64], a
 	ld hl, ChooseYourTraining
 	call PrintText
-	hlcoord 5, 9
+	hlcoord 6, 9
     ld de, .label_OK ; def
     call PlaceString
 	ld a, MON_DVS
@@ -309,14 +313,14 @@ DVEditMenu:
 	ld [wBuffer2], a
 	
 	ld de, wBuffer1	
-	hlcoord 5, 3	
+	hlcoord 6, 3	
 	ld b, 1	
 	call TN_PrintDVs
 	jr .loopRedraw
 	
 .loopRedrawAll:
 	ld de, wBuffer1	
-	hlcoord 5, 3	
+	hlcoord 6, 3	
 	ld b, 0	
 	call TN_PrintDVs
 .loopRedraw:	
@@ -613,11 +617,11 @@ jr nc, .playerOK
 	ret			
 	
 .cursorPositions:
-	dw 5 * SCREEN_WIDTH + 4
-	dw 6 * SCREEN_WIDTH + 4
-	dw 7 * SCREEN_WIDTH + 4
-	dw 8 * SCREEN_WIDTH + 4
-	dw 9 * SCREEN_WIDTH + 4
+	dw 5 * SCREEN_WIDTH + 5
+	dw 6 * SCREEN_WIDTH + 5
+	dw 7 * SCREEN_WIDTH + 5
+	dw 8 * SCREEN_WIDTH + 5
+	dw 9 * SCREEN_WIDTH + 5
    
 ChooseYourTraining: ; 0x48e0f
 	text "Decide how to"

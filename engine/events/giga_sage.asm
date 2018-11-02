@@ -13,7 +13,18 @@ _GigaSage: ; fb6ed
 	ld hl, GigaSageContinueText
 	call PrintText	
 	call YesNoBox
-	jp c, .cancel
+	jp c, .cancel	
+	ld hl, .requiredFunds
+	ld de, wStringBuffer2
+	ld bc, 3
+	call CopyBytes
+	ld de, wMoney
+	ld bc, wStringBuffer2
+	farcall CompareMoney
+	jr nc, .enoughMoney
+	ld hl, NotEnoughMoney 
+	jp .done
+.enoughMoney:	
 ; Select a Pokemon from your party
 	ld hl, GigaSageWhichMonText
 	call PrintText
@@ -32,6 +43,32 @@ _GigaSage: ; fb6ed
 	jr .gigaTrain
 
 .gigaTrainingSuccessful	
+	ld hl, GigaSageTrainingCommences
+	call PrintText
+	farcall FadeBlackQuickly
+	farcall ReloadSpritesNoPalettes
+	ld c, 20
+	call DelayFrames
+	ld de, SFX_SWORDS_DANCE
+	call PlaySFX
+	ld c, 60
+	call DelayFrames	
+	ld de, SFX_SHINE
+	call PlaySFX
+	ld c, 60
+	call DelayFrames
+	ld de, SFX_TRANSACTION
+	call PlaySFX
+	ld c, 60
+	call DelayFrames	
+	farcall FadeInQuickly	
+	ld hl, .requiredFunds
+	ld de, wStringBuffer2
+	ld bc, 3
+	call CopyBytes
+	ld bc, wStringBuffer2
+	ld de, wMoney
+	farcall TakeMoney
 	ld hl, GigaSageFinishedText	
 	jr .done
 .cancel
@@ -45,7 +82,7 @@ _GigaSage: ; fb6ed
 	call PrintText
 	ret
 	
-.gigaTrain:
+.gigaTrain:	
 	farcall EditMonDVs
 	ld a, [wcf65]
 	and a 
@@ -59,7 +96,10 @@ _GigaSage: ; fb6ed
 	ld [hli], a
 	dec b 
 	jr nz, .loop
-	jr .gigaTrainingSuccessful	
+	jp .gigaTrainingSuccessful
+
+.requiredFunds
+	db $03, $0D, $40 ; 200000
 
 GigaSageIntroText: ; 0xfb80f
 	text "Well met,"
@@ -116,7 +156,7 @@ GigaSageLetsBeginText: ; 0xfb819
 	db "@"
 	
 GigaSageFinishedText: ; 0xfb819
-	text "There, the full"	
+	text "There, the"	
 	line "potential of your"
 	
 	para "#MON has been"
@@ -130,18 +170,6 @@ GigaSageFinishedText: ; 0xfb819
 	done
 	db "@"	
 
-GigaSageWhichNameText: ; 0xfb81e
-	; All right. What name should we give it, then?
-	text_jump UnknownText_0x1c0142
-	db "@"
-; 0xfb823
-
-GigaSageEvenBetterText: ; 0xfb823
-	; That's a better name than before! Well done!
-	text_jump UnknownText_0x1c0171
-	db "@"
-; 0xfb828
-
 GigaSageCancelText: ; 0xfb828
 	text "Trainer! I"
 	line "shall be waiting!"
@@ -149,30 +177,27 @@ GigaSageCancelText: ; 0xfb828
 	db "@"
 ; 0xfb82d
 
-GigaSageTradedText: ; 0xfb82d
-	; Hm… @ ? What a great name! It's perfect.
-	; Treat @ with loving care.
-	text_jump UnknownText_0x1c01be
-	db "@"
-; 0xfb832
-
 GigaSageEggText: ; 0xfb832
 	; Whoa… That's just an EGG.	
 	text "An EGG cannot"
 	line "receive training!"
 	done
 	db "@"
+	
+NotEnoughMoney:
+	; Whoa… That's just an EGG.	
+	text "Trainer! Return"
+	line "when you have"
+	
+	cont "sufficient funds!"
+	done
+	db "@"
+	
+GigaSageTrainingCommences:
+	; Whoa… That's just an EGG.	
+	text "The GIGA TRAINING"
+	line "starts now!"
+	
+	prompt
+	db "@"	
 ; 0xfb837
-
-GigaSageSameAsBeforeText: ; 0xfb837
-	; It might look the different as before,
-	; but this new name is much better! Well done!
-	text_jump UnknownText_0x1c0222
-	db "@"
-; 0xfb83c
-
-GigaSageDoneText: ; 0xfb83c
-	; All right. This #MON is now named @ .
-	text_jump UnknownText_0x1c0272
-	db "@"
-; 0xfb841
