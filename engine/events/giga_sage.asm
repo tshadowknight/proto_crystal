@@ -110,17 +110,17 @@ _GigaSage: ; fb6ed
 	
 	ld a, MON_MAXHP
 	call GetPartyParamLocation
-	push hl	
+	ld d, h 
+	ld e, l	
 	ld a, MON_STAT_EXP - 1
 	call GetPartyParamLocation
-	pop de
+	
 	ld b, TRUE
 	predef CalcMonStats
 	
 	ld a, MON_HP
 	call GetPartyParamLocation
-	ld d, h 
-	ld e, l
+	
 	
 	ld a, MON_MAXHP
 	call GetPartyParamLocation
