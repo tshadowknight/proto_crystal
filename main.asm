@@ -454,7 +454,7 @@ SECTION "bank3E", ROMX
 INCLUDE "engine/gfx/load_font.asm"
 INCLUDE "engine/link/time_capsule.asm"
 INCLUDE "engine/events/name_rater.asm"
-INCLUDE "engine/events/giga_sage.asm"
+
 INCLUDE "engine/events/play_slow_cry.asm"
 INCLUDE "engine/pokedex/new_pokedex_entry.asm"
 INCLUDE "engine/link/time_capsule_2.asm"
@@ -633,3 +633,4 @@ SECTION "Type Checking", ROMX
 INCLUDE "data/types/type_matchups.asm"
 INCLUDE "engine/battle/type_checking.asm"
 
+INCLUDE "engine/events/giga_sage.asm"

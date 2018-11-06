@@ -96,6 +96,40 @@ _GigaSage: ; fb6ed
 	ld [hli], a
 	dec b 
 	jr nz, .loop
+	
+	ld a, MON_SPECIES
+	call GetPartyParamLocation
+	ld a, [hl]
+	ld [wCurSpecies], a
+	call GetBaseData
+	
+	ld a, MON_LEVEL
+	call GetPartyParamLocation
+	ld a, [hl]
+	ld [wCurPartyLevel], a
+	
+	ld a, MON_MAXHP
+	call GetPartyParamLocation
+	push hl	
+	ld a, MON_STAT_EXP - 1
+	call GetPartyParamLocation
+	pop de
+	ld b, TRUE
+	predef CalcMonStats
+	
+	ld a, MON_HP
+	call GetPartyParamLocation
+	ld d, h 
+	ld e, l
+	
+	ld a, MON_MAXHP
+	call GetPartyParamLocation
+	ld a, [hli]
+	ld [de], a 
+	inc de 
+	ld a, [hl]
+	ld [de], a		
+	
 	jp .gigaTrainingSuccessful
 
 .requiredFunds
