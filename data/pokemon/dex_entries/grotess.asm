@@ -1,7 +1,11 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "ABYSS@" ; species name
+	dw 1350, 13227 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "Their skin takes"
+	next "in minerals from"
+	next "the sand they "
+
+	page "crawl on,"
+	next "increasing their"
+	next "body mass.@"
+

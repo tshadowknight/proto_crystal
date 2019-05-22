@@ -6,5 +6,5 @@
 	next "undected. Many "
 
 	page "people still think"
-	next "that its existance"
+	next "its existance"
 	next "is a hoax.@"

@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "ANCHOR@" ; species name
+	dw 821, 6173 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "Found commonly at"
+	next "the bottom of the"
+	next "ocean, they"
+
+	page "feed primarily on"
+	next "unsuspecting"
+	next "STARYU.@"

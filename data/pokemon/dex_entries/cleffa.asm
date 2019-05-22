@@ -1,10 +1,10 @@
 	db "STARSHAPE@" ; species name
 	dw 100, 70 ; height, weight
 
-	db   "If the impact site"
-	next "of a meteorite is"
-	next "found, this"
+	db   "Its antenna allows"
+	next "it to communicate"
+	next "with CLEFAIRY from"
 
-	page "#MON is certain"
-	next "to be within the"
-	next "immediate area.@"
+	page "a large distance."
+	next "The signal reaches"
+	next "even outer space!@"

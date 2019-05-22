@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "SEA MINE@" ; species name
+	dw 656, 1540 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "It has a very"
+	next "potent toxin."
+	next "It releases it"
+
+	page "when attacked,"
+	next "leaving the area"
+	next "uninhabitable.@"

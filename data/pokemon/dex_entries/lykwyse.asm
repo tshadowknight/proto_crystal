@@ -1,7 +1,9 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "TRANSFORM@" ; species name
+	dw 100, 2200 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "It lets out a"
+	next "shrill shriek to"
+	next "annoy its enemy."
+
+	page "It does this even"
+	next "when transformed.@"

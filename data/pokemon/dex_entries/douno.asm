@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "TRIPLET@" ; species name
+	dw 65, 13 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "Though always seen"
+	next "in threes, people"
+	next "are still unsure "
+
+	page "whether this a"
+	next "single #MON"
+	next "rather than three.@"

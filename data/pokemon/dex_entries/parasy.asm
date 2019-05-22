@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "TINY BUG@" ; species name
+	dw 32, 2 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "The mushroom it"
+	next "lives on also"
+	next "provides its food."
+
+	page "The #MON is"
+	next "unaware that it"
+	next "is fighting back.@"

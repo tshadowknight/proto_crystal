@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "SCRATCHCAT@" ; species name
+	dw 65, 50 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "It spends most of"
+	next "its time sleeping."
+	next "When awake it is"
+
+	page "always cleaning"
+	next "the coin on its"
+	next "head.@"

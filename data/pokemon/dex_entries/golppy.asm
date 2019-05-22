@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "GOLDFISH@" ; species name
+	dw 065, 4 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "Popular as pets,"
+	next "their owners are"
+	next "in for a surprise"
+
+	page "when it becomes"
+	next "the much larger"
+	next "GOLDEEN!@"
