@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "VINE@" ; species name
+	dw 98, 220 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "They are often"
+	next "seen around a"
+	next "strange bush."
+
+	page "It is speculated"
+	next "to be an unknown"
+	next "#MON species!@"

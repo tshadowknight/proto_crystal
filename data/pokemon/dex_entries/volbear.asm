@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "FLAME BEAR@" ; species name
+	dw 211, 420 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "It collects twigs"
+	next "and twigs to get"
+	next "ready for winter."
+
+	page "It keeps warm by"
+	next "slowly burning"
+	next "its stockpile.@"

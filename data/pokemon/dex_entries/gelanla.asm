@@ -1,7 +1,13 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "VINE@" ; species name
+	dw 607, 2835 ; height, weight
 
-	db   "page 1"
+	db   "Its vines have a"
+	next "paralytic effect."
+	next "It stores prey"
 	
-	page "page 2"
-	db "@"
+	page "in its spacious"
+	next "body to take home"
+	next "to its young.@"
+
+
+	

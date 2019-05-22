@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "RUMORED@" ; species name
+	dw 707, 1960 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "It is incredibly"
+	next "adept at remaining"
+	next "undected. Many "
+
+	page "people still think"
+	next "that its existance"
+	next "is a hoax.@"

@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "FLAME CUB@" ; species name
+	dw 108, 170 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "It uses its"
+	next "flames to fend"
+	next "off bees while"
+
+	page "collecting honey."
+	next "They are known to"
+	next "cause wildfires.@"
