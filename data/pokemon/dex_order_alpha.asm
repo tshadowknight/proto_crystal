@@ -1,255 +1,255 @@
 ; Every Pokémon sorted alphabetically by name.
 
 AlphabeticalPokedexOrder: ; 0x40c65
-	db ABRA
-	db AERODACTYL
-	db AIPOM
-	db ALAKAZAM
-	db AMPHAROS
-	db ARBOK
-	db ARCANINE
-	db ARIADOS
-	db ARTICUNO
-	db BULBASAUR
-	db BLOSSOMOLE
-	db BEEDRILL
-	db BELLOSSOM
-	db BELLSPROUT
-	db BLASTOISE
-	db BLISSEY
-	db BULBASAUR
-	db BUTTERFREE
-	db CATERPIE
-	db LEAFEON
-	db CHANSEY
-	db CHARIZARD
-	db CHARMANDER
-	db CHARMELEON
-	db LEEF
-	db SUNMOLA
-	db CLEFABLE
-	db CLEFAIRY
-	db CLEFFA
-	db CLOYSTER
-	db BULBASAUR
-	db CROBAT
-	db AQUA
-	db CUBONE
-	db FLAMBEAR
-	db DELIBIRD
-	db DEWGONG
-	db DIGLETT
-	db DITTO
-	db DODRIO
-	db DODUO
-	db DONPHAN
-	db DRAGONAIR
-	db DRAGONITE
-	db DRATINI
-	db DROWZEE
-	db DUGTRIO
-	db BULBASAUR
-	db EEVEE
-	db EKANS
-	db ELECTABUZZ
-	db ELECTRODE
-	db ELEKID
-	db EN
-	db ESPEON
-	db EXEGGCUTE
-	db EXEGGUTOR
-	db FARFETCH_D
-	db FEAROW
-	db AQUARIA
-	db FLAAFFY
-	db FLAREON
-	db RAITORA
-	db BULBASAUR
-	db GASTLY
-	db GENGAR
-	db GEODUDE
-	db GIRAFARIG
-	db BULBASAUR
-	db GLOOM
-	db GOLBAT
-	db GOLDEEN
-	db GOLDUCK
-	db GOLEM
-	db BULBASAUR
-	db GRAVELER
-	db GRIMER
-	db GROWLITHE
-	db GYARADOS
-	db HAUNTER
-	db PLUX
-	db HITMONCHAN
-	db HITMONLEE
-	db HITMONTOP
-	db HO_OH
-	db HOOTHOOT
-	db LEFMEW
-	db HORSEA
-	db HOUNDOOM
-	db HOUNDOUR
-	db HYPNO
-	db IGGLYBUFF
-	db IVYSAUR
-	db JIGGLYPUFF
-	db JOLTEON
-	db COTTOMEW
-	db JYNX
-	db KABUTO
-	db KABUTOPS
-	db KADABRA
-	db KAKUNA
-	db KANGASKHAN
-	db KINGDRA
-	db KINGLER
-	db KOFFING
-	db KRABBY
-	db ANCHORAGE
-	db LAPRAS
-	db SNEASEL
-	db TRIPSTAR
-	db LEDYBA
-	db LICKITUNG
-	db SNUBBULL
-	db MACHAMP
-	db MACHOKE
-	db MACHOP
-	db MAGBY
-	db BULBASAUR
-	db MAGIKARP
-	db MAGMAR
-	db MAGNEMITE
-	db MAGNETON
-	db MANKEY
-	db RAYLEEP
-	db MAREEP
-	db MARILL
-	db MAROWAK
-	db BLOSSOMITE
-	db MEOWTH
-	db METAPOD
-	db MEW
-	db MEWTWO
-	db MILTANK
-	db BULBASAUR
-	db MOLTRES
-	db MR__MIME
-	db MUK
-	db MURKROW
-	db NATU
-	db NIDOKING
-	db NIDOQUEEN
-	db NIDORAN_F
-	db NIDORAN_M
-	db NIDORINA
-	db NIDORINO
-	db NINETALES
-	db HOOHOO
-	db OCTILLERY
-	db ODDISH
-	db OMANYTE
-	db OMASTAR
-	db ONIX
-	db PARAS
-	db PARASECT
-	db PERSIAN
-	db PHANPY
-	db PICHU
-	db PIDGEOT
-	db PIDGEOTTO
-	db PIDGEY
-	db PIKACHU
-	db WARWOLF
-	db KOTORA
-	db PINSIR
-	db POLITOED
-	db POLIWAG
-	db POLIWHIRL
-	db POLIWRATH
-	db PONYTA
-	db PORYGON
-	db PORYGON2
-	db PRIMEAPE
-	db PSYDUCK
-	db GRIMEY
-	db QUAGSIRE
-	db VOLBEAR
-	db QWILFISH
-	db RAICHU
-	db RAI
-	db RAPIDASH
-	db RATICATE
-	db RATTATA
-	db REMORAID
-	db RHYDON
-	db RHYHORN
-	db SANDSHREW
-	db SANDSLASH
-	db SCIZOR
-	db SCYTHER
-	db SEADRA
-	db SEAKING
-	db SEEL
-	db BULBASAUR
-	db SHELLDER
-	db BULBASAUR
-	db SKARMORY
-	db DANDEMEW
-	db SLOWBRO
-	db SLOWKING
-	db SLOWPOKE
-	db BULBASAUR
-	db SMEARGLE
-	db SMOOCHUM
-	db SNEASEL
-	db SNORLAX
-	db SNUBBULL
-	db SPEAROW
-	db SPINARAK
-	db SQUIRTLE
-	db BULBASAUR
-	db STARMIE
-	db STARYU
-	db STEELIX
-	db BULBASAUR
-	db SUI
-	db SUNFLORA
-	db BULBASAUR
-	db WOLFMAN
-	db TANGELA
-	db TAUROS
-	db BULBASAUR
-	db TENTACOOL
-	db TENTACRUEL
-	db TOGEPI
-	db BULBASAUR
-	db CRUZ
-	db DYNABEAR
-	db TOGEPI
-	db GOHNG
-	db UMBREON
-	db UNOWN
-	db BULBASAUR
-	db VAPOREON
-	db VENOMOTH
-	db VENONAT
-	db VENUSAUR
-	db VICTREEBEL
-	db VILEPLUME
-	db VOLTORB
-	db VULPIX
-	db WARTORTLE
-	db WEEDLE
-	db WEEPINBELL
-	db WEEZING
-	db WIGGLYTUFF
-	db LEDYBA
-	db GIRAFARIG
-	db XATU
-	db BULBASAUR
-	db ZAPDOS
-	db ZUBAT
+	db ABRA       ; 3f
+	db AERODACTYL ; 8e
+	db AIPOM ; 250
+	db ALAKAZAM   ; 41
+	db AMPHAROS ; 165
+	db ANCHORAGE ; 181
+	db AQUA ; 159
+	db AQUARIA ; 160
+	db ARBOK      ; 18
+	db ARCANINE   ; 3b
+	db ARIADOS ; 186
+	db ARTICUNO   ; 90
+	db BALLERINE ; 217
+	db BEEDRILL   ; 0f
+	db BELLBOYANT ; 198
+	db BELLMITT ; 222
+	db BELLOSSOM ; 221
+	db BELLSPROUT ; 45
+	db BLASTOISE  ; 09
+	db BLISSEY ; 232
+	db BLOSSOMITE ; 154
+	db BLOSSOMOLE ; 153
+	db BOMSEEL ; 224
+	db BULBASAUR  ; 01
+	db BUTTERFREE ; 0c
+	db CATERPIE   ; 0a
+	db CHANSEY    ; 71
+	db CHARIZARD  ; 06
+	db CHARMANDER ; 04
+	db CHARMELEON ; 05
+	db CLEFABLE   ; 24
+	db CLEFAIRY   ; 23
+	db CLEFFA ; 173
+	db CLOYSTER   ; 5b
+	db COTTOMEW ; 216
+	db CROBAT ; 183
+	db CRUZ ; 158
+	db CUBONE     ; 68
+	db DANDEMEW ; 215
+	db DELIBIRD ; 225
+	db DEWGONG    ; 57
+	db DIGLETT    ; 32
+	db DITTO      ; 84
+	db DODRIO     ; 55
+	db DODUO      ; 54
+	db DONPHAN ; 192
+	db DOUNO ; 189
+	db DRAGONAIR  ; 94
+	db DRAGONITE  ; 95
+	db DRATINI    ; 93
+	db DROWZEE    ; 60
+	db DUGTRIO    ; 33
+	db DYNABEAR ; 157
+	db EEVEE      ; 85
+	db EKANS      ; 17
+	db ELECTABUZZ ; 7d
+	db ELECTRODE  ; 65
+	db ELEKID ; 219
+	db EN ; 244
+	db ESPEON ; 205
+	db EXEGGCUTE  ; 66
+	db EXEGGUTOR  ; 67
+	db FARFETCH_D ; 53
+	db FEAROW     ; 16
+	db FLAAFFY ; 164
+	db FLAMBEAR ; 155
+	db FLAREON    ; 88
+	db GASTLY     ; 5c
+	db GELANLA ; 168
+	db GENGAR     ; 5e
+	db GEODUDE    ; 4a
+	db GIRAFARIG ; 194
+	db GLOOM      ; 2c
+	db GOHNG ; 211
+	db GOLBAT     ; 2a
+	db GOLDEEN    ; 76
+	db GOLDUCK    ; 37
+	db GOLEM      ; 4c
+	db GOLPPY ; 178
+	db GRAVELER   ; 4b
+	db GRIMER     ; 58
+	db GRIMEY ; 208
+	db GROTESS ; 182
+	db GROWLITHE  ; 3a
+	db GYARADOS   ; 82
+	db HAUNTER    ; 5d
+	db HITMONCHAN ; 6b
+	db HITMONLEE  ; 6a
+	db HITMONTOP ; 212
+	db HOOHOO ; 162
+	db HOOTHOOT ; 161
+	db HORSEA     ; 74
+	db HOUNDOOM ; 236
+	db HOUNDOUR ; 235
+	db HO_OH ; 247
+	db HYPNO      ; 61
+	db IGGLYBUFF ; 174
+	db IVYSAUR    ; 02
+	db JIGGLYPUFF ; 27
+	db JOLTEON    ; 87
+	db JYNX       ; 7c
+	db KABUTO     ; 8c
+	db KABUTOPS   ; 8d
+	db KADABRA    ; 40
+	db KAKUNA     ; 0e
+	db KANGASKHAN ; 73
+	db KINGDRA ; 242
+	db KINGLER    ; 63
+	db KOFFING    ; 6d
+	db KOTORA ; 226
+	db KRABBY     ; 62
+	db KURSTRAW ; 229
+	db LAPRAS     ; 83
+	db LEAFEON ; 251
+	db LEDYBA ; 202
+	db LEEF ; 152
+	db LEFMEW ; 214
+	db LICKITUNG  ; 6c
+	db LIKK ; 240
+	db LYKWYSE ; 188
+	db MACHAMP    ; 44
+	db MACHOKE    ; 43
+	db MACHOP     ; 42
+	db MADAME ; 228
+	db MAGBY ; 220
+	db MAGIKARP   ; 81
+	db MAGMAR     ; 7e
+	db MAGNEMITE  ; 51
+	db MAGNETON   ; 52
+	db MANKEY     ; 38
+	db MAREEP ; 163
+	db MARILL ; 179
+	db MAROWAK    ; 69
+	db MEOWSY ; 196
+	db MEOWTH     ; 34
+	db METAPOD    ; 0b
+	db MEW        ; 97
+	db MEWTWO     ; 96
+	db MILTANK ; 223
+	db MINICORN ; 204
+	db MOLTRES    ; 92
+	db MR__MIME   ; 7a
+	db MUK        ; 59
+	db MURKROW ; 231
+	db NATU ; 176
+	db NIDOKING   ; 22
+	db NIDOQUEEN  ; 1f
+	db NIDORAN_F  ; 1d
+	db NIDORAN_M  ; 20
+	db NIDORINA   ; 1e
+	db NIDORINO   ; 21
+	db NINETALES  ; 26
+	db NUMPUFF ; 171
+	db OCTILLERY ; 210
+	db ODDISH     ; 2b
+	db OMANYTE    ; 8a
+	db OMASTAR    ; 8b
+	db ONIX       ; 5f
+	db PANGSHI ; 230
+	db PARAS      ; 2e
+	db PARASECT   ; 2f
+	db PARASY ; 184
+	db PERSIAN    ; 35
+	db PHANPY ; 191
+	db PICHU ; 172
+	db PIDGEOT    ; 12
+	db PIDGEOTTO  ; 11
+	db PIDGEY     ; 10
+	db PIKACHU    ; 19
+	db PINSIR     ; 7f
+	db PLUX ; 234
+	db POLITOED ; 199
+	db POLIWAG    ; 3c
+	db POLIWHIRL  ; 3d
+	db POLIWRATH  ; 3e
+	db PONYTA     ; 4d
+	db PORYGON    ; 89
+	db PORYGON2 ; 239
+	db PRIMEAPE   ; 39
+	db PSYDUCK    ; 36
+	db PUDDI ; 213
+	db QUAGSIRE ; 175
+	db QWILFISH ; 170
+	db RAI ; 243
+	db RAICHU     ; 1a
+	db RAITORA ; 227
+	db RAPIDASH   ; 4e
+	db RATICATE   ; 14
+	db RATTATA    ; 13
+	db RAYLEEP ; 169
+	db REMORAID ; 209
+	db RHYDON     ; 70
+	db RHYHORN    ; 6f
+	db RINRING ; 197
+	db SANDSHREW  ; 1b
+	db SANDSLASH  ; 1c
+	db SCIZOR ; 233
+	db SCYTHER    ; 7b
+	db SEADRA     ; 75
+	db SEAKING    ; 77
+	db SEEL       ; 56
+	db SHELLDER   ; 5a
+	db SKARMORY ; 187
+	db SLOWBRO    ; 50
+	db SLOWKING ; 200
+	db SLOWPOKE   ; 4f
+	db SMEARGLE ; 195
+	db SMOOCHUM ; 218
+	db SNEASEL ; 246
+	db SNORLAX    ; 8f
+	db SNUBBULL ; 249
+	db SPEAROW    ; 15
+	db SPINARAK ; 185
+	db SQUIRTLE   ; 07
+	db STARMIE    ; 79
+	db STARYU     ; 78
+	db STEELIX ; 241
+	db SUI ; 245
+	db SUNFLORA ; 190
+	db SUNMOLA ; 180
+	db TANGEL ; 167
+	db TANGELA    ; 72
+	db TAUROS     ; 80
+	db TENTACOOL  ; 48
+	db TENTACRUEL ; 49
+	db TOGEPI ; 248
+	db TRIFOX ; 166
+	db TRIPSTAR ; 203
+	db TURBANN ; 207
+	db TWINZ ; 193
+	db UMBREON ; 206
+	db UNOWN ; 201
+	db VAPOREON   ; 86
+	db VENOMOTH   ; 31
+	db VENONAT    ; 30
+	db VENUSAUR   ; 03
+	db VICTREEBEL ; 47
+	db VILEPLUME  ; 2d
+	db VOLBEAR ; 156
+	db VOLTORB    ; 64
+	db VULPIX     ; 25
+	db WARTORTLE  ; 08
+	db WARWOLF ; 238
+	db WEEDLE     ; 0d
+	db WEEPINBELL ; 46
+	db WEEZING    ; 6e
+	db WIGGLYTUFF ; 28
+	db WOLFMAN ; 237
+	db XATU ; 177
+	db ZAPDOS     ; 91
+	db ZUBAT      ; 29
 ; 0x40d60
