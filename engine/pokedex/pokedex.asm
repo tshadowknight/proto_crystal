@@ -1566,6 +1566,7 @@ Pokedex_PlaceDefaultStringIfNotSeen: ; 40b8d (10:4b8d)
 	db "-----@"
 
 Pokedex_DrawFootprint: ; 40ba0
+	ret ; disable footprints
 	hlcoord 18, 1
 	ld a, $62
 	ld [hli], a
