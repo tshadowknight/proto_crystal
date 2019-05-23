@@ -1,7 +1,9 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "CLOAKED@" ; species name
+	dw 200, 220 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "Timid when alone,"
+	next "they hunt in large"
+	next "packs to take down"
+
+	page "prey much larger"
+	next "than themselves.@"

@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "SCUFFLE@" ; species name
+	dw 204, 460 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "To brush up on its"
+	next "fighting skills,"
+	next "it will challenge"
+
+	page "anyone. It has a"
+	next "very strong com-"
+	next "petitive spirit.@"

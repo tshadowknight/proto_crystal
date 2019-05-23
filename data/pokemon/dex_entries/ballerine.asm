@@ -1,7 +1,11 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "MIME@" ; species name
+	dw 204, 420 ; height, weight
 
-	db   "page 1"
+	db   "It habitually"
+	next "mimics foes."
+	next "Once mimicked, the"
+
+	page "foe has trouble"
+	next "focussing on the"
+	next "battle.@"
 	
-	page "page 2"
-	db "@"

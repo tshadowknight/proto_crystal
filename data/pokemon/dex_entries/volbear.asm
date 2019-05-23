@@ -1,7 +1,7 @@
 	db "FLAME BEAR@" ; species name
 	dw 211, 420 ; height, weight
 
-	db   "It collects twigs"
+	db   "It collects sticks"
 	next "and twigs to get"
 	next "ready for winter."
 

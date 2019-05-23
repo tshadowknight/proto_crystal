@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "HOPPING@" ; species name
+	dw 328, 22 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "Creations of a"
+	next "wicked hermit,"
+	next "they emerge from"
+
+	page "KURSTRAW when the"
+	next "seal keeping them"
+	next "imprisoned breaks.@"

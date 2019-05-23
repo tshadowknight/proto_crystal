@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "FIRE FOAL@" ; species name
+	dw 196, 440 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "A natural born"
+	next "runner, this"
+	next "#MON lets off"
+
+	page "excess heat by"
+	next "galloping at"
+	next "high speeds.@"

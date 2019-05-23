@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "VERDANT@" ; species name
+	dw 303, 562 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "It is closer"
+	next "to being a plant"
+	next "than an animal."
+
+	page "It uses photo-"
+	next "synthesis to"
+	next "produce energy.@"

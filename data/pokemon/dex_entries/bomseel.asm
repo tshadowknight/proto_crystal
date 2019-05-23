@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "DEMOLITION@" ; species name
+	dw 475, 2306 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "It creates steam"
+	next "explosions to"
+	next "carve out a nest"
+
+	page "near the shore. It"
+	next "is often seen near"
+	next "volcanic islands.@"

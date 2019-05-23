@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "AURORA@" ; species name
+	dw 607, 4120 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "This divine"
+	next "#MON blows"
+	next "around the world,"
+
+	page "always in search"
+	next "of a pure"
+	next "reservoir.@"

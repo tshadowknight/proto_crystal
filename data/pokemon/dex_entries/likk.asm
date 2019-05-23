@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "LICKING@" ; species name
+	dw 423, 1990 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "It lays its"
+	next "tongue as a trap"
+	next "in the underbrush"
+
+	page "to catch"
+	next "unsuspecting prey.@"
+

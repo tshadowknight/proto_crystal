@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "WILD DUCK@" ; species name
+	dw 426, 595 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "It is always"
+	next "honing its skills."
+	next "It often takes"
+
+	page "FARFETCH'D under"
+	next "its wing as"
+	next "pupils.@"

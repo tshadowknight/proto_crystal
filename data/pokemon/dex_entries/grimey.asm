@@ -1,7 +1,9 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "SLUDGE@" ; species name
+	dw 131, 31 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "This #MON is"
+	next "thought to form"
+	next "instantaneously"
+
+	page "in heavily"
+	next "polluted areas.@"

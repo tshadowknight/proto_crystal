@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "BALL TIGER@" ; species name
+	dw 220, 210 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "Its popularity as"
+	next "a pet has given"
+	next "rise to feral"
+
+	page "KOTORA populations"
+	next "in and near large"
+	next "cities.@"

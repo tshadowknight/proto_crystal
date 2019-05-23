@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "STAGBEETLE@" ; species name
+	dw 511, 1610 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "It will uproot"
+	next "large trees using"
+	next "its pincers and"
+
+	page "chuck them at its"
+	next "opponents as a"
+	next "warning.@"

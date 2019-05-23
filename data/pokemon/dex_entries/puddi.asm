@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "PUPPY@" ; species name
+	dw 91, 223 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "They are very"
+	next "dependent on the"
+	next "older members of"
+
+	page "their pack, but"
+	next "still help by"
+	next "being alert.@"

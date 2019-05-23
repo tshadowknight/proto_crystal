@@ -1,7 +1,9 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "VOODOO DOLL@" ; species name
+	dw 32, 22 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "When peering into"
+	next "their lifeless"
+	next "eyes, they appear"
+
+	page "to be much bigger"
+	next "than they are.@"

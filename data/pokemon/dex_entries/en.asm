@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "VOLCANO@" ; species name
+	dw 607, 4370 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "This brawny"
+	next "#MON courses"
+	next "around the earth,"
+
+	page "spouting flames"
+	next "hotter than a"
+	next "volcano's magma.@"

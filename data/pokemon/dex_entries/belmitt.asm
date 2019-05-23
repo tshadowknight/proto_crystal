@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "FLYCATCHER@" ; species name
+	dw 491, 374 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "It is surprisingly"
+	next "nimble. It will "
+	next "jump between tree"
+
+	page "branches while"
+	next "hunting down BUG"
+	next "#MON.@"

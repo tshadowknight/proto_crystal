@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "BALL TIGER@" ; species name
+	dw 493, 5511 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "Very territorial."
+	next "When two RAITORA"
+	next "clash the sound"
+
+	page "of their fight can"
+	next "be heard from"
+	next "miles away.@"

@@ -1,7 +1,10 @@
-	db "TEMP@" ; species name
-	dw 1, 1 ; height, weight
+	db "CLOAKED@" ; species name
+	dw 364, 1161 ; height, weight
 
-	db   "page 1"
-	
-	page "page 2"
-	db "@"
+	db   "A proficient"
+	next "hunter. Its "
+	next "haunting howl is"
+
+	page "considered a bad"
+	next "omen in its snow"
+	next "covered home land.@"

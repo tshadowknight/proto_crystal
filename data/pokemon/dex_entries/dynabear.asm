@@ -6,5 +6,5 @@
 	next "of scorched trees."
 
 	page "If threathened it"
-	next "will light its"
+	next "will set its"
 	next "habitat ablaze.@"
