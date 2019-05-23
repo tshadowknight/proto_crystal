@@ -1,10 +1,10 @@
 	db "ELECTRIC@" ; species name
 	dw 200, 520 ; height, weight
 
-	db   "It loves violent"
-	next "thunder. The space"
-	next "between its horns"
-
-	page "flickers bluish-"
-	next "white when it is"
-	next "charging energy.@"
+	db   "During thunder"
+	next "storms many gather"
+	next "at specific spots"
+	
+	page "with their antenna"					 
+	next "pointed to the sky"
+	next "in anticipation.@"

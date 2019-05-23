@@ -5,6 +5,6 @@
 	next "marked by a ring"
 	next "of scorched trees."
 
-	page "If threathened it"
-	next "will set its"
+	page "If threathened,"	
+	next "it will set its"
 	next "habitat ablaze.@"

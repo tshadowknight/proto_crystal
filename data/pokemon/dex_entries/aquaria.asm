@@ -3,8 +3,8 @@
 
 	db   "It is incredibly"
 	next "adept at remaining"
-	next "undected. Many "
+	next "undetected. Many"
 
 	page "people still think"
-	next "its existance is"
+	next "its existence is"
 	next "a hoax.@"

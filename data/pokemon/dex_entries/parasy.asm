@@ -5,6 +5,6 @@
 	next "lives on also"
 	next "provides its food."
 
-	page "The #MON is"
-	next "unaware that it"
+	page "PARASY is unaware"
+	next "that the mushroom"
 	next "is fighting back.@"

@@ -3,7 +3,8 @@
 
 	db   "The sound of the"
 	next "chime on its tail"
-	next "puts target prey"
+	next "puts its prey into"
 
-	page "into a state of"
-	next "trance.@"
+	page "a state of trance,"
+	next "giving RINRING a"
+	next "chance to pounce.@"

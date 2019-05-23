@@ -5,6 +5,6 @@
 	next "in threes, people"
 	next "are still unsure "
 
-	page "whether this a"
+	page "whether this is a"
 	next "single #MON"
 	next "rather than three.@"
