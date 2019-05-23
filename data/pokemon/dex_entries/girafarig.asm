@@ -1,10 +1,10 @@
-	db "LONG NECK@" ; species name
+	db "DUAL@" ; species name
 	dw 411, 910 ; height, weight
 
-	db   "When it is in"
-	next "danger, its tail"
-	next "uses some sort of"
+	db   "Extremely careful,"
+	next "this #MON's two"
+	next "heads take turns "
 
-	page "mysterious powers"
-	next "to drive away the"
-	next "enemy.@"
+	page "keeping watch "
+	next "while the other is"
+ 	next "eating.@"

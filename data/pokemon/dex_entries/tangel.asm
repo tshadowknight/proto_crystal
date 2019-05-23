@@ -3,8 +3,8 @@
 
 	db   "They are often"
 	next "seen around a"
-	next "strange bush."
+	next "strange bush"
 
-	page "It is speculated"
+	page "that is speculated"
 	next "to be an unknown"
 	next "#MON species!@"

@@ -6,5 +6,5 @@
 	next "fends for itself."
 
 	page "It retains some of"
-	next "its fomer host's"
+	next "its former host's"
 	next "psychic powers.@"
