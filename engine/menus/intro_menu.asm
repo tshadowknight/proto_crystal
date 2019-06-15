@@ -622,11 +622,11 @@ Continue_DisplayBadgesDexPlayerName: ; 5f1c
 
 Continue_PrintTypesSetting:	
 	push hl
-	ld a, [wOptions2]
-	and %00000010
-	jr z, .prototype
 	decoord 8, 10, 0
 	add hl, de
+	ld a, [wOptions2]
+	and %00000010
+	jr z, .prototype	
 	ld de, .Normal
 	call PlaceString
 	jr .done
