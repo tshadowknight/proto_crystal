@@ -621,18 +621,20 @@ Continue_DisplayBadgesDexPlayerName: ; 5f1c
 
 
 Continue_PrintTypesSetting:	
+	push hl
 	ld a, [wOptions2]
 	and %00000010
 	jr z, .prototype
-	hlcoord 12, 16
+	decoord 8, 10, 0
+	add hl, de
 	ld de, .Normal
 	call PlaceString
 	jr .done
 .prototype	
-	hlcoord 12, 16
 	ld de, .Prototype
 	call PlaceString
 .done:	
+	pop hl
 	ret
 	
 .Normal:
@@ -642,9 +644,11 @@ Continue_PrintTypesSetting:
 	db "PROTO@"		
 
 Continue_PrintGameTime: ; 5f40
+	push hl
 	decoord 9, 8, 0
 	add hl, de
 	call Continue_DisplayGameTime
+	pop hl
 	ret
 ; 5f48
 
