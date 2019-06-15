@@ -1,5 +1,5 @@
 	db "CROWN@" ; species name
-	dw 246, 220 ; height, weight
+	dw 204, 220 ; height, weight
 
 	db   "After separating"
 	next "from SLOWKING, it"

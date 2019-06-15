@@ -1,5 +1,5 @@
 	db "FIRE FOAL@" ; species name
-	dw 196, 440 ; height, weight
+	dw 111, 440 ; height, weight
 
 	db   "A natural born"
 	next "runner, this"

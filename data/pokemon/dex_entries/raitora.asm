@@ -1,5 +1,5 @@
 	db "BALL TIGER@" ; species name
-	dw 493, 5511 ; height, weight
+	dw 411, 5511 ; height, weight
 
 	db   "Very territorial."
 	next "When two RAITORA"

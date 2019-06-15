@@ -1,5 +1,5 @@
 	db "BALL TIGER@" ; species name
-	dw 220, 210 ; height, weight
+	dw 201, 210 ; height, weight
 
 	db   "Its popularity as"
 	next "a pet has given"

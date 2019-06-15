@@ -1,5 +1,5 @@
 	db "DEMOLITION@" ; species name
-	dw 475, 2306 ; height, weight
+	dw 405, 2306 ; height, weight
 
 	db   "It creates steam"
 	next "explosions to"

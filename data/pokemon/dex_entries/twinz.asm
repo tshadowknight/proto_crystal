@@ -1,5 +1,5 @@
 	db "DUAL@" ; species name
-	dw 492, 11 ; height, weight
+	dw 411, 11 ; height, weight
 
 	db   "This #MON's"
 	next "twin heads are"

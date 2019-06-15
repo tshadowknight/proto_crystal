@@ -1,5 +1,5 @@
 	db "VINE@" ; species name
-	dw 98, 220 ; height, weight
+	dw 11, 220 ; height, weight
 
 	db   "They are often"
 	next "seen around a"

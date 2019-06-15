@@ -1,5 +1,5 @@
 	db "LICKING@" ; species name
-	dw 423, 1990 ; height, weight
+	dw 402, 1990 ; height, weight
 
 	db   "It lays its"
 	next "tongue as a trap"

@@ -1,5 +1,5 @@
 	db "FLYCATCHER@" ; species name
-	dw 491, 374 ; height, weight
+	dw 411, 374 ; height, weight
 
 	db   "It is surprisingly"
 	next "nimble. It will "

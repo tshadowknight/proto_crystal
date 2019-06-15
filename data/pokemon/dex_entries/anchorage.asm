@@ -1,5 +1,5 @@
 	db "ANCHOR@" ; species name
-	dw 821, 6173 ; height, weight
+	dw 808, 6173 ; height, weight
 
 	db   "Found commonly at"
 	next "the bottom of the"

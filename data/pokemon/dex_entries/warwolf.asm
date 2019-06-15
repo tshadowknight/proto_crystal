@@ -1,5 +1,5 @@
 	db "CLOAKED@" ; species name
-	dw 364, 1161 ; height, weight
+	dw 306, 1161 ; height, weight
 
 	db   "A proficient"
 	next "hunter. Its "

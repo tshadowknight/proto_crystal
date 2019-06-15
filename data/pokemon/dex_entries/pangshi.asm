@@ -1,5 +1,5 @@
 	db "HOPPING@" ; species name
-	dw 328, 22 ; height, weight
+	dw 302, 22 ; height, weight
 
 	db   "Creations of a"
 	next "wicked hermit,"

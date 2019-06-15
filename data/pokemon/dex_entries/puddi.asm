@@ -1,5 +1,5 @@
 	db "PUPPY@" ; species name
-	dw 91, 223 ; height, weight
+	dw 10, 223 ; height, weight
 
 	db   "They are very"
 	next "dependent on the"

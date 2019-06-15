@@ -1,5 +1,5 @@
 	db "SLUDGE@" ; species name
-	dw 131, 31 ; height, weight
+	dw 103, 31 ; height, weight
 
 	db   "This #MON is"
 	next "thought to form"

@@ -1,5 +1,5 @@
 	db "ABYSS@" ; species name
-	dw 1350, 13227 ; height, weight
+	dw 1306, 13227 ; height, weight
 
 	db   "Their skin takes"
 	next "in minerals from"

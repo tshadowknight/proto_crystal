@@ -1,5 +1,5 @@
 	db "CHIME@" ; species name
-	dw 98, 85 ; height, weight
+	dw 11, 85 ; height, weight
 
 	db   "The sound of the"
 	next "chime on its tail"

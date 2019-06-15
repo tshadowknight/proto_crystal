@@ -1,5 +1,5 @@
 	db "TRIPLET@" ; species name
-	dw 65, 13 ; height, weight
+	dw 08, 13 ; height, weight
 
 	db   "Though always seen"
 	next "in threes, people"

@@ -1,5 +1,5 @@
 	db "VOODOO DOLL@" ; species name
-	dw 32, 22 ; height, weight
+	dw 02, 22 ; height, weight
 
 	db   "When peering into"
 	next "their lifeless"

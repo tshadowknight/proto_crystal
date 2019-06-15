@@ -1,5 +1,5 @@
 	db "SUNFISH@" ; species name
-	dw 146, 220 ; height, weight
+	dw 106, 220 ; height, weight
 
 	db   "Sunmola are said"
 	next "to bring good luck"

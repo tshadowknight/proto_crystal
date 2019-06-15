@@ -1,5 +1,5 @@
 	db "FOX PUP@" ; species name
-	dw 131, 132 ; height, weight
+	dw 109, 132 ; height, weight
 
 	db   "Ancient Kanto myth"
 	next "says that TRIFOX"

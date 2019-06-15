@@ -1,5 +1,5 @@
 	db "GOLDFISH@" ; species name
-	dw 065, 4 ; height, weight
+	dw 007, 4 ; height, weight
 
 	db   "Popular as pets,"
 	next "their owners are"

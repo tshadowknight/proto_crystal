@@ -1,5 +1,5 @@
 	db "SEA MINE@" ; species name
-	dw 656, 1540 ; height, weight
+	dw 606, 1540 ; height, weight
 
 	db   "It has a very"
 	next "potent toxin."
