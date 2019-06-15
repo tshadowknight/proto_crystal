@@ -20,6 +20,9 @@ my @newMoveHeaders;
 my @newMovePointers;
 my @newPalettePointers;
 my @newPartyIconsPlaceHolders;
+my @newEggMovePointers;
+my @newEggMovesStubs;
+
 for my $id (sort keys %translations){
 	push(@newBSTStrings, "INCLUDE \"data/pokemon/base_stats/".(lc $translations{$id}->{"new"}).".asm\"	;$id - ".(lc $translations{$id}->{"old"}));
 	push(@newPokeConstants, "\tconst ".(uc $translations{$id}->{"new"})." ; ".$id);
@@ -34,8 +37,23 @@ for my $id (sort keys %translations){
 	push(@newPalettePointers,  "INCLUDE \"gfx/pokemon/".(lc $translations{$id}->{"new"})."/normal.pal\"");
 	push(@newPalettePointers,  "INCLUDE \"gfx/pokemon/".(lc $translations{$id}->{"new"})."/shiny.pal\"");
 	push(@newPartyIconsPlaceHolders,  "\tdb ICON_ODDISH      ; ".$translations{$id}->{"new"});
+	
+	push(@newEggMovePointers,  "\tdw ".(ucfirst $translations{$id}->{"new"})."EggMoves      ; ".$translations{$id}->{"new"});
+	
+	push(@newEggMovesStubs,  (ucfirst $translations{$id}->{"new"})."EggMoves:");
+	push(@newEggMovesStubs,  "\tdb -1 ; end;");	
 		
 }
+
+my $filename = 'newEggMovePointers.txt';
+open(my $fh, '>', $filename) or die "Could not open file '$filename' $!";
+print $fh join("\n", @newEggMovePointers);
+close $fh;
+
+my $filename = 'newEggMovesStubs.txt';
+open(my $fh, '>', $filename) or die "Could not open file '$filename' $!";
+print $fh join("\n", @newEggMovesStubs);
+close $fh;
 
 my $filename = 'new_bst_order.txt';
 open(my $fh, '>', $filename) or die "Could not open file '$filename' $!";

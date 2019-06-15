@@ -868,5 +868,58 @@ LarvitarEggMoves:
 	db ANCIENTPOWER
 	db -1 ; end
 
+LeefEggMoves:
+	db -1 ; end;
+FlambearEggMoves:
+	db -1 ; end;
+CruzEggMoves:
+	db -1 ; end;	
+TrifoxEggMoves:
+	db -1 ; end;
+TangelEggMoves:
+	db -1 ; end;
+RayleepEggMoves:
+	db -1 ; end;
+QuagsireEggMoves:
+	db -1 ; end;
+GolppyEggMoves:
+	db -1 ; end;
+SunmolaEggMoves:
+	db -1 ; end;
+ParasyEggMoves:
+	db -1 ; end;
+DounoEggMoves:
+	db -1 ; end;
+SunfloraEggMoves:
+	db -1 ; end;
+TwinzEggMoves:
+	db -1 ; end;
+MeowsyEggMoves:
+	db -1 ; end;
+RinringEggMoves:
+	db -1 ; end;
+MinicornEggMoves:
+	db -1 ; end;
+TurbannEggMoves:
+	db -1 ; end;
+GrimeyEggMoves:
+	db -1 ; end;
+GohngEggMoves:
+	db -1 ; end;
+PuddiEggMoves:
+	db -1 ; end;
+LefmewEggMoves:
+	db -1 ; end;
+BallerineEggMoves:
+	db -1 ; end;
+BomseelEggMoves:
+	db -1 ; end;
+KotoraEggMoves:
+	db -1 ; end;
+KurstrawEggMoves:
+	db -1 ; end;
+WolfmanEggMoves:
+	db -1 ; end;
+	
 NoEggMoves:
 	db -1 ; end

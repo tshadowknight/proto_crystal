@@ -154,104 +154,104 @@ endc
 	dw NoEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
-	dw ChikoritaEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw CyndaquilEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw TotodileEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw SentretEggMoves
-	dw NoEggMoves
-	dw HoothootEggMoves
-	dw NoEggMoves
-	dw LedybaEggMoves
-	dw NoEggMoves
-	dw SpinarakEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw ChinchouEggMoves
-	dw NoEggMoves
-	dw PichuEggMoves
-	dw CleffaEggMoves
-	dw IgglybuffEggMoves
-	dw TogepiEggMoves
-	dw NoEggMoves
-	dw NatuEggMoves
-	dw NoEggMoves
-	dw MareepEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw MarillEggMoves
-	dw NoEggMoves
-	dw SudowoodoEggMoves
-	dw NoEggMoves
-	dw HoppipEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw AipomEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw YanmaEggMoves
-	dw WooperEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw MurkrowEggMoves
-	dw NoEggMoves
-	dw MisdreavusEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw GirafarigEggMoves
-	dw PinecoEggMoves
-	dw NoEggMoves
-	dw DunsparceEggMoves
-	dw GligarEggMoves
-	dw NoEggMoves
-	dw SnubbullEggMoves
-	dw NoEggMoves
-	dw QwilfishEggMoves
-	dw NoEggMoves
-	dw ShuckleEggMoves
-	dw HeracrossEggMoves
-	dw SneaselEggMoves
-	dw TeddiursaEggMoves
-	dw NoEggMoves
-	dw SlugmaEggMoves
-	dw NoEggMoves
-	dw SwinubEggMoves
-	dw NoEggMoves
-	dw CorsolaEggMoves
-	dw RemoraidEggMoves
-	dw NoEggMoves
-	dw DelibirdEggMoves
-	dw MantineEggMoves
-	dw SkarmoryEggMoves
-	dw HoundourEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw PhanpyEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw StantlerEggMoves
-	dw NoEggMoves
-	dw TyrogueEggMoves
-	dw NoEggMoves
-	dw SmoochumEggMoves
-	dw ElekidEggMoves
-	dw MagbyEggMoves
-	dw MiltankEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw LarvitarEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
-	dw NoEggMoves
+	dw LeefEggMoves      ; Leef
+	dw NoEggMoves      ; Blossomole
+	dw NoEggMoves      ; Blossomite
+	dw FlambearEggMoves      ; Flambear
+	dw NoEggMoves      ; Volbear
+	dw NoEggMoves      ; Dynabear
+	dw CruzEggMoves      ; Cruz
+	dw NoEggMoves      ; Aqua
+	dw NoEggMoves      ; Aquaria
+	dw HoothootEggMoves      ; Hoothoot
+	dw NoEggMoves      ; Hoohoo
+	dw MareepEggMoves      ; Mareep
+	dw NoEggMoves      ; Flaaffy
+	dw NoEggMoves      ; Ampharos
+	dw TrifoxEggMoves      ; Trifox
+	dw TangelEggMoves      ; Tangel
+	dw NoEggMoves     ; Gelanla
+	dw RayleepEggMoves      ; Rayleep
+	dw QwilfishEggMoves      ; Qwilfish
+	dw NoEggMoves      ; Numpuff
+	dw PichuEggMoves      ; Pichu
+	dw CleffaEggMoves      ; Cleffa
+	dw IgglybuffEggMoves      ; Igglybuff
+	dw QuagsireEggMoves      ; Quagsire
+	dw NatuEggMoves      ; Natu
+	dw NoEggMoves      ; Xatu
+	dw GolppyEggMoves      ; Golppy
+	dw MarillEggMoves      ; Marill
+	dw SunmolaEggMoves      ; Sunmola
+	dw NoEggMoves      ; Anchorage
+	dw NoEggMoves      ; Grotess
+	dw NoEggMoves      ; Crobat
+	dw ParasyEggMoves      ; Parasy
+	dw SpinarakEggMoves      ; Spinarak
+	dw NoEggMoves      ; Ariados
+	dw SkarmoryEggMoves      ; Skarmory
+	dw NoEggMoves      ; Lykwyse
+	dw DounoEggMoves      ; Douno
+	dw SunfloraEggMoves      ; Sunflora
+	dw PhanpyEggMoves      ; Phanpy
+	dw NoEggMoves       ; Donphan
+	dw TwinzEggMoves      ; Twinz
+	dw NoEggMoves     ; Girafarig
+	dw NoEggMoves      ; Smeargle
+	dw MeowsyEggMoves      ; Meowsy
+	dw RinringEggMoves      ; Rinring
+	dw NoEggMoves      ; Bellboyant
+	dw NoEggMoves      ; Politoed
+	dw NoEggMoves      ; Slowking
+	dw NoEggMoves      ; Unown
+	dw LedybaEggMoves      ; Ledyba
+	dw NoEggMoves      ; Tripstar
+	dw MinicornEggMoves      ; Minicorn
+	dw NoEggMoves      ; Espeon
+	dw NoEggMoves     ; Umbreon
+	dw TurbannEggMoves      ; Turbann
+	dw GrimeyEggMoves      ; Grimey
+	dw RemoraidEggMoves      ; Remoraid
+	dw NoEggMoves      ; Octillery
+	dw GohngEggMoves      ; Gohng
+	dw NoEggMoves     ; Hitmontop
+	dw PuddiEggMoves      ; Puddi
+	dw LefmewEggMoves      ; Lefmew
+	dw NoEggMoves      ; Dandemew
+	dw NoEggMoves      ; Cottomew
+	dw BallerineEggMoves      ; Ballerine
+	dw SmoochumEggMoves      ; Smoochum
+	dw ElekidEggMoves      ; Elekid
+	dw MagbyEggMoves      ; Magby
+	dw NoEggMoves     ; Bellossom
+	dw NoEggMoves      ; Belmitt
+	dw MiltankEggMoves      ; Miltank
+	dw BomseelEggMoves      ; Bomseel
+	dw DelibirdEggMoves      ; Delibird
+	dw KotoraEggMoves      ; Kotora
+	dw NoEggMoves    ; Raitora
+	dw NoEggMoves      ; Madame
+	dw KurstrawEggMoves      ; Kurstraw
+	dw NoEggMoves    ; Pangshi
+	dw MurkrowEggMoves      ; Murkrow
+	dw NoEggMoves     ; Blissey
+	dw NoEggMoves      ; Scizor
+	dw NoEggMoves      ; Plux
+	dw HoundourEggMoves      ; Houndour
+	dw NoEggMoves      ; Houndoom
+	dw WolfmanEggMoves      ; Wolfman
+	dw NoEggMoves      ; Warwolf
+	dw NoEggMoves      ; Porygon2
+	dw NoEggMoves     ; Likk
+	dw NoEggMoves      ; Steelix
+	dw NoEggMoves     ; Kingdra
+	dw NoEggMoves      ; Rai
+	dw NoEggMoves      ; En
+	dw NoEggMoves      ; Sui
+	dw SneaselEggMoves      ; Sneasel
+	dw NoEggMoves     ; Ho_Oh
+	dw TogepiEggMoves      ; Togepi
+	dw SnubbullEggMoves      ; Snubbull
+	dw AipomEggMoves      ; Aipom
+	dw NoEggMoves      ; Leafeon
 ; 0x23d07

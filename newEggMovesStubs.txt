@@ -1,0 +1,200 @@
+LeefEggMoves:
+	db -1 ; end;
+BlossomoleEggMoves:
+	db -1 ; end;
+BlossomiteEggMoves:
+	db -1 ; end;
+FlambearEggMoves:
+	db -1 ; end;
+VolbearEggMoves:
+	db -1 ; end;
+DynabearEggMoves:
+	db -1 ; end;
+CruzEggMoves:
+	db -1 ; end;
+AquaEggMoves:
+	db -1 ; end;
+AquariaEggMoves:
+	db -1 ; end;
+HoothootEggMoves:
+	db -1 ; end;
+HoohooEggMoves:
+	db -1 ; end;
+MareepEggMoves:
+	db -1 ; end;
+FlaaffyEggMoves:
+	db -1 ; end;
+AmpharosEggMoves:
+	db -1 ; end;
+TrifoxEggMoves:
+	db -1 ; end;
+TangelEggMoves:
+	db -1 ; end;
+GelanlaEggMoves:
+	db -1 ; end;
+RayleepEggMoves:
+	db -1 ; end;
+QwilfishEggMoves:
+	db -1 ; end;
+NumpuffEggMoves:
+	db -1 ; end;
+PichuEggMoves:
+	db -1 ; end;
+CleffaEggMoves:
+	db -1 ; end;
+IgglybuffEggMoves:
+	db -1 ; end;
+QuagsireEggMoves:
+	db -1 ; end;
+NatuEggMoves:
+	db -1 ; end;
+XatuEggMoves:
+	db -1 ; end;
+GolppyEggMoves:
+	db -1 ; end;
+MarillEggMoves:
+	db -1 ; end;
+SunmolaEggMoves:
+	db -1 ; end;
+AnchorageEggMoves:
+	db -1 ; end;
+GrotessEggMoves:
+	db -1 ; end;
+CrobatEggMoves:
+	db -1 ; end;
+ParasyEggMoves:
+	db -1 ; end;
+SpinarakEggMoves:
+	db -1 ; end;
+AriadosEggMoves:
+	db -1 ; end;
+SkarmoryEggMoves:
+	db -1 ; end;
+LykwyseEggMoves:
+	db -1 ; end;
+DounoEggMoves:
+	db -1 ; end;
+SunfloraEggMoves:
+	db -1 ; end;
+PhanpyEggMoves:
+	db -1 ; end;
+DonphanEggMoves:
+	db -1 ; end;
+TwinzEggMoves:
+	db -1 ; end;
+GirafarigEggMoves:
+	db -1 ; end;
+SmeargleEggMoves:
+	db -1 ; end;
+MeowsyEggMoves:
+	db -1 ; end;
+RinringEggMoves:
+	db -1 ; end;
+BellboyantEggMoves:
+	db -1 ; end;
+PolitoedEggMoves:
+	db -1 ; end;
+SlowkingEggMoves:
+	db -1 ; end;
+UnownEggMoves:
+	db -1 ; end;
+LedybaEggMoves:
+	db -1 ; end;
+TripstarEggMoves:
+	db -1 ; end;
+MinicornEggMoves:
+	db -1 ; end;
+EspeonEggMoves:
+	db -1 ; end;
+UmbreonEggMoves:
+	db -1 ; end;
+TurbannEggMoves:
+	db -1 ; end;
+GrimeyEggMoves:
+	db -1 ; end;
+RemoraidEggMoves:
+	db -1 ; end;
+OctilleryEggMoves:
+	db -1 ; end;
+GohngEggMoves:
+	db -1 ; end;
+HitmontopEggMoves:
+	db -1 ; end;
+PuddiEggMoves:
+	db -1 ; end;
+LefmewEggMoves:
+	db -1 ; end;
+DandemewEggMoves:
+	db -1 ; end;
+CottomewEggMoves:
+	db -1 ; end;
+BallerineEggMoves:
+	db -1 ; end;
+SmoochumEggMoves:
+	db -1 ; end;
+ElekidEggMoves:
+	db -1 ; end;
+MagbyEggMoves:
+	db -1 ; end;
+BellossomEggMoves:
+	db -1 ; end;
+BelmittEggMoves:
+	db -1 ; end;
+MiltankEggMoves:
+	db -1 ; end;
+BomseelEggMoves:
+	db -1 ; end;
+DelibirdEggMoves:
+	db -1 ; end;
+KotoraEggMoves:
+	db -1 ; end;
+RaitoraEggMoves:
+	db -1 ; end;
+MadameEggMoves:
+	db -1 ; end;
+KurstrawEggMoves:
+	db -1 ; end;
+PangshiEggMoves:
+	db -1 ; end;
+MurkrowEggMoves:
+	db -1 ; end;
+BlisseyEggMoves:
+	db -1 ; end;
+ScizorEggMoves:
+	db -1 ; end;
+PluxEggMoves:
+	db -1 ; end;
+HoundourEggMoves:
+	db -1 ; end;
+HoundoomEggMoves:
+	db -1 ; end;
+WolfmanEggMoves:
+	db -1 ; end;
+WarwolfEggMoves:
+	db -1 ; end;
+Porygon2EggMoves:
+	db -1 ; end;
+LikkEggMoves:
+	db -1 ; end;
+SteelixEggMoves:
+	db -1 ; end;
+KingdraEggMoves:
+	db -1 ; end;
+RaiEggMoves:
+	db -1 ; end;
+EnEggMoves:
+	db -1 ; end;
+SuiEggMoves:
+	db -1 ; end;
+SneaselEggMoves:
+	db -1 ; end;
+Ho_OhEggMoves:
+	db -1 ; end;
+TogepiEggMoves:
+	db -1 ; end;
+SnubbullEggMoves:
+	db -1 ; end;
+AipomEggMoves:
+	db -1 ; end;
+LeafeonEggMoves:
+	db -1 ; end;
