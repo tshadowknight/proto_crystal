@@ -2281,7 +2281,7 @@ AmpharosEvosAttacks:
 	db 9, THUNDERSHOCK
 	db 18, THUNDER_WAVE
 	db 27, COTTON_SPORE
-	db 30, THUNDERPUNCH
+	db 32, THUNDERPUNCH
 	db 42, LIGHT_SCREEN
 	db 57, THUNDER
 	db 0 ; no more level-up moves
