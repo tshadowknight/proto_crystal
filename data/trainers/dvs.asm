@@ -10,14 +10,14 @@ TrainerClassDVs: ; 270d6
 	db $98, $88 ; jasmine
 	db $98, $88 ; chuck
 	db $7C, $DD ; clair
-	db $DD, $DD ; rival1
+	db $9D, $DD ; rival1
 	db $98, $88 ; pokemon prof
-	db $DC, $DD ; will
-	db $DC, $DD ; cal
-	db $DC, $DD ; bruno
+	db $9C, $DD ; will
+	db $99, $99 ; cal
+	db $DC, $D9 ; bruno
 	db $7F, $DF ; karen
-	db $DC, $DD ; koga
-	db $DC, $DD ; champion
+	db $DC, $D9 ; koga
+	db $DC, $9D ; champion
 	db $98, $88 ; brock
 	db $78, $88 ; misty
 	db $98, $88 ; lt surge
@@ -64,7 +64,7 @@ TrainerClassDVs: ; 270d6
 	db $68, $8A ; kimono girl
 	db $68, $A8 ; twins
 	db $6D, $88 ; pokefanf
-	db $FD, $DE ; red
+	db $FD, $9E ; red
 	db $9D, $DD ; blue
 	db $98, $88 ; officer
 	db $7E, $A8 ; gruntf
