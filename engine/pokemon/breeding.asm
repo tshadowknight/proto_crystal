@@ -42,14 +42,20 @@ CheckBreedmonCompatibility: ; 16e1d
 	ld a, [wBreedMon1Species]
 	cp DITTO
 	jr z, .ditto1
+	cp LYKWYSE
+	jr z, .ditto1
 	ld a, [wBreedMon2Species]
 	cp DITTO
-	jr nz, .done
-	jr .compute
+	jr z, .compute	
+	cp LYKWYSE
+	jr z, .compute
+	jr .done
 
 .ditto1
 	ld a, [wBreedMon2Species]
 	cp DITTO
+	jr z, .done
+	cp LYKWYSE
 	jr z, .done
 
 .compute
@@ -127,6 +133,8 @@ CheckBreedmonCompatibility: ; 16e1d
 	ld a, [wBreedMon2Species]
 	cp DITTO
 	jr z, .Compatible
+	cp LYKWYSE
+	jr z, .Compatible
 	ld [wCurSpecies], a
 	call GetBaseData
 	ld a, [wBaseEggGroups]
@@ -140,6 +148,8 @@ CheckBreedmonCompatibility: ; 16e1d
 
 	ld a, [wBreedMon1Species]
 	cp DITTO
+	jr z, .Compatible
+	cp LYKWYSE
 	jr z, .Compatible
 	ld [wCurSpecies], a
 	push bc
@@ -568,8 +578,12 @@ GetHeritableMoves: ; 17197
 	ld a, [wBreedMon1Species]
 	cp DITTO
 	jr z, .ditto1
+	cp LYKWYSE
+	jr z, .ditto1
 	ld a, [wBreedMon2Species]
 	cp DITTO
+	jr z, .ditto2
+	cp LYKWYSE
 	jr z, .ditto2
 	ld a, [wBreedMotherOrNonDitto]
 	and a
@@ -626,8 +640,12 @@ GetBreedmonMovePointer: ; 1720b
 	ld a, [wBreedMon1Species]
 	cp DITTO
 	ret z
+	cp LYKWYSE
+	ret z
 	ld a, [wBreedMon2Species]
 	cp DITTO
+	jr z, .ditto
+	cp LYKWYSE 
 	jr z, .ditto
 	ld a, [wBreedMotherOrNonDitto]
 	and a

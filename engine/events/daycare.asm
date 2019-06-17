@@ -637,8 +637,16 @@ DayCare_InitBreeding: ; 16a3b
 	cp DITTO
 	ld a, $1
 	jr z, .LoadWhichBreedmonIsTheMother
+	ld a, [wBreedMon1Species]
+	cp LYKWYSE
+	ld a, $1
+	jr z, .LoadWhichBreedmonIsTheMother
 	ld a, [wBreedMon2Species]
 	cp DITTO
+	ld a, $0
+	jr z, .LoadWhichBreedmonIsTheMother
+	ld a, [wBreedMon2Species]
+	cp LYKWYSE
 	ld a, $0
 	jr z, .LoadWhichBreedmonIsTheMother
 	farcall GetGender
@@ -722,9 +730,13 @@ DayCare_InitBreeding: ; 16a3b
 	ld a, [wBreedMon1Species]
 	cp DITTO
 	jr z, .GotDVs
+	cp LYKWYSE
+	jr z, .GotDVs
 	ld de, wBreedMon2DVs
 	ld a, [wBreedMon2Species]
 	cp DITTO
+	jr z, .GotDVs
+	cp LYKWYSE
 	jr z, .GotDVs
 	ld a, TEMPMON
 	ld [wMonType], a
