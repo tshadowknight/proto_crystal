@@ -71,18 +71,18 @@ PokefanmRexAfterBattleText:
 	done
 
 PokefanmAllanSeenText:
-	text "My BULBASAUR is"
+	text "My BALLERINE is"
 	line "the cutest in the"
 	cont "world."
 	done
 
 PokefanmAllanBeatenText:
-	text "My BULBASAUR!"
+	text "My BALLERINE!"
 	done
 
 PokefanmAllanAfterBattleText:
 	text "Look how adorable"
-	line "my BULBASAUR acts!"
+	line "my BALLERINE acts!"
 
 	para "Isn't it cute"
 	line "enough to make"
