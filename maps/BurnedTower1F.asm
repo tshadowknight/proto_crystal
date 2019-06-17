@@ -233,7 +233,7 @@ BurnedTower1FEusineIntroText:
 
 	para "I'm on the trail"
 	line "of a #MON named"
-	cont "SUICUNE."
+	cont "SUI."
 
 	para "And you are…?"
 
@@ -269,7 +269,7 @@ BurnedTower1FMortyText:
 	line "said to be the"
 
 	para "legendary #MON"
-	line "--SUICUNE, EN"
+	line "--SUI, EN"
 	cont "and RAI."
 
 	para "EUSINE is here, so"

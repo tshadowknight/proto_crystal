@@ -129,7 +129,7 @@ NoBeastsText:
 	line "the legendary"
 
 	para "#MON RAI and"
-	line "ENTEI?"
+	line "EN?"
 
 	para "<……><……><……>"
 

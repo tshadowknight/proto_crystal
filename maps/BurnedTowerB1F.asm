@@ -197,7 +197,7 @@ BurnedTowerB1FEusineText:
 
 	para "I was shocked!"
 
-	para "SUICUNE raced by"
+	para "SUI raced by"
 	line "like a blur, right"
 
 	para "in front of my"
@@ -226,7 +226,7 @@ BurnedTowerB1FEusineText:
 	line "get close."
 
 	para "I'm going to track"
-	line "SUICUNE."
+	line "SUI."
 
 	para "<PLAYER>, let's"
 	line "meet again!"

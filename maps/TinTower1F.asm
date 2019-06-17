@@ -317,7 +317,7 @@ TinTowerEusineSuicuneText:
 	para "That was truly"
 	line "inspiring to see."
 
-	para "SUICUNE was tough,"
+	para "SUI was tough,"
 	line "but you were even"
 
 	para "more incredible,"
@@ -390,8 +390,8 @@ TinTower1FSage2Text:
 
 	para "They are…"
 
-	para "SUICUNE, EN and"
-	line "RAIKOU."
+	para "SUI, EN and"
+	line "RAI."
 
 	para "That is what they"
 	line "say."

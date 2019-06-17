@@ -131,8 +131,8 @@ MovementData_0x98628:
 WiseTriosRoomSage1Text:
 	text "Astounding…"
 
-	para "SUICUNE, EN and"
-	line "RAIKOU have arisen"
+	para "SUI, EN and"
+	line "RAI have arisen"
 	cont "from their sleep…"
 
 	para "Is the legend"
@@ -161,7 +161,7 @@ UnknownText_0x98712:
 	line "GYM BADGE."
 
 	para "However, now that"
-	line "SUICUNE, RAI"
+	line "SUI, RAI"
 
 	para "and EN have"
 	line "arisen, I ask you"
@@ -218,7 +218,7 @@ UnknownText_0x98938:
 	line "who claim to have"
 
 	para "seen SUI,"
-	line "ENTEI and RAI"
+	line "EN and RAI"
 	cont "while they slept?"
 
 	para "Unbelievable!"
@@ -331,14 +331,14 @@ UnknownText_0x98cac:
 	line "and enter the TIN"
 	cont "TOWER ahead."
 
-	para "SUICUNE will put"
+	para "SUI will put"
 	line "you to the test."
 	done
 
 UnknownText_0x98db5:
 	text "Please, do go on."
 
-	para "SUICUNE will put"
+	para "SUI will put"
 	line "you to the test."
 	done
 
