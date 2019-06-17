@@ -215,6 +215,8 @@ NewPokedexOrder: ; 0x40d60
 	db RHYHORN
 	db RHYDON
 	db MURKROW
+	db RINRING
+	db BELLBOYANT
 	db HOUNDOUR
 	db HOUNDOOM
 	db SNEASEL
