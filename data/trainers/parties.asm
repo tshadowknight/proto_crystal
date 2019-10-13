@@ -3097,7 +3097,7 @@ CamperGroup:
 	db -1 ; end
 
 	; CAMPER (21)
-	db "TODD@"
+	db "TODD@", TRAINERTYPE_NORMAL
 	db 33, GRAVELER
 	db 33, GRAVELER
 	db 36, NUMPUFF

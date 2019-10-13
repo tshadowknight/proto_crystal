@@ -736,3 +736,4 @@ HaunterBackpic:      INCBIN "gfx/pokemon/haunter/back.2bpp.lz"
 XatuBackpic:         INCBIN "gfx/pokemon/golppy/back.2bpp.lz"
 RedPic:              INCBIN "gfx/trainers/red.2bpp.lz"
 Porygon2Backpic:     INCBIN "gfx/pokemon/scizor/back.2bpp.lz"
+

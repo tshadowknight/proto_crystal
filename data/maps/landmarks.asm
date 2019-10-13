@@ -102,6 +102,7 @@ Landmarks: ; 0x1ca8c3
 	landmark  20, 116, TohjoFallsName
 	landmark  28,  84, Route28Name
 	landmark 148, 132, FastShipName
+	landmark   0,   0, FarawayIslandName
 ; 0x1caa43
 
 NewBarkTownName:     db "NEW BARK¯TOWN@"
@@ -206,3 +207,4 @@ TohjoFallsName:      db "TOHJO FALLS@"
 UndergroundName:     db "UNDERGROUND@"
 BattleTowerName:     db "BATTLE¯TOWER@"
 SpecialMapName:      db "SPECIAL@"
+FarawayIslandName:   db "FARAWAY¯ISLAND@"

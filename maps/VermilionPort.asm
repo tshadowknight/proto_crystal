@@ -2,6 +2,7 @@
 	const VERMILIONPORT_SAILOR1
 	const VERMILIONPORT_SAILOR2
 	const VERMILIONPORT_SUPER_NERD
+	const VERMILIONPORT_BORED_SAILOR
 
 VermilionPort_MapScripts:
 	db 2 ; scene scripts
@@ -191,7 +192,87 @@ VermilionPortSuperNerdScript:
 	waitbutton
 	closetext
 	end
+	
+VermilionPortBoredSailor:
+	faceplayer
+	opentext 
+	checkevent EVENT_SHOWN_MAP
+	iftrue .askToGoIntro
+	writetext boredSailorNoMap
+	waitbutton
+	checkitem OLD_SEA_MAP
+	iftrue .playerHasMap
+	closetext
+	end
+	
+.playerHasMap:	
+	showemote EMOTE_SHOCK, VERMILIONPORT_BORED_SAILOR, 15
+	pause 10
+	writetext boredSailorNoticeMap
+	waitbutton
+	setevent EVENT_SHOWN_MAP
+	jump .askToGo
+	closetext
+	end
+	
+.askToGoIntro
+	writetext boredSailorAskToGoIntro
+	waitbutton
+.askToGo:
+	writetext boredSailorAskToGo
+	yesorno
+	iffalse .refuse
+	writetext boredSailorAccept
+	waitbutton	
+	closetext
+	special FadeOutPalettes
+	warp FARAWAY_ISLAND_EXTERIOR, 16, 41	
+	end
+	
+.refuse
+	writetext boredSailorRefuse
+	waitbutton	
+	closetext
+	end
+	
+boredSailorNoMap:
+	text "I wish I could go"
+	line "out there and"
+	cont "discover some- "
+	cont "thing new…"
+	para "Something I've"
+	line "never seen before."
+	done	
+	
+boredSailorNoticeMap:
+	text "That map!"
+	line "I've never seen"
+	cont "anything like it!"
+	done	
+	
+boredSailorAskToGoIntro:
+	text "So about the"
+	line "location on that"
+	cont "map…"
+	done
+	
+boredSailorAskToGo:
+	text "Shall we go check"
+	line "it out?"
+	done
 
+boredSailorRefuse:
+	text "…"
+	line "…"
+	cont "I hope you change"
+	cont "your mind."
+	para "I'll be waiting!"
+	done	
+	
+boredSailorAccept:
+	text "Alright, let's go!"
+	done		
+	
 VermilionPortHiddenIron:
 	hiddenitem IRON, EVENT_VERMILION_PORT_HIDDEN_IRON
 
@@ -309,7 +390,8 @@ VermilionPort_MapEvents:
 	db 1 ; bg events
 	bg_event 16, 13, BGEVENT_ITEM, VermilionPortHiddenIron
 
-	db 3 ; object events
+	db 4 ; object events
 	object_event  7, 17, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionPortSailorAtGangwayScript, EVENT_VERMILION_PORT_SAILOR_AT_GANGWAY
 	object_event  6, 11, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionPortSailorScript, -1
 	object_event 11, 11, SPRITE_SUPER_NERD, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VermilionPortSuperNerdScript, -1
+	object_event 15, 10, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_RIGHT, 2, 0, -1, -1, 2, OBJECTTYPE_SCRIPT, 0, VermilionPortBoredSailor, -1

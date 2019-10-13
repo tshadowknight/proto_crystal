@@ -29,6 +29,7 @@ OutdoorSprites: ; 144b8
 	dw NewBarkGroupSprites
 	dw SaffronGroupSprites
 	dw CherrygroveGroupSprites
+	dw OlivineGroupSprites
 ; 144ec
 
 

@@ -662,3 +662,5 @@ ENDM
 	map_attributes Route30BerryHouse, ROUTE_30_BERRY_HOUSE, $00, 0
 	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $00, 0
 	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
+	map_attributes FarawayIslandExterior, FARAWAY_ISLAND_EXTERIOR, $35, 0
+	map_attributes FarawayIslandInterior, FARAWAY_ISLAND_INTERIOR, $00, 0

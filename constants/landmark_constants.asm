@@ -100,6 +100,7 @@ KANTO_LANDMARK EQU const_value
 	const TOHJO_FALLS       ; 5d
 	const ROUTE_28          ; 5e
 	const FAST_SHIP         ; 5f
+	const FARAWAY_ISLAND       ; 60
 
 ; used in CaughtData
 GIFT_LOCATION  EQU $7e

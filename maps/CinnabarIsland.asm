@@ -1,5 +1,6 @@
 	const_def 2 ; object constants
 	const CINNABARISLAND_BLUE
+	const CINNABARISLAND_POKE_BALL1
 
 CinnabarIsland_MapScripts:
 	db 0 ; scene scripts
@@ -22,6 +23,9 @@ CinnabarIslandBlue:
 	disappear CINNABARISLAND_BLUE
 	clearevent EVENT_VIRIDIAN_GYM_BLUE
 	end
+	
+CinnabarIslandSeaMap:
+	itemball OLD_SEA_MAP	
 
 CinnabarIslandGymSign:
 	jumptext CinnabarIslandGymSignText
@@ -139,5 +143,7 @@ CinnabarIsland_MapEvents:
 	bg_event  7,  7, BGEVENT_READ, CinnabarIslandSign
 	bg_event  9,  1, BGEVENT_ITEM, CinnabarIslandHiddenRareCandy
 
-	db 1 ; object events
+	db 2 ; object events
 	object_event  9,  6, SPRITE_BLUE, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CinnabarIslandBlue, EVENT_BLUE_IN_CINNABAR
+	object_event 9, 1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CinnabarIslandSeaMap, EVENT_CINNABAR_OLD_SEA_MAP
+	
