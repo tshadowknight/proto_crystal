@@ -386,25 +386,25 @@ KantoGrassWildMons: ; 0x2b274
 	db 15, RATTATA
 	db 15, SPEAROW
 	db 15, RATICATE
+	db 15, MANKEY
 	db 15, FEAROW
-	db 15, FEAROW
-	db 18, MAROWAK
+	db 18, PRIMEAPE
 	db 18, MAROWAK
 	; day
 	db 15, RATTATA
 	db 15, SPEAROW
 	db 15, RATICATE
+	db 15, MANKEY
 	db 15, FEAROW
-	db 15, FEAROW
-	db 18, MAROWAK
+	db 18, PRIMEAPE
 	db 18, MAROWAK
 	; nite
 	db 15, RATTATA
 	db 15, VENONAT
-	db 15, RATICATE
+	db 15, MANKEY
 	db 15, VENOMOTH
 	db 15, ZUBAT
-	db 18, RATICATE
+	db 18, PRIMEAPE
 	db 18, RATICATE
 
 	map_id ROUTE_10_NORTH

@@ -1279,7 +1279,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 7, BELLSPROUT
 	db 6, PUDDI
 	db 7, PIDGEY
-	db 7, PUDDI
+	db 7, MAREEP
 	db 7, LEFMEW
 	; day
 	db 4, EKANS
@@ -1287,7 +1287,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 7, BELLSPROUT
 	db 6, PUDDI
 	db 7, PIDGEY
-	db 7, PUDDI
+	db 7, MAREEP
 	db 7, LEFMEW
 	; nite
 	db 4, BELLSPROUT
@@ -1518,7 +1518,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 15, SNEASEL
-	db 16, PIDGEOTTO
+	db 16, MAREEP
 	db 16, FARFETCH_D
 	db 15, SNEASEL
 	db 17, RATICATE
@@ -1526,7 +1526,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 17, GIRAFARIG
 	; day
 	db 15, SNEASEL
-	db 16, PIDGEOTTO
+	db 16, MAREEP
 	db 16, FARFETCH_D
 	db 15, SNEASEL
 	db 17, RATICATE
