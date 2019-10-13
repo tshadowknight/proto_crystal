@@ -2,8 +2,16 @@
 	const FARAWAY_ISLAND_EXCITED_SAILOR
 	
 FarawayIslandExterior_MapScripts:
-	db 0 ; scene scripts
+	db 2 ; scene scripts
+	scene_script .DummyScene0 ; SCENE_DEFAULT
+	scene_script .DummyScene1 ; SCENE_FINISHED
 	db 0 ; callbacks
+	
+.DummyScene0:
+	end
+
+.DummyScene1:
+	end		
 	
 FarawayIslandExcitedSailor:
 	faceplayer
@@ -70,10 +78,23 @@ FadedSignText:
 	line "faded to read…"	
 	done
 	
+FarawayIslandExterior_FakeWarp1:
+	special FadeOutPalettes
+	warpfacing 1, FARAWAY_ISLAND_INTERIOR, 12, 20 
+	end	
+	
+FarawayIslandExterior_FakeWarp2:
+	special FadeOutPalettes
+	warpfacing 1, FARAWAY_ISLAND_INTERIOR, 13, 20 
+	end		
+	
+	
 FarawayIslandExterior_MapEvents:
 	db 0, 0;
 	db 0 ; warp events
-	db 0 ; coord events
+	db 2 ; coord events
+	coord_event  28,  7, $FF, FarawayIslandExterior_FakeWarp1
+	coord_event  29,  7, $FF, FarawayIslandExterior_FakeWarp2
 	db 1 ; bg events
 	bg_event  17, 43, BGEVENT_READ, FadedSign
 	db 1 ; objects events

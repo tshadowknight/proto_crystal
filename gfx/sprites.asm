@@ -106,3 +106,5 @@ SuicuneSpriteGFX::             INCBIN "gfx/sprites/suicune.2bpp" ; c7e00
 EnteiSpriteGFX::               INCBIN "gfx/sprites/entei.2bpp" ; c7e40
 RaikouSpriteGFX::              INCBIN "gfx/sprites/raikou.2bpp" ; c7e80
 StandingYoungsterSpriteGFX::   INCBIN "gfx/sprites/standing_youngster.2bpp" ; c7ec0
+
+MewTailGFX::   INCBIN "gfx/sprites/mew_tail.2bpp" ; c7ec0

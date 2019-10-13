@@ -29,7 +29,7 @@ OutdoorSprites: ; 144b8
 	dw NewBarkGroupSprites
 	dw SaffronGroupSprites
 	dw CherrygroveGroupSprites
-	dw OlivineGroupSprites
+	dw FarawayIslandGroupSprites
 ; 144ec
 
 
@@ -696,3 +696,28 @@ CableClubGroupSprites: ; 1472b
 	db SPRITE_POKE_BALL
 	db SPRITE_POKEDEX
 ; 14736
+
+FarawayIslandGroupSprites: ; 146a1
+	db SPRITE_SUICUNE
+	db SPRITE_SILVER_TROPHY
+	db SPRITE_FAMICOM
+	db SPRITE_POKEDEX
+	db SPRITE_WILL
+	db SPRITE_KAREN
+	db SPRITE_NURSE
+	db SPRITE_OLD_LINK_RECEPTIONIST
+	db SPRITE_BIG_LAPRAS
+	db SPRITE_BIG_ONIX
+	db SPRITE_SUDOWOODO
+	db SPRITE_BIG_SNORLAX
+	db SPRITE_SAILOR
+	db SPRITE_FISHING_GURU
+	db SPRITE_GENTLEMAN
+	db SPRITE_SUPER_NERD
+	db SPRITE_HO_OH
+	db SPRITE_TEACHER
+	db SPRITE_COOLTRAINER_F
+	db SPRITE_YOUNGSTER
+	db SPRITE_MEW_TAIL
+	db SPRITE_POKE_BALL
+	db SPRITE_ROCK

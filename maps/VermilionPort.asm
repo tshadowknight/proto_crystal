@@ -226,7 +226,7 @@ VermilionPortBoredSailor:
 	waitbutton	
 	closetext
 	special FadeOutPalettes
-	warp FARAWAY_ISLAND_EXTERIOR, 16, 41	
+	warpfacing 1, FARAWAY_ISLAND_EXTERIOR, 16, 41	
 	end
 	
 .refuse
