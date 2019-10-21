@@ -30,6 +30,7 @@ OutdoorSprites: ; 144b8
 	dw SaffronGroupSprites
 	dw CherrygroveGroupSprites
 	dw FarawayIslandGroupSprites
+	dw NewBarkGroupSprites
 ; 144ec
 
 

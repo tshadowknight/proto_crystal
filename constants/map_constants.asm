@@ -196,12 +196,13 @@ ENDM
 	map_const ROUTE_10_POKECENTER_2F_BETA,                  8,  4 ;  9
 	map_const POWER_PLANT,                                 10,  9 ; 10
 	map_const BILLS_HOUSE,                                  4,  4 ; 11
-	map_const ROUTE_4,                                     20,  9 ; 12
+	map_const ROUTE_4,                                     20,  10 ; 12
 	map_const ROUTE_9,                                     30,  9 ; 13
 	map_const ROUTE_10_NORTH,                              10,  9 ; 14
 	map_const ROUTE_24,                                    10,  9 ; 15
 	map_const ROUTE_25,                                    30,  9 ; 16
-	map_const CERULEAN_CITY,                               20, 18 ; 17
+	map_const CERULEAN_CITY,                               22, 18 ; 17
+	
 
 	newgroup                                                      ;  8
 
@@ -495,3 +496,9 @@ ENDM
 	newgroup													   ; 27
 	map_const FARAWAY_ISLAND_EXTERIOR,						20, 30
 	map_const FARAWAY_ISLAND_INTERIOR,						14, 14
+	
+	newgroup														;28
+	map_const CERULEAN_CAVE_1F,							    20, 13
+	map_const CERULEAN_CAVE_2F,							    20, 13
+	map_const CERULEAN_CAVE_1BF,							20, 13
+	

@@ -812,4 +812,85 @@ KantoGrassWildMons: ; 0x2b274
 	db 42, GOLBAT
 	db 42, GOLBAT
 
+	map_id CERULEAN_CAVE_1F
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 58, ELECTRODE
+	db 59, PRIMEAPE
+	db 58, MACHOKE
+	db 58, PARASECT
+	db 60, DITTO
+	db 65, BLASTOISE
+	db 65, BLASTOISE
+	; day
+	db 58, ELECTRODE
+	db 59, PRIMEAPE
+	db 58, MACHOKE
+	db 58, PARASECT
+	db 60, DITTO
+	db 65, BLASTOISE
+	db 65, BLASTOISE
+	; nite
+	db 58, ELECTRODE
+	db 59, PRIMEAPE
+	db 58, MACHOKE
+	db 58, PARASECT
+	db 60, DITTO
+	db 65, BLASTOISE
+	db 65, BLASTOISE
+	
+	map_id CERULEAN_CAVE_2F
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 60, PARASECT
+	db 61, KADABRA
+	db 60, MACHOKE
+	db 60, ELECTRODE
+	db 62, DODRIO
+	db 65, VENUSAUR
+	db 65, VENUSAUR
+	; day
+	db 60, PARASECT
+	db 61, KADABRA
+	db 60, MACHOKE
+	db 60, ELECTRODE
+	db 62, DODRIO
+	db 65, VENUSAUR
+	db 65, VENUSAUR
+	; nite
+	db 60, PARASECT
+	db 61, KADABRA
+	db 60, MACHOKE
+	db 60, ELECTRODE
+	db 62, DODRIO
+	db 65, VENUSAUR
+	db 65, VENUSAUR
+	
+	map_id CERULEAN_CAVE_1BF
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 62, PARASECT
+	db 63, KADABRA
+	db 62, MACHOKE
+	db 62, ELECTRODE
+	db 64, LYKWYSE
+	db 67, CHARIZARD
+	db 67, CHARIZARD
+	; day
+	db 62, PARASECT
+	db 63, KADABRA
+	db 62, MACHOKE
+	db 62, ELECTRODE
+	db 64, LYKWYSE
+	db 67, CHARIZARD
+	db 67, CHARIZARD
+	; nite
+	db 61, PARASECT
+	db 61, KADABRA
+	db 62, MACHOKE
+	db 62, ELECTRODE
+	db 64, LYKWYSE
+	db 67, CHARIZARD
+	db 67, CHARIZARD
+
 	db -1 ; end

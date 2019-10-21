@@ -78,6 +78,8 @@ PlayBattleMusic: ; 2ee6c
 	jp z, .done
 	cp $92 ; Moltres
 	jp z, .done
+	cp $96 ; Mewtwo
+	jp z, .done
 	cp $97 ; Mew
 	jp z, .done
 

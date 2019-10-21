@@ -37,6 +37,7 @@ MapGroupRoofs: ; 1c021i
 	db -1             ; 25
 	db ROOF_NEW_BARK  ; 26 (Cherrygrove)
 	db -1             ; 27
+	db -1             ; 28
 ; 1c03c
 
 Roofs: ; 1c03c

@@ -302,13 +302,13 @@ ENDM
 	connection east, Route8, ROUTE_8, 9, 0, 9
 
 	map_attributes Route5, ROUTE_5, $0f, NORTH | SOUTH
-	connection north, CeruleanCity, CERULEAN_CITY, -3, 2, 16
+	connection north, CeruleanCity, CERULEAN_CITY, -5, 2, 16
 	connection south, SaffronCity, SAFFRON_CITY, -3, 2, 16
 
 	map_attributes CeruleanCity, CERULEAN_CITY, $0f, NORTH | SOUTH | WEST | EAST
-	connection north, Route24, ROUTE_24, 6, 0, 10
-	connection south, Route5, ROUTE_5, 5, 0, 10
-	connection west, Route4, ROUTE_4, 5, 0, 9
+	connection north, Route24, ROUTE_24, 8, 0, 10
+	connection south, Route5, ROUTE_5, 7, 0, 10
+	connection west, Route4, ROUTE_4, 4, 0, 9
 	connection east, Route9, ROUTE_9, 9, 0, 9
 
 	map_attributes Route9, ROUTE_9, $2c, SOUTH | WEST
@@ -317,7 +317,7 @@ ENDM
 
 	map_attributes Route24, ROUTE_24, $2c, NORTH | SOUTH
 	connection north, Route25, ROUTE_25, 0, 0, 13
-	connection south, CeruleanCity, CERULEAN_CITY, -3, 3, 16
+	connection south, CeruleanCity, CERULEAN_CITY, -5, 3, 16
 
 	map_attributes Route25, ROUTE_25, $2c, SOUTH
 	connection south, Route24, ROUTE_24, 0, 0, 10
@@ -328,7 +328,7 @@ ENDM
 
 	map_attributes Route4, ROUTE_4, $2c, WEST | EAST
 	connection west, Route3, ROUTE_3, 0, 0, 9
-	connection east, CeruleanCity, CERULEAN_CITY, -3, 2, 15
+	connection east, CeruleanCity, CERULEAN_CITY, -2, 2, 15
 
 	map_attributes Route8, ROUTE_8, $2c, WEST | EAST
 	connection west, SaffronCity, SAFFRON_CITY, -3, 6, 12
@@ -663,4 +663,8 @@ ENDM
 	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $00, 0
 	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
 	map_attributes FarawayIslandExterior, FARAWAY_ISLAND_EXTERIOR, $35, 0
-	map_attributes FarawayIslandInterior, FARAWAY_ISLAND_INTERIOR, $00, 0
+	map_attributes FarawayIslandInterior, FARAWAY_ISLAND_INTERIOR, $00, 0	
+	map_attributes CeruleanCave1F, CERULEAN_CAVE_1F, $0A, 0
+	map_attributes CeruleanCave2F, CERULEAN_CAVE_2F, $0A, 0
+	map_attributes CeruleanCave1BF, CERULEAN_CAVE_1BF, $0A, 0
+	

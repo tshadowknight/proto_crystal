@@ -1053,3 +1053,12 @@ FarawayIslandExterior_Blocks:
 	
 FarawayIslandInterior_Blocks:
 	INCBIN "maps/FarawayIslandInterior.blk"
+	
+CeruleanCave1F_Blocks:
+	INCBIN "maps/CeruleanCave1F.blk"
+	
+CeruleanCave2F_Blocks:
+	INCBIN "maps/CeruleanCave2F.blk"
+	
+CeruleanCave1BF_Blocks:
+	INCBIN "maps/CeruleanCave1BF.blk"	

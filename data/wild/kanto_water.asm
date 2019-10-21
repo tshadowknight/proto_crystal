@@ -145,5 +145,17 @@ KantoWaterWildMons: ; 0x2b7f7
 	db 35, BOMSEEL
 	db 30, BOMSEEL
 	db 35, BOMSEEL
+	
+	map_id CERULEAN_CAVE_1F
+	db 6 percent ; encounter rate
+	db 58, POLIWHIRL
+	db 59, POLITOED
+	db 65, SLOWKING
+	
+	map_id CERULEAN_CAVE_1BF
+	db 6 percent ; encounter rate
+	db 62, POLIWRATH
+	db 64, POLITOED
+	db 69, SLOWKING
 
 	db -1 ; end

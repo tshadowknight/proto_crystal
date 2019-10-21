@@ -29,6 +29,7 @@ Red:
 	pause 15
 	special FadeInQuickly
 	pause 30
+	setevent EVENT_BEAT_RED
 	special HealParty
 	refreshscreen
 	credits
