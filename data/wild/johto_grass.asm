@@ -1061,7 +1061,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 48, GOLBAT
 	db 50, LYKWYSE
 	db 47, PANGSHI
-	db 46, PARASECT
+	db 46, BLOSSOMITE
 	db 48, WARWOLF
 	db 15, SNEASEL
 	db 20, SNEASEL
@@ -1069,7 +1069,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 48, GOLBAT
 	db 50, LYKWYSE
 	db 47, PANGSHI
-	db 46, PARASECT
+	db 46, BLOSSOMITE
 	db 48, WARWOLF
 	db 15, SNEASEL
 	db 20, SNEASEL
@@ -1077,7 +1077,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 48, GOLBAT
 	db 50, LYKWYSE
 	db 46, GOLBAT
-	db 46, PARASECT
+	db 46, BLOSSOMITE
 	db 48, WARWOLF
 	db 45, PANGSHI
 	db 45, WARWOLF
@@ -1089,52 +1089,52 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 50, LYKWYSE
 	db 48, GRAVELER
 	db 50, PANGSHI
-	db 20, SNEASEL
-	db 15, SNEASEL
-	db 20, GRIMEY
+	db 46, DYNABEAR
+	db 51, STEELIX
+	db 51, STEELIX
 	; day
 	db 51, GOLBAT
 	db 50, LYKWYSE
 	db 48, GRAVELER
 	db 50, PANGSHI
-	db 20, SNEASEL
-	db 15, SNEASEL
-	db 20, GRIMEY
+	db 46, DYNABEAR
+	db 51, STEELIX
+	db 51, STEELIX
 	; nite
 	db 51, GOLBAT
 	db 50, LYKWYSE
 	db 48, GRAVELER
 	db 49, GOLBAT
-	db 45, GOLDUCK
-	db 53, GOLBAT
-	db 53, GOLBAT
+	db 46, DYNABEAR
+	db 51, STEELIX
+	db 51, STEELIX
 
 	map_id SILVER_CAVE_ITEM_ROOMS
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 30, LYKWYSE
-	db 30, LYKWYSE
-	db 50, LYKWYSE
 	db 50, LYKWYSE
 	db 70, LYKWYSE
 	db 70, LYKWYSE
+	db 80, LYKWYSE
 	db 90, LYKWYSE
+	db 90, LYKWYSE
+	db 100, LYKWYSE
 	; day
-	db 30, LYKWYSE
-	db 30, LYKWYSE
-	db 50, LYKWYSE
 	db 50, LYKWYSE
 	db 70, LYKWYSE
 	db 70, LYKWYSE
+	db 80, LYKWYSE
 	db 90, LYKWYSE
+	db 90, LYKWYSE
+	db 100, LYKWYSE
 	; nite
-	db 30, LYKWYSE
-	db 30, LYKWYSE
-	db 50, LYKWYSE
 	db 50, LYKWYSE
 	db 70, LYKWYSE
 	db 70, LYKWYSE
+	db 80, LYKWYSE
 	db 90, LYKWYSE
+	db 90, LYKWYSE
+	db 100, LYKWYSE
 
 	map_id DARK_CAVE_VIOLET_ENTRANCE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
@@ -1630,23 +1630,23 @@ JohtoGrassWildMons: ; 0x2a5e9
 	db 42, ARBOK
 	db 44, RAPIDASH
 	db 41, DODUO
-	db 43, DODRIO
-	db 43, DODRIO
+	db 43, SCIZOR
+	db 43, SCIZOR
 	; day
 	db 41, TANGELA
 	db 42, PONYTA
 	db 42, ARBOK
 	db 44, RAPIDASH
 	db 41, DODUO
-	db 43, DODRIO
-	db 43, DODRIO
+	db 43, SCIZOR
+	db 43, SCIZOR
 	; nite
 	db 41, TANGELA
 	db 42, POLIWHIRL
 	db 42, GOLBAT
 	db 44, POLIWHIRL
 	db 40, GOLBAT
-	db 44, GOLBAT
-	db 44, GOLBAT
+	db 44, SCIZOR
+	db 44, SCIZOR
 
 	db -1 ; end
