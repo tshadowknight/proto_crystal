@@ -3,7 +3,7 @@
 	db  75,  90,  50,  95, 110,  80
 	;   hp  atk  def  spd  sat  sdf
 
-	db DARK, FIRE ; type
+	db FIRE, FIRE ; type
 	db 45 ; catch rate
 	db 204 ; base exp
 	db NO_ITEM, NO_ITEM ; items
