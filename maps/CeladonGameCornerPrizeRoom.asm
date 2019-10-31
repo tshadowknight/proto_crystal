@@ -197,7 +197,7 @@ CeladonGameCornerPrizeRoomPokemonVendor:
 	db 4 ; items
 	db "PIKACHU    2222@"
 	db "PORYGON    5555@"
-	db "LARVITAR   8888@"
+	db "SNEASEL    8888@"
 	db "CANCEL@"
 
 CeladonGameCornerPrizeRoomGentlemanText:

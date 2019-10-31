@@ -110,11 +110,11 @@ UnknownText_0x7e2c0:
 
 UnknownText_0x7e355:
 	text "<PLAYER> received"
-	line "TYROGUE."
+	line "GHONG."
 	done
 
 UnknownText_0x7e36a:
-	text "TYROGUE is a"
+	text "GHONG is a"
 	line "fighting-type."
 
 	para "It evolves into a"
