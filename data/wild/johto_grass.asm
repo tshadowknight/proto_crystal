@@ -1230,7 +1230,7 @@ JohtoGrassWildMons: ; 0x2a5e9
 	; day
 	db 3, PIDGEY
 	db 3, CATERPIE
-	db 4, CATERPIE
+	db 4, DOUNO
 	db 4, PIDGEY
 	db 3, WEEDLE
 	db 4, DOUNO
