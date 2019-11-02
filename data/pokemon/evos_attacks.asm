@@ -502,9 +502,9 @@ VulpixEvosAttacks:
 	db 1, TAIL_WHIP
 	db 7, QUICK_ATTACK
 	db 13, ROAR
-	db 19, CONFUSE_RAY
+	db 18, FLAMETHROWER
 	db 25, SAFEGUARD
-	db 31, FLAMETHROWER
+	db 31, CONFUSE_RAY
 	db 37, FIRE_SPIN
 	db 0 ; no more level-up moves
 
@@ -2314,7 +2314,7 @@ TangelEvosAttacks:
 	db 10, ABSORB
 	db 13, POISONPOWDER
 	db 19, VINE_WHIP
-	db 23, MEGA_DRAIN
+	db 23, GIGA_DRAIN
 	db 34, STUN_SPORE
 	db 40, SLAM
 	db 46, GROWTH
@@ -2610,8 +2610,8 @@ DounoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
 	db 1, GROWL
-	db 9, PURSUIT
-	db 13, FURY_ATTACK
+	db 5, PURSUIT
+	db 11, FURY_ATTACK
 	db 18, DRILL_PECK
 	db 21, TRI_ATTACK
 	db 25, RAGE	
@@ -2865,9 +2865,10 @@ GrimeyEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_GAS
 	db 1, POUND
-	db 5, HARDEN
-	db 10, DISABLE
-	db 16, SLUDGE
+	db 3, HARDEN
+	db 6, DISABLE
+	db 11, SLUDGE
+	db 16, TOXIC
 	db 23, MINIMIZE
 	db 31, SCREECH
 	db 40, ACID_ARMOR
@@ -2926,7 +2927,7 @@ PuddiEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, BITE
 	db 1, ROAR
-	db 9, EMBER
+	db 6, EMBER
 	db 15, FLAME_WHEEL
 	db 18, LEER
 	db 26, TAKE_DOWN	
@@ -3040,8 +3041,8 @@ MagbyEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, EMBER
 	db 7, LEER
-	db 13, SMOG
-	db 19, FIRE_PUNCH
+	db 13, FIRE_PUNCH
+	db 19, SMOG
 	db 25, SMOKESCREEN
 	db 31, SUNNY_DAY
 	db 37, FLAMETHROWER
