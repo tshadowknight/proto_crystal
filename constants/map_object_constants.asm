@@ -247,3 +247,4 @@ SPRITEMOVEDATA_FIELDS EQU 6
 	const STEP_TURN          ; 5
 	const STEP_BACK_LEDGE    ; 6
 	const STEP_WALK_IN_PLACE ; 7
+	const STEP_FASTER ; 8

@@ -29,7 +29,7 @@ DeleteMapObject:: ; 4357
 	ret
 ; 437b
 
-Function437b: ; 437b
+MonitorTempObjects: ; 437b
 	call .CheckObjectStillVisible
 	ret c
 	call .HandleStepType
@@ -391,6 +391,11 @@ StepVectors: ; 4700
 	db  0, -4,  4, 4
 	db -4,  0,  4, 4
 	db  4,  0,  4, 4
+	; faster
+	db  0,  8,  2, 8
+	db  0, -8,  2, 8
+	db -8,  0,  2, 8
+	db  8,  0,  2, 8
 ; 4730
 
 GetStepVectorSign: ; 4730
@@ -986,6 +991,10 @@ MapObjectMovementPattern: ; 47dd
 	add hl, de
 	ld a, [hl]
 	add -1
+	and a
+	jr nz, .framesDetermined
+	ld a, 1
+.framesDetermined
 	ld hl, OBJECT_STEP_DURATION
 	add hl, bc
 	ld [hl], a
@@ -2514,7 +2523,7 @@ HandleNPCStep:: ; 576a
 	ld [hMapObjectIndexBuffer], a
 	call DoesObjectHaveASprite
 	jr z, .next
-	call Function437b
+	call MonitorTempObjects
 .next
 	ld hl, OBJECT_STRUCT_LENGTH
 	add hl, bc

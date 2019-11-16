@@ -90,6 +90,10 @@ MovementPointers: ; 5075
 	dw Movement_rock_smash            ; 57
 	dw Movement_return_dig            ; 58
 	dw Movement_skyfall_top           ; 59
+	dw Movement_bigger_step_down         ; 5a
+	dw Movement_bigger_step_up           ; 5b
+	dw Movement_bigger_step_left         ; 5c
+	dw Movement_bigger_step_right        ; 5d
 ; 5129
 
 
@@ -725,6 +729,25 @@ Movement_turn_step_left: ; 53f8
 Movement_turn_step_right: ; 53fc
 	ld a, OW_RIGHT
 	jr TurnStep
+	
+Movement_bigger_step_down: ; 5328
+	ld a, 12
+	jp NormalStep
+; 532d
+
+Movement_bigger_step_up: ; 532d
+	ld a, 13
+	jp NormalStep
+; 5332
+
+Movement_bigger_step_left: ; 5332
+	ld a, 14
+	jp NormalStep
+; 5337
+
+Movement_bigger_step_right: ; 5337
+	ld a, 15
+	jp NormalStep	
 
 TurnStep: ; 5400
 	ld hl, OBJECT_1D ; new facing

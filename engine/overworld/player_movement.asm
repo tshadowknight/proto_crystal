@@ -289,11 +289,11 @@ DoPlayerMovement:: ; 80000
 
 	ld hl, wBikeFlags
 	bit BIKEFLAGS_DOWNHILL_F, [hl]
-	jr z, .fast
+	jr z, .faster
 
 	ld a, [wWalkingDirection]
 	cp DOWN
-	jr z, .fast
+	jr z, .faster
 
 	ld a, STEP_WALK
 	call .DoStep
@@ -317,6 +317,12 @@ DoPlayerMovement:: ; 80000
 	call .DoStep
 	scf
 	ret
+	
+.faster	
+	ld a, STEP_FASTER
+	call .DoStep
+	scf
+	ret	
 
 ; unused
 	xor a
@@ -490,6 +496,7 @@ DoPlayerMovement:: ; 80000
 	dw .TurningStep
 	dw .BackJumpStep
 	dw .FinishFacing
+	dw .FasterStep
 
 .SlowStep:
 	slow_step DOWN
@@ -531,6 +538,11 @@ DoPlayerMovement:: ; 80000
 	db $80 + UP
 	db $80 + LEFT
 	db $80 + RIGHT
+.FasterStep:
+	db $5a
+	db $5b
+	db $5c
+	db $5d
 ; 802b3
 
 .StandInPlace: ; 802b3

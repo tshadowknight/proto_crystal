@@ -11,7 +11,7 @@ _HandlePlayerStep:: ; d497 (3:5497)
 	ret
 
 .update_overworld_map
-	ld a, 4
+	ld a, 2
 	ld [wHandlePlayerStep], a
 	call UpdateOverworldMap
 	jr .finish
