@@ -13,7 +13,7 @@ Mewtwo:
 	cry MEWTWO
 	pause 15
 	closetext
-	setevent EVENT_FOUGHT_MEW
+	setevent EVENT_FOUGHT_MEWTWO
 	writecode VAR_BATTLETYPE, BATTLETYPE_FORCEITEM
 	loadwildmon MEWTWO, 90
 	startbattle

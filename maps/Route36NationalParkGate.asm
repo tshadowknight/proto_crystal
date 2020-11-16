@@ -247,7 +247,7 @@ Route36Officer_ContestHasConcluded:
 .Sunstone:
 	writetext UnknownText_0x6b97f
 	buttonsound
-	verbosegiveitem SUN_STONE
+	verbosegiveitem POISON_STONE
 	iffalse .BagFull
 	clearevent EVENT_CONTEST_OFFICER_HAS_SUN_STONE
 	closetext

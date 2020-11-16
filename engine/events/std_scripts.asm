@@ -385,10 +385,10 @@ BugContestResults_CleanUp:
 
 BugContestResults_FirstPlace: ; 0xbc31e
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	itemtotext SUN_STONE, MEM_BUFFER_1
+	itemtotext POISON_STONE, MEM_BUFFER_1
 	farwritetext ContestResults_PlayerWonAPrizeText
 	waitbutton
-	verbosegiveitem SUN_STONE
+	verbosegiveitem POISON_STONE
 	iffalse BugContestResults_NoRoomForSunStone
 	jump BugContestResults_ReturnAfterWinnersPrize
 ; 0xbc332
